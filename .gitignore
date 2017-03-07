@@ -1,0 +1,9 @@
+node_modules/
+resources/scss/font-awesome/
+resources/fonts/FontAwesome.otf
+resources/fonts/
+gulpfile.js
+package.json
+resources/js/
+resources/img/favicon.png
+resources/css/prism.css
