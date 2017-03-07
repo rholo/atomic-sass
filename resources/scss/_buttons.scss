@@ -1,0 +1,164 @@
+/**
+ * @title Buttons
+ * @example
+**/
+.nt_button {
+      background-color: $colour-btn-default;
+      color: white;
+      font-weight: normal;
+      font-size:1.2rem;
+      text-transform: uppercase;
+      height: 30px;
+      white-space:nowrap;
+      text-overflow: ellipsis;
+      padding: 7px 12px;
+      min-width: 120px;
+      @include border(1px solid darken($colour-btn-default, 5%));
+      @include border-radius($border-radius-btn);
+      @include transition(all 100ms linear);
+      outline: none;
+      vertical-align: middle;
+      &:hover {
+        background-color: darken($colour-btn-default, 5.5%);
+      }
+      &:disabled {
+          cursor:not-allowed!important;
+          opacity: .5;
+      }
+      > .fa {
+          margin-right: 3px;
+      }
+}
+[data-button="default"]{
+    background-color: $colour-btn-default;
+    @include border(1px solid darken($colour-btn-default, 5%));
+    &:hover{
+        background-color: darken($colour-btn-default, 5.5%)
+    }
+    &:hover:disabled{
+        background-color: $colour-btn-default;
+    }
+}
+[data-button="primary"]{
+    background-color: $colour-btn-primary;
+    @include border(1px solid darken($colour-btn-primary, 5%));
+    &:hover{
+        background-color: darken($colour-btn-primary, 5.5%)
+    }
+    &:hover:disabled{
+        background-color: $colour-btn-primary;
+    }
+}
+[data-button="safe"]{
+    background-color: $colour-btn-safe;
+    @include border(1px solid darken($colour-btn-safe, 5%));
+    &:hover{
+        background-color: darken($colour-btn-safe, 5.5%)
+    }
+    &:hover:disabled{
+        background-color: $colour-btn-safe;
+    }
+}
+[data-button="warning"]{
+    background-color: $colour-btn-warning;
+    @include border(1px solid darken($colour-btn-warning, 5%));
+    &:hover{
+        background-color: darken($colour-btn-warning, 5.5%)
+    }
+    &:hover:disabled{
+        background-color: $colour-btn-warning;
+    }
+}
+[data-button="risk"]{
+    background-color: $colour-btn-risk;
+    @include border(1px solid darken($colour-btn-risk, 5%));
+    &:hover{
+        background-color: darken($colour-btn-risk, 5.5%)
+    }
+    &:hover:disabled{
+        background-color: $colour-btn-risk;
+    }
+}
+[data-button="disabled"]{
+    background-color: white;
+    color: darken(white, 20%);
+    @include border(1px solid darken(white, 5%));
+    &:hover{
+        background-color:white;
+    }
+    &:hover:disabled{
+        background-color: white;
+    }
+}
+[data-button="minimal"]{
+    background-color: transparent;
+    color:$colour-btn-minimal;
+    border:0;
+    &:hover{
+        color:darken($colour-btn-minimal,5.5%);
+        background-color: transparent;
+    }
+}
+
+.toggle-button {
+    background-color: white;
+    margin:0;
+    border-radius: 20px;
+    border: 2px solid #D0D0D0;
+    height: 26px;
+    cursor: pointer;
+    width: 40px!important;
+    position: relative;
+    display: inline-block;
+    user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    button {
+        cursor: pointer;
+        outline: 0;
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        border-radius: 100%;
+        width: 26px;
+        height: 26px;
+        background-color: white;
+        float: left;
+        margin: -2px 0 0 -2px;
+        border: 2px solid #D0D0D0;
+        transition: left 0.3s;
+    }
+}
+.toggle-button-selected {
+    background-color: #83B152;
+    border: 2px solid #7DA652;
+    button {
+        left: 14px;
+        top: 0;
+        margin: 0;
+        border: none;
+        width: 22px;
+        height: 22px;
+        box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+    }
+}
+
+.button-order{
+    width: 34px;
+    float: left;
+}
+.button-order button {
+    border: 0;
+    margin: 2px;
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    border: 2px solid black;
+    @include transition(all 100ms linear);
+    &:hover{
+        background-color: black;
+        color: white;
+    }
+}

@@ -1,0 +1,39 @@
+/**
+ * @title Module-blocks
+ * @example <div module="blocks">
+ * @description the most common grid css system, use if your proyect is under IE11 support
+**/
+
+.nt_row + .nt_row{
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+.nt_row:after,.nt_row:before {
+    content: "";
+    display: table;
+    clear: both
+}
+[class*="nt_col-"] {
+    float: left;
+    // padding: .5rem;
+    margin-right: $grid-deft-space
+}
+[class*="nt_col-"]:last-of-type{
+    border-right: 0;
+    margin-right: 0;
+}
+@for $i from 1 through $default-columns {
+    .nt_col-#{$i} {
+       width:(100% / ($default-columns / $i)) - (($grid-deft-space * ($default-columns - $i)) / $default-columns); 
+    }
+}
+@media screen and (max-width: $break-point) {
+    [class*="nt_col-"] {
+        float: none;
+        width: 100%!important;
+        margin-right: 0
+    }
+    [class*="nt_col-"]:last-of-type{
+        margin-top: 5px;
+    }
+  }

@@ -1,0 +1,10 @@
+body {
+  overflow-x: hidden;
+}
+.nt_layout{
+//  min-width: $min-width-layout;
+    max-width: $max-width-layout;
+    margin: 0 auto;
+    padding:$layout-spacing;
+    position: relative;
+}

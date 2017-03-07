@@ -1,0 +1,329 @@
+<!doctype html>
+<html lang="es">
+<head>
+	<meta charset="utf-8" />
+	<!--<link rel="shortcut icon" href="resources/img/favicon.ico">-->
+	<title>NT Dashboard</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, target-densitydpi=device-dpi" />
+	<meta http-equiv="Cache-control" content="public">
+	<link rel="icon" href="resources/img/favicon.png">
+	<link rel="stylesheet" media="all" href="resources/css/main.css" />
+	<!--use prism for example code-->
+	<link href="resources/css/prism.css" rel="stylesheet" />
+	<!--jquery-->
+	<!--<script src="resources/js/jquery.min.js"></script>-->
+	<!--[if lt IE 9]>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+</head>
+<body>
+    <header class="nt_header-bigHead">
+		<div class="start-here">
+ 			<h1>Nectia<strong> BASE</strong></h1>
+			<button class="nt_button" data-button="safe"><i class="fa fa-css3"></i>Ready to use file</button>
+			<hr class="nt_help-separator"/>
+			<button class="nt_button" data-button="safe"><i class="fa fa-github-alt"></i>SASS version</button>
+		</div>
+    </header>
+    <main class="nt_layout">
+        <article class="nt_article">
+            <header>
+                <div class="nt_art-head-title">
+					<!--<h2>blank layout<small> initial HTML tags with custom css</small></h2>-->
+				</div>
+            </header>
+			<section class="nt_section">
+				<header>
+					<h3>Flex grid<small>with 16 columns</small></h3>
+					<p>IE11+</p>
+				</header>
+				<div class="nt_section-content">
+					<div class="nt_grid-flx">
+					    <div class="nt_flx-col-2 nt_example-col">
+							<p>nt_flx-col-2</p>
+					    </div>
+						<div class="nt_flx-col-14 nt_example-col">
+						   <p>nt_flx-col-14</p>
+					   </div>
+					</div>
+					<div class="nt_grid-flx">
+					    <div class="nt_flx-col-4 nt_example-col">
+							<p>nt_flx-col-4</p>
+					    </div>
+						<div class="nt_flx-col-12 nt_example-col">
+						   <p>nt_flx-col-12</p>
+					   </div>
+					</div>
+					<div class="nt_grid-flx">
+					    <div class="nt_flx-col-6 nt_example-col">
+							<p>nt_flx-col-6</p>
+					    </div>
+					   <div class="nt_flx-col-10 nt_example-col">
+						   <p>nt_flx-col-10</p>
+					   </div>
+					</div>
+					<div class="nt_grid-flx">
+						<div class="nt_flx-col-8 nt_example-col">
+							<p>nt_flx-col-8</p>
+						</div>
+					   <div class="nt_flx-col-8 nt_example-col">
+						   <p>nt_flx-col-8</p>
+					   </div>
+					</div>
+					<div class="nt_grid-flx">
+						<div class="nt_flx-col-10 nt_example-col">
+							<p>nt_flx-col-10</p>
+						</div>
+					   <div class="nt_flx-col-6 nt_example-col">
+						   <p>nt_flx-col-6</p>
+					   </div>
+					</div>
+					<div class="nt_grid-flx">
+						<div class="nt_flx-col-12 nt_example-col">
+							<p>nt_flx-col-12</p>
+						</div>
+					   <div class="nt_flx-col-4 nt_example-col">
+						   <p>nt_flx-col-4</p>
+					   </div>
+					</div>
+				</div>
+			</section>
+			<section class="nt_section">
+				<header>
+					<h3>Common Grid<small>with 12 columns</small></h3>
+					<p>the most common grid system...</p>
+				</header>
+				<div class="nt_section-content">
+					<div class="nt_row">
+					    <div class="nt_col-2 nt_example-col">
+							<p>nt_col-2</p>
+					    </div>
+						<div class="nt_col-10 nt_example-col">
+							<p>nt_col-10</p>
+					    </div>
+					</div>
+					<div class="nt_row">
+					    <div class="nt_col-4 nt_example-col">
+							<p>nt_col-4</p>
+					    </div>
+						<div class="nt_col-8 nt_example-col">
+							<p>nt_col-8</p>
+					    </div>
+					</div>
+					<div class="nt_row">
+					    <div class="nt_col-6 nt_example-col">
+							<p>nt_col-6</p>
+					    </div>
+						<div class="nt_col-6 nt_example-col">
+							<p>nt_col-6</p>
+					    </div>
+					</div>
+					<div class="nt_row">
+					    <div class="nt_col-8 nt_example-col">
+							<p>nt_col-8</p>
+					    </div>
+						<div class="nt_col-4 nt_example-col">
+							<p>nt_col-4</p>
+					    </div>
+					</div>
+					<div class="nt_row">
+					    <div class="nt_col-10 nt_example-col">
+							<p>nt_col-10</p>
+					    </div>
+						<div class="nt_col-2 nt_example-col">
+							<p>nt_col-2</p>
+					    </div>
+					</div>
+				</div>
+            </section>
+			<section class="nt_section">
+				<header>
+					<h3>Table grid<small>12 columns grid like a table</small></h3>
+					<p>Tested on IE7+, margin doesnt work around here, recomended padding for separated columns</p>
+				</header>
+			<div class="nt_section-content">
+					<div class="nt_row-fix">
+					    <div class="nt_fix-col-2 nt_example-col">
+							<p>nt_fix-col-2</p>
+					    </div>
+						<div class="nt_fix-col-10 nt_example-col">
+							<p>nt_fix-col-10</p>
+					    </div>
+					</div>
+					<div class="nt_row-fix">
+					    <div class="nt_fix-col-4 nt_example-col">
+							<p>nt_fix-col-4</p>
+					    </div>
+						<div class="nt_fix-col-8 nt_example-col">
+							<p>nt_fix-col-8</p>
+					    </div>
+					</div>
+					<div class="nt_row-fix">
+					    <div class="nt_fix-col-6 nt_example-col">
+							<p>nt_fix-col-6</p>
+					    </div>
+						<div class="nt_fix-col-6 nt_example-col">
+							<p>nt_fix-col-6</p>
+					    </div>
+					</div>
+					<div class="nt_row-fix">
+					    <div class="nt_fix-col-8 nt_example-col">
+							<p>nt_fix-col-8</p>
+					    </div>
+						<div class="nt_fix-col-4 nt_example-col">
+							<p>nt_fix-col-4</p>
+					    </div>
+					</div>
+					<div class="nt_row-fix">
+					    <div class="nt_fix-col-10 nt_example-col">
+							<p>nt_fix-col-10</p>
+					    </div>
+						<div class="nt_fix-col-2 nt_example-col">
+							<p>nt_fix-col-2</p>
+					    </div>
+					</div>
+				</div>
+			</section>
+			<section class="nt_section">
+				<header>
+					<h3>Buttons</h3>
+                    <p>class .nt_button and attr data-button="" for colors</p>
+				</header>
+				<div class="nt_section-content nt_example-btn-content">
+					<button class="nt_button" data-button="default">Default</button>
+					<button class="nt_button" data-button="primary">Primary</button>
+					<button class="nt_button" data-button="safe">Confirm</button>
+					<button class="nt_button" data-button="warning">Atention</button>
+					<button class="nt_button" data-button="risk">Risk</button>
+					<button class="nt_button" data-button="minimal">Minimal</button>
+				</div>
+            </section>
+            <section class="nt_section">
+                <header>
+                    <h3>Headings <small>bla bla</small></h3>
+                    <p>...</p>
+                </header>
+                <div class="nt_section-content">
+					<h1>Heading H1 <small>complement text</small><h1>
+					<h2>Heading H2 <small>complement text</small><h2>
+					<h3>Heading H3 <small>complement text</small><h3>
+					<h4>Heading H4 <small>complement text</small><h4>
+					<h5>Heading H5 <small>complement text</small><h5>
+					<h6>Heading H6 <small>complement text</small><h6>
+				</div>
+            </section>
+			<section class="nt_section">
+				<header>
+					<h3>Paragraph <small>text, links, others</small></h3>
+					<p>Text to complement title section</p>
+				</header>
+				<div class="nt_section-content">
+					<p>Lorem ipsum <strong>dolor sit amet</strong>, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					<p>Lorem ipsum dolor sit amet, <a href="">consectetur adipisicing elit</a>, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+				</div>
+			</section>
+			<section class="nt_section">
+				<header>
+					<h3>Navigation <small>simple nav menu</small></h3>
+					<p>...</p>
+				</header>
+				<div class="nt_section-content">
+					<p>.nt_nav-burger</p>
+					<a href="javascript:;" class="nt_nav-burger">
+						<span></span>
+						<span></span>
+						<span></span>
+					</a>
+					<p>.nt_main-nav</p>
+					<nav class="nt_main-nav-h">
+						<ul>
+							<li><a href="javascript:;">Opción A</a></li>
+							<li><a href="javascript:;">Opción A</a></li>
+							<li><a href="javascript:;">Opción A</a></li>
+							<li><a href="javascript:;">Opción A</a></li>
+							<!--<li>Opción A</li>
+							<li>Opción A</li>-->
+						</ul>
+					</nav>
+					<p>.nt_main-nav-v</p>
+					<nav class="nt_main-nav-v">
+						<ul>
+							<li><a href="javascript:;"><i class="fa fa-code"></i>Opción A (with icon)</a></li>
+							<li><a href="javascript:;">Opción A</a></li>
+							<li><a href="javascript:;">Opción A</a></li>
+							<li><a href="javascript:;">Opción A</a></li>
+							<!--<li>Opción A</li>
+							<li>Opción A</li>-->
+						</ul>
+					</nav>
+				</div>
+			</section>
+			<section class="nt_section">
+				<header>
+					<h3>Form <small>input, checkbox, select, textarea</small></h3>
+					<p>Text to complement title section</p>
+				</header>
+				<div class="nt_section-content">
+					<form novalidate="" id="">
+						<p>.nt_input</p>
+						<input type="text" class="nt_input" name="nameInput" value="">
+						<p>.nt_select</p>
+						<select class="nt_select" name="nameSelect">
+						    <option value="">Seleccionar</option>
+						</select>
+						<p>.nt_input-checkbox</p>
+						<input type="checkbox" class="nt_input-checkbox" value="" name="">
+						<p>.nt_input-radio</p>
+						<input type="radio" class="nt_input-radio" value="" name="">
+					</form>
+				</div>
+			</section>
+			<section class="nt_section">
+				<header>
+					<h3>Table</h3>
+					<p>.nt_table</p>
+				</header>
+				<div class="nt_section-content">
+					<div class="nt_table">
+						<table>
+							<thead>
+							<tr>
+								<th width="10"></th>
+								<th width="10"></th>
+								<th>Player</th>
+								<th>Country</th>
+								<th>Team</th>
+							</tr>
+							</thead>
+							<tbody>
+							<tr>
+								<td><a href="javascript:;"><i class="fa fa-eye"></i></a></td>
+								<td><i class="fa fa-pencil"></i></td>
+								<td>C. Ronaldo</td>
+								<td>Portugal</td>
+								<td>Real Madrid</td>
+							</tr>
+							<tr>
+								<td><a href="javascript:;"><i class="fa fa-eye"></i></a></td>
+								<td><i class="fa fa-pencil"></i></td>
+								<td>A. Sanchez</td>
+								<td>Chile</td>
+								<td>Arsenal F.C</td>
+							</tr>
+							<tr>
+								<td><a href="javascript:;"><i class="fa fa-eye"></i></a></td>
+								<td><i class="fa fa-pencil"></i></td>
+								<td>A. Griezmann</td>
+								<td>Francia</td>
+								<td>C. Atlético Madrid</td>
+							</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</section>
+        </article>
+    </main>
+</body>
+</html>

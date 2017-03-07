@@ -1,0 +1,47 @@
+/**
+ * Description: Navigation
+**/
+.nt_nav-burger{
+  padding:16px;
+  padding-left: 0;
+  display: inline-block;
+  color: $colour_nav-burger;
+  > span{
+      width: 25px;
+      height: 3px;
+      background: $colour_nav-burger;
+      display: block;
+  }
+  > span + span{
+      margin-top: 5px;
+  }
+  &:hover{
+    color:darken($colour_nav-burger, 5.5%);
+    text-decoration: none;
+  }
+}
+[class*="nt_main-nav-"]{
+    padding: 0;
+    > ul{
+      overflow:hidden;
+      > li {
+        position: relative;
+        > a {
+          display:block;
+          padding:.4rem;
+          > .fa{
+            margin-right:.4rem;
+          }
+        }
+        &[disabled]{
+          opacity: .4;
+          cursor: not-allowed;
+        }
+      }
+    }
+}
+nav.nt_main-nav-h {
+    ul{
+        display:flex;
+    }
+}

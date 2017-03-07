@@ -1,0 +1,24 @@
+.nt_helper-float-r{
+    float:right;
+}
+.nt_helper-float-l{
+    float: left;
+}
+.nt_disabled {
+    cursor: not-allowed!important;
+}
+a.nt_disabled {
+    pointer-events: none!important;
+}
+.nt_helper-hidden{
+    display: none;
+}
+.nt_helper-flx{
+    display: flex; //IE 11+
+}
+hr.nt_helper-separator{
+    height: 1px;
+    background-color: #e8e8e8;
+    width: 100%;
+    margin: 10px 0;
+}

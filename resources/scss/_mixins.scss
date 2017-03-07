@@ -1,0 +1,33 @@
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+@mixin transition($args) {
+-webkit-transition: $args;
+   -moz-transition: $args;
+    -ms-transition: $args;
+     -o-transition: $args;
+        transition: $args;
+}
+@mixin transform($transform) {
+  -webkit-transform: $transform;
+     -moz-transform: $transform;
+      -ms-transform: $transform;
+       -o-transform: $transform;
+          transform: $transform;
+}
+@mixin font-size($font-size-global){
+    font-size:$font-size-global;
+    -webkit-text-size-adjust: $font-size-global;
+    -ms-text-size-adjust: $font-size-global;
+}
+
+@mixin border($border) {
+    border:$border;
+}
+//rotate
+@mixin rotate ($deg) {
+  @include transform(rotate(#{$deg}deg));
+}

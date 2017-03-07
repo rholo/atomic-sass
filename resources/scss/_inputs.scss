@@ -1,0 +1,33 @@
+/**
+ * @title Inputs
+ * @example
+**/
+.nt_input,
+.nt_select,
+.nt_textarea {
+  border: 1px solid #ccc !important;
+  outline: none;
+  padding: 6px;
+  font-size: 1.2rem;
+  font-family: inherit;
+  width: 100%;
+  background-color: #fbfbfb;
+  color: #5a5a5a;
+}
+.nt_input,
+.nt_select{
+    height: 30px;
+}
+.nt_select[multiple] {
+    min-height: 120px;
+}
+input {
+  &[type="file"] {
+    border: 0 !important;
+    outline: none;
+  }
+  &:focus {
+    border-color: #65B3CC !important;
+    background-color: #F9F9F9 !important;
+  }
+}

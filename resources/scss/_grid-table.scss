@@ -1,0 +1,35 @@
+.nt_row-fix {
+    display: table;
+    table-layout: fixed;
+    // border-collapse:separate;
+    // border-spacing:.5rem 0;
+    margin: 0;
+    width: 100%;
+    padding-bottom: 5px;
+}
+.nt_row-fix + .nt_row-fix {
+    margin-top: 5px;
+    padding-top: 5px;
+}
+[class*='nt_fix-col'] {
+    display: table-cell;
+    padding:0 1.2rem;
+}
+[class*='nt_fix-col']:last-of-type{
+    border-right:0;
+}
+@for $i from 1 through $fix-columns {
+    .nt_fix-col-#{$i} {
+       width:(100% / ($fix-columns / $i))
+    }
+}
+@media screen and (max-width: $break-point) {
+    [class*='nt_fix-col'] {
+        display: block;
+        width: 100%!important;
+        padding:0 1.2rem;
+    }
+    [class*='nt_fix-col']:last-of-type{
+        margin-top: 5px;
+    }
+}
