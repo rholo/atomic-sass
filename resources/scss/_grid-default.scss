@@ -16,7 +16,7 @@
 [class*="nt_col-"] {
     float: left;
     // padding: .5rem;
-    margin-right: $grid-deft-space
+    margin-right: $grid-space
 }
 [class*="nt_col-"]:last-of-type{
     border-right: 0;
@@ -24,7 +24,7 @@
 }
 @for $i from 1 through $default-columns {
     .nt_col-#{$i} {
-       width:(100% / ($default-columns / $i)) - (($grid-deft-space * ($default-columns - $i)) / $default-columns); 
+       width:(100% / ($default-columns / $i)) - (($grid-space * ($default-columns - $i)) / $default-columns); 
     }
 }
 @media screen and (max-width: $break-point) {

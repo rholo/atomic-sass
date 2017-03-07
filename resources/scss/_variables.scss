@@ -16,7 +16,7 @@ $font-secondary         :'Roboto Slab', Georgia, "Times New Roman", Times, serif
 
 $font-size-global       :62.5%;
 //font-size 1.4rem = 14px
-$font-size              :1.4rem; 
+$font-size              :1.4rem;
 
 //layout configuration
 //$min-width-layout     :280px;
@@ -24,13 +24,14 @@ $max-width-layout       :90%;
 $layout-spacing         :0 2%;
 
 //select columns for your grid
-$flex-columns           :16;
 $default-columns        :12;
+$flex-columns           :16;
 $fix-columns            :12;
-
 //add margin to columns on default grid
-$grid-deft-space        :.5%;
-$break-point            : 40em;
+$grid-space        :.5%;
+
+//for mediaqueries
+$break-point            :40em;
+
 //button
 $border-radius-btn      :4px;
-

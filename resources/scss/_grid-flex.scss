@@ -1,30 +1,30 @@
 //use for IE11+
-.nt_grid-flx{
+.nt_grid-flex{
     display: flex;
 }
-.nt_grid-flx + .nt_grid-flx{
+.nt_grid-flex + .nt_grid-flex{
     margin-top:.8rem;
 }
-[class*='nt_flx-']{
-    margin-right: $grid-deft-space;
+[class*='nt_flex-']{
+    margin-right: $grid-space;
 }
-[class*='nt_flx-']:last-of-type{
+[class*='nt_flex-']:last-of-type{
     margin-right: 0;
 }
 
 @for $i from 1 through $flex-columns {
-    .nt_flx-col-#{$i} {flex:$i}
+    .nt_flex-col-#{$i} {flex:$i}
 }
 
 @media screen and (max-width: $break-point) {
-    .nt_grid-flx {
+    .nt_grid-flex {
         display: block;
     }
-    [class*='nt_flx-']{
+    [class*='nt_flex-']{
         flex:1!important;
         margin-right: 0;
     }
-    [class*='nt_flx-']:last-of-type{
+    [class*='nt_flex-']:last-of-type{
         margin-top: 5px;
     }
   }

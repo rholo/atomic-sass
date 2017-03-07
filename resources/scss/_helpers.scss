@@ -1,7 +1,7 @@
-.nt_helper-float-r{
+.nt_helper-float-right{
     float:right;
 }
-.nt_helper-float-l{
+.nt_helper-float-left{
     float: left;
 }
 .nt_disabled {
@@ -13,10 +13,10 @@ a.nt_disabled {
 .nt_helper-hidden{
     display: none;
 }
-.nt_helper-flx{
+.nt_helper-flex{
     display: flex; //IE 11+
 }
-hr.nt_helper-separator{
+hr.nt_helper-divisor{
     height: 1px;
     background-color: #e8e8e8;
     width: 100%;

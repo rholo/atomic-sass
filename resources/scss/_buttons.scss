@@ -144,21 +144,3 @@
         box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
     }
 }
-
-.button-order{
-    width: 34px;
-    float: left;
-}
-.button-order button {
-    border: 0;
-    margin: 2px;
-    width: 30px;
-    height: 30px;
-    background-color: transparent;
-    border: 2px solid black;
-    @include transition(all 100ms linear);
-    &:hover{
-        background-color: black;
-        color: white;
-    }
-}
