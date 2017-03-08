@@ -13,8 +13,9 @@ Puedes ver un ejemplo del proyecto base en [rholo]
   - table
   - grids
 
-incluye tres tipos de grillas (incluida con flex)
-
+tambien incluye:
+- Tres tipos de grids flex IE11+, table y por defecto IE9+
+- Configurado por defecto para utilizar iconografía desde [font-awesome]
 #### npm package pronto
 
 ```sh
@@ -30,6 +31,7 @@ npm install [nt_layout]
 | $flex-columns | N° de columnas en la grilla flex | 16
 | $custom-columns | N° de columnas en la grilla por defecto | 12
 | $fix-columns | N° de columnas en la grilla tipo tabla | 12
+| $grid-space | margen en columnas custom y flex | .5%
 | $font-size-global | % relativo al html | 62.5%
 | $font-size | tamaño base para la fuente | 1.4rem
 
@@ -85,4 +87,5 @@ Por definición se ha utilizado y respetado la definición de estructura de HTML
     <footer>...
 </section>
 ```
-   [rholo]: <http://rholo.cl/labs/nt_layout>
+[rholo]: <http://rholo.cl/labs/nt_layout>
+[font-awesome]: <http://fontawesome.io/get-started/>
