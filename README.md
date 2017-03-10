@@ -17,12 +17,6 @@ Además incluye:
 - Esquema de colores UI pre establecidos utilizando [Flat UI Colors]
 - Iconografía por defecto [Font Awesome]
 
-npm package pronto
-
-```sh
-npm install [nt_layout]
-```
-
 #### Variables SASS
 
 | variable | descripción | Valor defecto
