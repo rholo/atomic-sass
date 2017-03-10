@@ -1,6 +1,5 @@
 node_modules/
 resources/scss/font-awesome/
-resources/fonts/FontAwesome.otf
 resources/fonts/
 gulpfile.js
 package.json

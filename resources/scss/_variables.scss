@@ -8,7 +8,7 @@
 @import url(http://fonts.googleapis.com/css?family=Roboto+Slab|Open+Sans:400italic,700italic,400,700);
 
 //Font-awesome icons
-@import "font-awesome/font-awesome.scss";
+//@import "font-awesome/font-awesome.scss";
 
 //Global params tipography
 $font-primary           :'Open Sans', Arial, "Helvetica Neue", Helvetica, sans-serif;
@@ -33,5 +33,5 @@ $grid-space        :.5%;
 //for mediaqueries
 $break-point            :40em;
 
-//button
-$border-radius-btn      :4px;
+//button & inputs
+$border-radius      :4px;

@@ -1,7 +1,52 @@
+//disabled link in helpers .nt_disabled
 a.nt_link {
   color: $colour-link-default;
   &:hover {
     color: darken($colour-link-default, 5.5%);
   }
 }
-//disabled link in helpers .nt_disabled
+
+//button link
+.nt_link-button{
+    background-color: $colour-btn-default;
+    display: inline-block;
+    color: white;
+    font-weight: 700;
+    font-size:1.2rem;
+    text-transform: uppercase;
+    height: 30px;
+    white-space:nowrap;
+    text-overflow: ellipsis;
+    outline: none;
+    vertical-align: middle;
+    padding: 4px 12px;
+    min-width: 120px;
+    @include border(1px solid darken($colour-btn-default, 5%));
+    @include border-radius($border-radius);
+    @include transition(all 100ms linear);
+
+    &:hover {
+      background-color: darken($colour-btn-default, 5.5%);
+      color:white;
+      text-decoration: none;
+    }
+    &:disabled {
+        cursor:not-allowed!important;
+        opacity: .5;
+    }
+    > .fa {
+        margin-right: 3px;
+    }
+}
+a.nt_link-size-big{
+    min-width: 200px;
+    height: 50px;
+    line-height: 40px;
+    font-size: 1.8rem;
+}
+a[data-link="download"] {
+    background-color: $colour-btn-safe;
+    &:hover{
+        background-color: darken($colour-btn-safe, 5.5%);
+    }
+}

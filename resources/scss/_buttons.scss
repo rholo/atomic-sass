@@ -14,7 +14,7 @@
       padding: 7px 12px;
       min-width: 120px;
       @include border(1px solid darken($colour-btn-default, 5%));
-      @include border-radius($border-radius-btn);
+      @include border-radius($border-radius);
       @include transition(all 100ms linear);
       outline: none;
       vertical-align: middle;

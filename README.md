@@ -1,22 +1,23 @@
-# NT Layout
+NT Layout
+=========
 
-Proyecto base para iniciar nuevos proyectos, basado en SASS
-Puedes ver un ejemplo del proyecto base en [rholo]
+Proyecto base para iniciar nuevos proyectos, estructura HTML5 y CSS3 con SASS, Puedes ver un ejemplo del proyecto base en [rholo]
+Incluidas en esta version:
+- headings
+- paragraph
+- link
+- list
+- button
+- inputs
+- table
+- grids
 
-### Incluidas en esta version
-  - headings
-  - paragraph
-  - link
-  - list
-  - button
-  - inputs
-  - table
-  - grids
+Además incluye:
+- Tres tipos de grids flex IE11+, table y por defecto (float) IE9+
+- Esquema de colores UI pre establecidos utilizando [Flat UI Colors]
+- Iconografía por defecto [Font Awesome]
 
-tambien incluye:
-- Tres tipos de grids flex IE11+, table y por defecto IE9+
-- Configurado por defecto para utilizar iconografía desde [font-awesome]
-#### npm package pronto
+npm package pronto
 
 ```sh
 npm install [nt_layout]
@@ -43,21 +44,20 @@ npm install [nt_layout]
 | $colour-link-default | color de links
 | $colour-btn-default | color de fondo por defecto en un boton
 | $colour-btn-primary | background para data-button primary
-| $colour-btn-primary | background para data-button primary
 | $colour-btn-safe | background para data-button safe
 | $colour-btn-warning | background para data-button warning
 | $colour-btn-risk | background para data-button risk
 | $colour-btn-minimal | background para data-button minimal
 | $colour_nav-burger | color para el menú tipo burger
 
-#### .nt_classes
+#### NT Classes
 
-| Clase | Descripción | Uso
-| ------ | ------ | ------ |
+| Clase | Descripción |
+| ------ | ------ |
 | .nt_layout | define layout contenedor <main> o <div> | <main class="nt_layout">
 | .nt_article | define <article> | <article class="nt_layout">
 | .nt_section | define <section> y su <header> | <section class="nt_section">
-| .nt_input | standard para inputs de tipo texto | <input type="text" class="nt_layout">
+| .nt_input | standard para inputs de tipo texto | <input type="text" class="nt_input">
 | .nt_select | standard para <select> | <select class="nt_select">
 
 #### Estructura Base HTML
@@ -87,5 +87,26 @@ Por definición se ha utilizado y respetado la definición de estructura de HTML
     <footer>...
 </section>
 ```
+#### Navigation
+```sh
+<nav class="nt_main-nav-h">
+	<ul>
+		<li><a href="javascript:;">link</a></li>
+		<!-- con iconos -->
+		<li><a href="javascript:;"><i class="fa fa-*"></i>link</a></li>
+		...
+	</ul>
+</nav>
+```
+#### Buttons
+```sh
+<button class="nt_button" data-button="default">Default</button>
+<button class="nt_button" data-button="primary">Primary</button>
+<button class="nt_button" data-button="safe">Confirm</button>
+<button class="nt_button" data-button="warning">Atention</button>
+<button class="nt_button" data-button="risk">Risk</button>
+<button class="nt_button" data-button="minimal">Minimal</button>
+```
 [rholo]: <http://rholo.cl/labs/nt_layout>
-[font-awesome]: <http://fontawesome.io/get-started/>
+[Font Awesome]: <http://fontawesome.io/get-started/>
+[Flat UI Colors]: <http://flatuicolors.com/>

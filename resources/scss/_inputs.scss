@@ -13,10 +13,17 @@
   width: 100%;
   background-color: #fbfbfb;
   color: #5a5a5a;
+  @include border-radius($border-radius);
 }
 .nt_input,
 .nt_select{
     height: 30px;
+    &:disabled {
+        background: #efefef;
+      }
+}
+select[disabled] > option{
+    color:#ccc!important;
 }
 .nt_select[multiple] {
     min-height: 120px;
