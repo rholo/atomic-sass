@@ -1,42 +1,39 @@
 //disabled link in helpers .nt_disabled
 a.nt_link {
   color: $colour-link-default;
+  .fa{
+    margin: 0 .5rem 0 0;
+  }
   &:hover {
     color: darken($colour-link-default, 5.5%);
   }
 }
-
-//button link
 .nt_link-button{
-    background-color: $colour-btn-default;
-    display: inline-block;
-    color: white;
-    font-weight: 700;
-    font-size:1.2rem;
-    text-transform: uppercase;
-    height: 30px;
-    white-space:nowrap;
-    text-overflow: ellipsis;
-    outline: none;
-    vertical-align: middle;
-    padding: 4px 12px;
-    min-width: 120px;
-    @include border(1px solid darken($colour-btn-default, 5%));
-    @include border-radius($border-radius);
-    @include transition(all 100ms linear);
-
-    &:hover {
-      background-color: darken($colour-btn-default, 5.5%);
-      color:white;
-      text-decoration: none;
-    }
-    &:disabled {
-        cursor:not-allowed!important;
-        opacity: .5;
-    }
-    > .fa {
-        margin-right: 3px;
-    }
+  display: block;
+  /* min-width: 109px; */
+  height: 30px;
+  background-color: $colour-link-btn;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 700;
+  line-height: 28px;
+  max-width: 160px;
+  @include border(1px solid darken($colour-link-btn, 5%));
+  @include border-radius($border-radius);
+  @include transition(all 100ms linear);
+  > .fa {
+      margin-right: 3px;
+  }
+  &:hover {
+    background-color: darken($colour-link-btn, 5.5%);
+    color:white;
+    text-decoration: none;
+  }
+  &:disabled {
+      cursor:not-allowed!important;
+      opacity: .5;
+  }
 }
 a.nt_link-size-big{
     min-width: 200px;

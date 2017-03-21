@@ -5,7 +5,7 @@
 .nt_button {
       background-color: $colour-btn-default;
       color: white;
-      font-weight: normal;
+      font-weight: $button-weight;
       font-size:1.2rem;
       text-transform: uppercase;
       height: 30px;
@@ -30,72 +30,71 @@
       }
 }
 [data-button="default"]{
-    background-color: $colour-btn-default;
-    @include border(1px solid darken($colour-btn-default, 5%));
+    background-color: $colour-btn-default!important;
+    @include border(1px solid darken($colour-btn-default, 5%)!important);
     &:hover{
-        background-color: darken($colour-btn-default, 5.5%)
+        background-color: darken($colour-btn-default, 5.5%)!important;
     }
     &:hover:disabled{
-        background-color: $colour-btn-default;
+        background-color: $colour-btn-default!important;;
     }
 }
 [data-button="primary"]{
-    background-color: $colour-btn-primary;
-    @include border(1px solid darken($colour-btn-primary, 5%));
+    background-color: $colour-btn-primary!important;
+    @include border(1px solid darken($colour-btn-primary, 5%)!important);
     &:hover{
-        background-color: darken($colour-btn-primary, 5.5%)
+        background-color: darken($colour-btn-primary, 5.5%)!important;
     }
     &:hover:disabled{
-        background-color: $colour-btn-primary;
+        background-color: $colour-btn-primary!important;;
     }
 }
 [data-button="safe"]{
-    background-color: $colour-btn-safe;
-    @include border(1px solid darken($colour-btn-safe, 5%));
+    background-color: $colour-btn-safe!important;
+    @include border(1px solid darken($colour-btn-safe, 5%)!important);
     &:hover{
-        background-color: darken($colour-btn-safe, 5.5%)
+        background-color: darken($colour-btn-safe, 5.5%)!important;
     }
     &:hover:disabled{
-        background-color: $colour-btn-safe;
+        background-color: $colour-btn-safe!important;;
     }
 }
 [data-button="warning"]{
-    background-color: $colour-btn-warning;
-    @include border(1px solid darken($colour-btn-warning, 5%));
+    background-color: $colour-btn-warning!important;
+    @include border(1px solid darken($colour-btn-warning, 5%)!important);
     &:hover{
-        background-color: darken($colour-btn-warning, 5.5%)
+        background-color: darken($colour-btn-warning, 5.5%)!important;
     }
     &:hover:disabled{
-        background-color: $colour-btn-warning;
+        background-color: $colour-btn-warning!important;;
     }
 }
 [data-button="risk"]{
-    background-color: $colour-btn-risk;
-    @include border(1px solid darken($colour-btn-risk, 5%));
+    background-color: $colour-btn-risk!important;;
+    @include border(1px solid darken($colour-btn-risk, 5%)!important);
     &:hover{
-        background-color: darken($colour-btn-risk, 5.5%)
+        background-color: darken($colour-btn-risk, 5.5%)!important;
     }
     &:hover:disabled{
-        background-color: $colour-btn-risk;
+        background-color: $colour-btn-risk!important;;
     }
 }
 [data-button="disabled"]{
-    background-color: white;
+    background-color: white!important;;
     color: darken(white, 20%);
-    @include border(1px solid darken(white, 5%));
+    @include border(1px solid darken(white, 5%)!important);
     &:hover{
-        background-color:white;
+        background-color:white!important;;
     }
     &:hover:disabled{
-        background-color: white;
+        background-color: white!important;
     }
 }
 [data-button="minimal"]{
-    background-color: transparent;
-    color:$colour-btn-minimal;
-    border:0;
+    background-color: transparent!important;;
+    color:$colour-btn-minimal!important;;
     &:hover{
-        color:darken($colour-btn-minimal,5.5%);
+        color:darken($colour-btn-minimal,5.5%)!important;
         background-color: transparent;
     }
 }

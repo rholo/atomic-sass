@@ -28,10 +28,11 @@ $default-columns        :12;
 $flex-columns           :16;
 $fix-columns            :12;
 //add margin to columns on default grid
-$grid-space        :.5%;
+$grid-space             :.5%;
 
 //for mediaqueries
 $break-point            :40em;
 
 //button & inputs
-$border-radius      :4px;
+$border-radius          :4px;
+$button-weight          :700;
