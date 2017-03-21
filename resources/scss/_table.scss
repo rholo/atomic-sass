@@ -2,6 +2,12 @@
  * @title Table
  * @description: CSS for tables
 **/
+.nt_table{
+
+}
+.nt_table-scroll-x{
+  overflow-x: auto;
+}
 .nt_table table {
     border-collapse: collapse;
     border-spacing: 0;
@@ -93,4 +99,47 @@
     background-color: #FFF8EF!important;
     font-weight: bolder;
     // border-left: 4px solid #0b925a;
+}
+
+@media screen and (max-width:40em){
+  .nt_table-responsive table thead{
+    display: none;
+  }
+  .nt_table-responsive tr{
+    display: block!important;
+    margin-bottom: 11px;
+    border-bottom: 1px solid #f1f1f1;
+    &:after{
+      content:'';
+      display: table;
+      clear: both;
+    }
+    &:before{
+      display: block;
+    }
+    :last-of-type{
+      margin-bottom: 0;
+      border-bottom: 0;
+    }
+  }
+  .nt_table-responsive table td{
+    display: block;
+    float:left;
+    clear:left;
+    width:100%;
+    text-align: right;
+    &:last-child{
+      border-bottom: 0;
+    }
+    &:before{
+      content:attr(data-label);
+      float: left;
+      text-transform: uppercase;
+      font-weight: 700;
+    }
+    a{
+      display: block;
+      position: relative;
+    }
+  }
 }

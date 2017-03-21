@@ -53,6 +53,9 @@ Además incluye:
 | .nt_section | define <section> y su <header> | <section class="nt_section">
 | .nt_input | standard para inputs de tipo texto | <input type="text" class="nt_input">
 | .nt_select | standard para <select> | <select class="nt_select">
+| .nt_table | add this class to parent's <table> | <div class="nt_table"><table>...
+
+
 
 #### Estructura Base HTML
 
@@ -101,6 +104,16 @@ Por definición se ha utilizado y respetado la definición de estructura de HTML
 <button class="nt_button" data-button="risk">Risk</button>
 <button class="nt_button" data-button="minimal">Minimal</button>
 ```
+#### table
+```sh
+<div class="nt_table">
+  <table>
+    ...
+  </table>
+<div>
+```
+
+
 [rholo]: <http://rholo.cl/labs/nt_layout>
 [Font Awesome]: <http://fontawesome.io/get-started/>
 [Flat UI Colors]: <http://flatuicolors.com/>
