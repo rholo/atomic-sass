@@ -9,16 +9,14 @@ a.nt_link {
   }
 }
 .nt_link-button{
-  display: block;
+  display: inline-block;
+  padding:10px 20px;
   /* min-width: 109px; */
-  height: 30px;
   background-color: $colour-link-btn;
+  font-weight: $button-weight;
   color: white;
   text-align: center;
   text-decoration: none;
-  font-weight: 700;
-  line-height: 28px;
-  max-width: 160px;
   @include border(1px solid darken($colour-link-btn, 5%));
   @include border-radius($border-radius);
   @include transition(all 100ms linear);
@@ -36,10 +34,8 @@ a.nt_link {
   }
 }
 a.nt_link-size-big{
-    min-width: 200px;
-    height: 50px;
-    line-height: 40px;
-    font-size: 1.8rem;
+  font-size: 2.2rem;
+  padding: 12px 28px;
 }
 a[data-link="download"] {
     background-color: $colour-btn-safe;

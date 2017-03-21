@@ -19,7 +19,7 @@
       outline: none;
       vertical-align: middle;
       &:hover {
-        background-color: darken($colour-btn-default, 5.5%);
+        background-color: darken($colour-btn-default, 6.5%);
       }
       &:disabled {
           cursor:not-allowed!important;
@@ -33,7 +33,7 @@
     background-color: $colour-btn-default!important;
     @include border(1px solid darken($colour-btn-default, 5%)!important);
     &:hover{
-        background-color: darken($colour-btn-default, 5.5%)!important;
+        background-color: darken($colour-btn-default, 6.5%)!important;
     }
     &:hover:disabled{
         background-color: $colour-btn-default!important;;
@@ -43,7 +43,7 @@
     background-color: $colour-btn-primary!important;
     @include border(1px solid darken($colour-btn-primary, 5%)!important);
     &:hover{
-        background-color: darken($colour-btn-primary, 5.5%)!important;
+        background-color: darken($colour-btn-primary, 6.5%)!important;
     }
     &:hover:disabled{
         background-color: $colour-btn-primary!important;;
@@ -53,7 +53,7 @@
     background-color: $colour-btn-safe!important;
     @include border(1px solid darken($colour-btn-safe, 5%)!important);
     &:hover{
-        background-color: darken($colour-btn-safe, 5.5%)!important;
+        background-color: darken($colour-btn-safe, 6.5%)!important;
     }
     &:hover:disabled{
         background-color: $colour-btn-safe!important;;
@@ -63,7 +63,7 @@
     background-color: $colour-btn-warning!important;
     @include border(1px solid darken($colour-btn-warning, 5%)!important);
     &:hover{
-        background-color: darken($colour-btn-warning, 5.5%)!important;
+        background-color: darken($colour-btn-warning, 6.5%)!important;
     }
     &:hover:disabled{
         background-color: $colour-btn-warning!important;;
@@ -73,7 +73,7 @@
     background-color: $colour-btn-risk!important;;
     @include border(1px solid darken($colour-btn-risk, 5%)!important);
     &:hover{
-        background-color: darken($colour-btn-risk, 5.5%)!important;
+        background-color: darken($colour-btn-risk, 6.5%)!important;
     }
     &:hover:disabled{
         background-color: $colour-btn-risk!important;;
@@ -94,7 +94,7 @@
     background-color: transparent!important;;
     color:$colour-btn-minimal!important;;
     &:hover{
-        color:darken($colour-btn-minimal,5.5%)!important;
+        color:darken($colour-btn-minimal,6.5%)!important;
         background-color: transparent;
     }
 }
