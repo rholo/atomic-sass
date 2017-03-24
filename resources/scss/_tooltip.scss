@@ -2,73 +2,36 @@
 [data-tooltip]{
   position: relative;
   &:hover{
-    &:after{
-      content: attr(data-tooltip);
-      @include transition(all 100ms ease-in-out);
-      text-align: center;
+    &:before{
       position: absolute;
-      z-index: 20;
-      //white-space: nowrap;
-      background-color: white;
-      font-size: 0.9em;
-      border-radius: 4px;
-      border: 1px solid #c6c6c6;
-      font-family: inherit;
-      color: #666;
+      bottom: 120%;
+      left: 0;
+      margin-bottom: 5px;
+      padding: 7px;
+      width: 110px;
+      -webkit-border-radius: 3px;
+      -moz-border-radius: 3px;
+      border-radius: 3px;
+      background-color: #e8e8e8;
+      color: #717171;
+      content: attr(data-tooltip);
+      text-align: center;
+      font-size: 12px;
+      line-height: 1.2;
+      cursor: default;
     }
-  }
-}
-.nt_tooltip-s{
-  &:hover{
     &:after{
-      padding: 2px;
-      width: $tooltip-small
-    }
-  }
-}
-.nt_tooltip-m{
-  &:hover{
-    &:after{
-      padding: 6px;
-      width:$tooltip-medium;
-    }
-  }
-}
-.nt_tooltip-l{
-  &:hover{
-    &:after{
-      padding: 12px;
-      width:$tooltip-large;
-    }
-  }
-}
-[class*="nt_tooltip-bottom-"]{
-  &:hover{
-    &:after{
-      top:110%;
-    }
-  }
-}
-[class*="nt_tooltip-top-"]{
-  &:hover{
-    &:after{
-      bottom:110%;
-    }
-  }
-}
-.nt_tooltip-bottom-left,
-.nt_tooltip-top-left{
-  &:hover{
-    &:after{
-      left:5%;
-    }
-  }
-}
-.nt_tooltip-bottom-right,
-.nt_tooltip-top-right{
-  &:hover{
-    &:after{
-      right:5%;
+      position: absolute;
+      cursor: default;
+      bottom: 120%;
+      left: 10%;
+      width: 0;
+      border-top:5px solid #e8e8e8;
+      border-right: 5px solid transparent;
+      border-left: 5px solid transparent;
+      content: " ";
+      font-size: 0;
+      line-height: 0;
     }
   }
 }
