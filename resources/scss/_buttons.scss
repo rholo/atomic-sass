@@ -30,83 +30,46 @@
       }
 }
 [data-button="default"]{
-    background-color: $colour-btn-default!important;
     @include border(1px solid darken($colour-btn-default, 5%)!important);
-    &:hover{
-        background-color: darken($colour-btn-default, 6.5%)!important;
-    }
-    &:hover:disabled{
-        background-color: $colour-btn-default!important;;
-    }
+    @include btn-state($colour-btn-default);
 }
 [data-button="primary"]{
-    background-color: $colour-btn-primary!important;
     @include border(1px solid darken($colour-btn-primary, 5%)!important);
-    &:hover{
-        background-color: darken($colour-btn-primary, 6.5%)!important;
-    }
-    &:hover:disabled{
-        background-color: $colour-btn-primary!important;;
-    }
+    @include btn-state($colour-btn-primary);
 }
 [data-button="safe"]{
-    background-color: $colour-btn-safe!important;
     @include border(1px solid darken($colour-btn-safe, 5%)!important);
-    &:hover{
-        background-color: darken($colour-btn-safe, 6.5%)!important;
-    }
-    &:hover:disabled{
-        background-color: $colour-btn-safe!important;;
-    }
+    @include btn-state($colour-btn-safe);
 }
 [data-button="warning"]{
-    background-color: $colour-btn-warning!important;
     @include border(1px solid darken($colour-btn-warning, 5%)!important);
-    &:hover{
-        background-color: darken($colour-btn-warning, 6.5%)!important;
-    }
-    &:hover:disabled{
-        background-color: $colour-btn-warning!important;;
-    }
+    @include btn-state($colour-btn-warning);
 }
 [data-button="risk"]{
-    background-color: $colour-btn-risk!important;;
     @include border(1px solid darken($colour-btn-risk, 5%)!important);
-    &:hover{
-        background-color: darken($colour-btn-risk, 6.5%)!important;
-    }
-    &:hover:disabled{
-        background-color: $colour-btn-risk!important;;
-    }
+    @include btn-state($colour-btn-risk);
 }
 [data-button="disabled"]{
-    background-color: white!important;;
     color: darken(white, 20%);
     @include border(1px solid darken(white, 5%)!important);
-    &:hover{
-        background-color:white!important;;
-    }
-    &:hover:disabled{
-        background-color: white!important;
-    }
+    @include btn-state(white);
 }
 [data-button="minimal"]{
-    background-color: transparent!important;;
-    color:$colour-btn-minimal!important;;
+    color:$colour-btn-minimal!important;
+    @include btn-state(white);
     &:hover{
         color:darken($colour-btn-minimal,6.5%)!important;
-        background-color: transparent;
     }
 }
 
 .toggle-button {
     background-color: white;
     margin:0;
-    border-radius: 20px;
     border: 2px solid #D0D0D0;
     height: 26px;
-    cursor: pointer;
     width: 40px!important;
+    border-radius: 20px;
+    cursor: pointer;
     position: relative;
     display: inline-block;
     user-select: none;
@@ -120,12 +83,12 @@
         position: absolute;
         left: 0;
         top: 0;
-        border-radius: 100%;
         width: 26px;
         height: 26px;
         background-color: white;
         float: left;
         margin: -2px 0 0 -2px;
+        border-radius: 100%;
         border: 2px solid #D0D0D0;
         transition: left 0.3s;
     }

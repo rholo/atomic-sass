@@ -5,14 +5,15 @@
 @import "variables","reset","mixins";
 @import "typography","helpers";
 //basic layout
-@import "layout","article","section","headers","nav";
+@import "layout","article","headers","nav";
 
 //grid: "grid","grid-flex","grid-table";
 @import "grid-flex","grid-default","grid-table";
 
 //inputs
 @import "buttons","links","inputs","table";
-
+//components
+@import "tooltip";
 
 //your design, this case is example stuff
 @import "custom";

@@ -1,17 +1,17 @@
 //disabled link in helpers .nt_disabled
 a.nt_link {
-  color: $colour-link-default;
+  @include link-state(
+    $colour-link-default,
+    darken($colour-link-default, 5.5%),
+    green,
+    blue);
   .fa{
     margin: 0 .5rem 0 0;
-  }
-  &:hover {
-    color: darken($colour-link-default, 5.5%);
   }
 }
 .nt_link-button{
   display: inline-block;
-  padding:10px 20px;
-  /* min-width: 109px; */
+  padding:4px 12px;
   background-color: $colour-link-btn;
   font-weight: $button-weight;
   color: white;
@@ -36,10 +36,4 @@ a.nt_link {
 a.nt_link-size-big{
   font-size: 2.2rem;
   padding: 12px 28px;
-}
-a[data-link="download"] {
-    background-color: $colour-btn-safe;
-    &:hover{
-        background-color: darken($colour-btn-safe, 5.5%);
-    }
 }
