@@ -1,17 +1,12 @@
 
 [data-tooltip]{
   position: relative;
-  &:after{
-    bottom: 40%;
-  }
   &:hover{
     &:after{
       content: attr(data-tooltip);
       @include transition(all 100ms ease-in-out);
       text-align: center;
       position: absolute;
-      left: 50%;
-      bottom: 100%;
       z-index: 20;
       //white-space: nowrap;
       background-color: white;
@@ -23,27 +18,57 @@
     }
   }
 }
-.nt_tooltip-small{
+.nt_tooltip-s{
   &:hover{
     &:after{
       padding: 2px;
-      @include absolute-center($tooltip-small);
+      width: $tooltip-small
     }
   }
 }
-.nt_tooltip-medium{
+.nt_tooltip-m{
   &:hover{
     &:after{
       padding: 6px;
-      @include absolute-center($tooltip-medium);
+      width:$tooltip-medium;
     }
   }
 }
-.nt_tooltip-large{
+.nt_tooltip-l{
   &:hover{
     &:after{
       padding: 12px;
-      @include absolute-center($tooltip-large);
+      width:$tooltip-large;
+    }
+  }
+}
+[class*="nt_tooltip-bottom-"]{
+  &:hover{
+    &:after{
+      top:110%;
+    }
+  }
+}
+[class*="nt_tooltip-top-"]{
+  &:hover{
+    &:after{
+      bottom:110%;
+    }
+  }
+}
+.nt_tooltip-bottom-left,
+.nt_tooltip-top-left{
+  &:hover{
+    &:after{
+      left:5%;
+    }
+  }
+}
+.nt_tooltip-bottom-right,
+.nt_tooltip-top-right{
+  &:hover{
+    &:after{
+      right:5%;
     }
   }
 }
