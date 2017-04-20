@@ -2,25 +2,25 @@
  * @title Table
  * @description: CSS for tables
 **/
-.nt_table{
+.#{$prefix}table{
 
 }
-.nt_table-scroll-x{
+.#{$prefix}table-scroll-x{
   overflow-x: auto;
 }
-.nt_table table {
+.#{$prefix}table table {
     border-collapse: collapse;
     border-spacing: 0;
     width: 100%;
 }
-.nt_table .nt_table-scroll {
+.#{$prefix}table .#{$prefix}table-scroll {
     overflow-x: auto;
     position: relative;
     td {
         white-space: nowrap;
     }
 }
-.nt_table table th {
+.#{$prefix}table table th {
     border-bottom: 1px solid #E2E2E2;
     padding: 9px;
     text-align: left;
@@ -30,7 +30,7 @@
         background: #f1f1f1;
     }
 }
-.nt_table tbody > tr {
+.#{$prefix}table tbody > tr {
     background: #FBFBFB;
     display: table-row;
     &:nth-child(even) {
@@ -38,12 +38,12 @@
     }
 }
 
-.nt_table td {
+.#{$prefix}table td {
     padding:9px;
     color: #5d626b;
     white-space: nowrap;
 }
-.nt_table td > {
+.#{$prefix}table td > {
     .input-text,
     .select,
     .textarea{
@@ -54,7 +54,7 @@
         padding: 0 12px;
     }
 }
-.nt_table table tbody > tr > td {
+.#{$prefix}table table tbody > tr > td {
     font-size: 1.2rem !important;
     line-height: 1.8 !important;
     > * {
@@ -89,23 +89,23 @@
     margin: 5px 0 0;
 }
 
-.nt_table .nt_table-tr-not-found {
+.#{$prefix}table .#{$prefix}table-tr-not-found {
     padding: 17px;
     text-align: center;
     font-weight: bolder;
     //color:$deep-sea;
 }
-.nt_table .nt_table-tr-selected {
+.#{$prefix}table .#{$prefix}table-tr-selected {
     background-color: #FFF8EF!important;
     font-weight: bolder;
     // border-left: 4px solid #0b925a;
 }
 
 @media screen and (max-width:40em){
-  .nt_table-responsive table thead{
+  .#{$prefix}table-responsive table thead{
     display: none;
   }
-  .nt_table-responsive tr{
+  .#{$prefix}table-responsive tr{
     display: block!important;
     margin-bottom: 11px;
     border-bottom: 1px solid #f1f1f1;
@@ -122,7 +122,7 @@
       border-bottom: 0;
     }
   }
-  .nt_table-responsive table td{
+  .#{$prefix}table-responsive table td{
     display: block;
     float:left;
     clear:left;

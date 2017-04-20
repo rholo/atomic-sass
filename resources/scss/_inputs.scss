@@ -2,9 +2,9 @@
  * @title Inputs
  * @example
 **/
-.nt_input,
-.nt_select,
-.nt_textarea {
+.#{$prefix}input,
+.#{$prefix}select,
+.#{$prefix}textarea {
   border: 1px solid #ccc !important;
   outline: none;
   padding: 6px;
@@ -15,8 +15,8 @@
   color: #5a5a5a;
   @include border-radius($border-radius);
 }
-.nt_input,
-.nt_select{
+.#{$prefix}input,
+.#{$prefix}select{
     height: 30px;
     &:disabled {
         background: #efefef;
@@ -25,7 +25,7 @@
 select[disabled] > option{
     color:#ccc!important;
 }
-.nt_select[multiple] {
+.#{$prefix}select[multiple] {
     min-height: 120px;
 }
 input {

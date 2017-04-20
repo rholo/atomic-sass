@@ -1,4 +1,4 @@
-.nt_section {
+.#{$prefix}section {
   > header{
       margin-bottom: 13px;
       border-bottom:1px solid #f1f1f1
@@ -8,7 +8,7 @@
     padding-top: .3em;
     border-top: 1px solid #f1f1f1
   }
-  + .nt_section {
+  + .#{$prefix}section {
      margin-top: 4rem;
   }
 }

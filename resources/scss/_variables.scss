@@ -10,6 +10,9 @@
 //Font-awesome icons
 //@import "font-awesome/font-awesome.scss";
 
+//add prefix to all classname!
+$prefix:'' + 'nt_';
+
 //Global params tipography
 $font-primary           :'Open Sans', Arial, "Helvetica Neue", Helvetica, sans-serif;
 $font-secondary         :'Roboto Slab', Georgia, "Times New Roman", Times, serif;

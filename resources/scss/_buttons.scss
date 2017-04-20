@@ -2,7 +2,7 @@
  * @title Buttons
  * @example
 **/
-.nt_button {
+.#{$prefix}button {
       background-color: $colour-btn-default;
       color: white;
       font-weight: $button-weight;

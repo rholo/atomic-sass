@@ -1,4 +1,4 @@
-.nt_example-col{
+.#{$prefix}example-col{
     background-color: #eaeaea;
     >p{
         text-align: center;
@@ -10,7 +10,7 @@
     }
     text-align:center;
     width: 320px;
-    > .nt_button{
+    > .#{$prefix}button{
         margin:20px auto 0;
         display: block;
         width:210px;
@@ -19,9 +19,9 @@
         }
     }
 }
-.nt_example-btn-content{
+.#{$prefix}example-btn-content{
     text-align: center;
-    .nt_button{
+    .#{$prefix}button{
         margin: 4px;
     }
 }

@@ -1,7 +1,7 @@
 /**
  * Description: Navigation
 **/
-.nt_nav-burger{
+.#{$prefix}nav-burger{
   padding:16px;
   padding-left: 0;
   display: inline-block;
@@ -20,7 +20,7 @@
     text-decoration: none;
   }
 }
-[class*="nt_main-nav-"]{
+[class*="#{$prefix}main-nav-"]{
     padding: 0;
     > ul{
       overflow:hidden;
@@ -40,7 +40,7 @@
       }
     }
 }
-nav.nt_main-nav-h {
+nav.#{$prefix}main-nav-h {
     ul{
         display:flex;
     }

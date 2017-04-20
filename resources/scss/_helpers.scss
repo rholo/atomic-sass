@@ -1,31 +1,31 @@
-.nt_helper-float-right{
+.#{$prefix}helper-float-right{
     float:right;
 }
-.nt_helper-float-left{
+.#{$prefix}helper-float-left{
     float: left;
 }
-.nt_helper-align-l{
+.#{$prefix}helper-align-l{
   text-align: left;
 }
-.nt_helper-align-r{
+.#{$prefix}helper-align-r{
   text-align: right;
 }
-.nt_helper-align-c{
+.#{$prefix}helper-align-c{
   text-align: center;
 }
-.nt_disabled {
+.#{$prefix}disabled {
     cursor: not-allowed!important;
 }
-a.nt_disabled {
+a.#{$prefix}disabled {
     pointer-events: none!important;
 }
-.nt_helper-hidden{
+.#{$prefix}helper-hidden{
     display: none;
 }
-.nt_helper-flex{
+.#{$prefix}helper-flex{
     display: flex; //IE 11+
 }
-hr.nt_helper-divisor{
+hr.#{$prefix}helper-divisor{
     height: 1px;
     background-color: #e8e8e8;
     width: 100%;
