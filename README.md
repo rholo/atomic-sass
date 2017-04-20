@@ -17,6 +17,9 @@ Además incluye:
 - Esquema de colores UI pre establecidos utilizando [Flat UI Colors]
 - Iconografía por defecto [Font Awesome]
 
+#### Now with custom prefix to all classname
+now you can edit your $prefix variable to add all classname!
+
 #### Variables SASS
 
 | variable | descripción | Valor defecto
