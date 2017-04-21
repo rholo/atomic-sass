@@ -4,36 +4,36 @@
  * @description the most common grid css system, use if your proyect is under IE11 support
 **/
 
-.#{$prefix}row + .#{$prefix}row{
+.#{$prefix}defult-row + .#{$prefix}defult-row{
   margin-top: 1em;
   margin-bottom: 1em;
 }
-.#{$prefix}row:after,.#{$prefix}row:before {
+.#{$prefix}defult-row:after,.#{$prefix}defult-row:before {
     content: "";
     display: table;
     clear: both
 }
-[class*="#{$prefix}col-"] {
+[class*="#{$prefix}defult-col-"] {
     float: left;
     // padding: .5rem;
     margin-right: $grid-space
 }
-[class*="#{$prefix}col-"]:last-of-type{
+[class*="#{$prefix}defult-col-"]:last-of-type{
     border-right: 0;
     margin-right: 0;
 }
 @for $i from 1 through $default-columns {
-    .#{$prefix}col-#{$i} {
-       width:(100% / ($default-columns / $i)) - (($grid-space * ($default-columns - $i)) / $default-columns); 
+    .#{$prefix}defult-col-#{$i} {
+       width:(100% / ($default-columns / $i)) - (($grid-space * ($default-columns - $i)) / $default-columns);
     }
 }
 @media screen and (max-width: $break-point) {
-    [class*="#{$prefix}col-"] {
+    [class*="#{$prefix}defult-col-"] {
         float: none;
         width: 100%!important;
         margin-right: 0
     }
-    [class*="#{$prefix}col-"]:last-of-type{
+    [class*="#{$prefix}defult-col-"]:last-of-type{
         margin-top: 5px;
     }
   }

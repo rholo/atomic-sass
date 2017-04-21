@@ -1,3 +1,13 @@
 /* article */
-.#{$prefix}article{
+
+.#{$prefix}article {
+  > header{
+      margin-bottom: 13px;
+      border-bottom:1px solid #f1f1f1
+  }
+  > footer{
+    margin-top:13px;
+    padding-top: .3em;
+    border-top: 1px solid #f1f1f1
+  }
 }

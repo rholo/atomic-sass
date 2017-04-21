@@ -1,8 +1,8 @@
-NT Layout
+Base Layout
 =========
+Base layout is a initial clean SASS proyecto based on standard HTML5 structure, stay for more... [rholo]
 
-Proyecto base para iniciar nuevos proyectos, estructura HTML5 y CSS3 con SASS, Puedes ver un ejemplo del proyecto base en [rholo]
-Incluidas en esta version:
+Included:
 - headings
 - paragraph
 - link
@@ -12,111 +12,129 @@ Incluidas en esta version:
 - table
 - grids
 
-Además incluye:
-- Tres tipos de grids flex IE11+, table y por defecto (float) IE9+
-- Esquema de colores UI pre establecidos utilizando [Flat UI Colors]
-- Iconografía por defecto [Font Awesome]
+and more:
+- three kind of grids, flex included for IE11+, and two standard grids for older
+- UI pallette colours defined by [Flat UI Colors]
+- Icons ready to use with [Font Awesome]
 
-#### Now with custom prefix to all classname
+#### Now add custom prefix to all classname
 now you can edit your $prefix variable to add all classname!
 
-#### Variables SASS
+#### three type's grid (flex included!)
+to define margin in custom and flex grid $grid-space: .5%
 
-| variable | descripción | Valor defecto
-| ------ | ------ | ------ |
-| $max-width-layout | ancho máximo del layout contenedor | 90%
-| $layout-spacing | margen del layout | 0 2%
-| $flex-columns | N° de columnas en la grilla flex | 16
-| $custom-columns | N° de columnas en la grilla por defecto | 12
-| $fix-columns | N° de columnas en la grilla tipo tabla | 12
-| $grid-space | margen en columnas custom y flex | .5%
-| $font-size-global | % relativo al html | 62.5%
-| $font-size | tamaño base para la fuente | 1.4rem
-
-#### SASS (Colours)
-
-| variable | descripción
+| grid type | Number of columns
 | ------ | ------ |
-| $colour-text | color de textos, paragraph
-| $colour-link-default | color de links
-| $colour-btn-default | color de fondo por defecto en un boton
-| $colour-btn-primary | background para data-button primary
-| $colour-btn-safe | background para data-button safe
-| $colour-btn-warning | background para data-button warning
-| $colour-btn-risk | background para data-button risk
-| $colour-btn-minimal | background para data-button minimal
-| $colour_nav-burger | color para el menú tipo burger
+| $flex-columns | 16
+| $custom-columns | 12
+| $fix-columns | 12
 
-#### NT Classes
+#### Layout Variables
+| variable | description | default value
+| ------ | ------ | ------ |
+| $max-width-layout | max-width of your Main Layout | 90%
+| $layout-spacing | margin layout | 0 2%
 
+#### Fonts
+| variable | description | default value
+| ------ | ------ | ------ |
+| $font-size-global | relative to HTML | 62.5%
+| $font-size | Base size | 1.4rem
+
+#### Colour Variables
+
+| variable | description
+| ------ | ------ |
+| $colour-text | text and paragraph
+| $colour-link-default | default link colour
+| $colour-btn-default | default button
+| $colour-btn-primary | primary button
+| $colour-btn-safe | safe button (usually use for save, accept, send interaction)
+| $colour-btn-warning | warning button (to warning user)
+| $colour-btn-risk | risk button (to advice user)
+| $colour-btn-minimal | minimal button
+| $colour_nav-burger | define color of your burger navigation
+
+#### Default classname
 | Clase | Descripción |
 | ------ | ------ |
-| .nt_layout | define layout contenedor <main> o <div> | <main class="nt_layout">
-| .nt_article | define <article> | <article class="nt_layout">
-| .nt_section | define <section> y su <header> | <section class="nt_section">
-| .nt_input | standard para inputs de tipo texto | <input type="text" class="nt_input">
-| .nt_select | standard para <select> | <select class="nt_select">
-| .nt_table | add this class to parent's <table> | <div class="nt_table"><table>...
+| .main-layout | define layout contenedor <main> o <div> |
+| .article | define <article> |
+| .section | define <section> and childe <header> and <footer> |
+| .input | standard para inputs de tipo texto |
+| .select | standard para <select> |
+| .table | add this class to parent's <table> <div class="table"><table>...
 
-
-
-#### Estructura Base HTML
-
-Por definición se ha utilizado y respetado la definición de estructura de HTML5:
+#### Layout Base HTML
+Standard HTML5 definition, remind if you define $prefix you need add this name to your markup: if your prefix is 'myPrefix' then classname will be myPrefix-main-layout
 
 #### Main
-
+add class "layout" to define your main layout
 ```sh
 <body>
-    <main class="nt_layout"></main>
+    <main class="main-layout"></main>
 </body>
 ```
 #### Article
 ```sh
-<article class="nt_article">
+<article class="article">
     <header>...
         <section>...
     <footer>...
 </article>
 ```
+
 #### Section
 ```sh
-<section class="nt_section">
+<section class="section">
     <header>...
-        <div class="nt_section-content">...
+        <div class="section-content">...
     <footer>...
 </section>
 ```
+
 #### Navigation
 ```sh
-<nav class="nt_main-nav-h">
+<nav class="main-nav-h">
 	<ul>
 		<li><a href="javascript:;">link</a></li>
-		<!-- con iconos -->
+		<!-- include font-awesome icon -->
 		<li><a href="javascript:;"><i class="fa fa-*"></i>link</a></li>
 		...
 	</ul>
 </nav>
 ```
+
 #### Buttons
 ```sh
-<button class="nt_button" data-button="default">Default</button>
-<button class="nt_button" data-button="primary">Primary</button>
-<button class="nt_button" data-button="safe">Confirm</button>
-<button class="nt_button" data-button="warning">Atention</button>
-<button class="nt_button" data-button="risk">Risk</button>
-<button class="nt_button" data-button="minimal">Minimal</button>
+<!-- default color -->
+<button class="button" data-button="default">Default</button>
+<button class="button" data-button="primary">Primary</button>
+<button class="button" data-button="safe">Confirm</button>
+<button class="button" data-button="warning">Atention</button>
+<button class="button" data-button="risk">Risk</button>
+<button class="button" data-button="minimal">Minimal</button>
 ```
-#### table
+
+#### Basic Table
 ```sh
-<div class="nt_table">
+<div class="table">
+  <table>...
+```
+#### Responsive Table
+```sh
+<div class="table table-responsive">
   <table>
-    ...
+    <thead>...
+        <tr>...
+            <th>title
+    <tbody>...
+        <tr>..
+            <td data-label="title">
   </table>
 <div>
 ```
 
-
-[rholo]: <http://rholo.cl/labs/nt_layout>
+[rholo]: <http://rholo.cl/labs/layout-base>
 [Font Awesome]: <http://fontawesome.io/get-started/>
 [Flat UI Colors]: <http://flatuicolors.com/>

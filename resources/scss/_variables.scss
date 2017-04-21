@@ -2,56 +2,47 @@
  * @title _variables
  * @description: main configuration
 **/
+
 //setup colours: _colours.scss
 @import "colours";
+
 // Google Fonts
 @import url(http://fonts.googleapis.com/css?family=Roboto+Slab|Open+Sans:400italic,700italic,400,700);
 
-//Font-awesome icons
+//Font-awesome icons if you wanna use their sass version
 //@import "font-awesome/font-awesome.scss";
 
-//add prefix to all classname!
-$prefix:'' + 'nt_';
+//add prefix to all classname! for example $prefix:'nt' + '--'
+// learn more at http://getbem.com/naming/
+$prefix:'' + '';
 
-//Global params tipography
+//Global tipography
 $font-primary           :'Open Sans', Arial, "Helvetica Neue", Helvetica, sans-serif;
 $font-secondary         :'Roboto Slab', Georgia, "Times New Roman", Times, serif;
 $font-size-global       :62.5%;
 //font-size 1.4rem = 14px
 $font-size              :1.4rem;
+
 //layout configuration
 //$min-width-layout     :280px;
 $max-width-layout       :90%;
 $layout-spacing         :0 2%;
+
 //select columns for your grid
-$default-columns        :12;
 $flex-columns           :16;
+$default-columns        :12;
 $fix-columns            :12;
 //add margin to columns on default grid
 $grid-space             :.5%;
+
 //for grids, responsive table
 $break-point            :40em;
+
 //button & inputs
 $border-radius          :5px;
 $button-weight          :700;
+
 //tooltip-size
 $tooltip-small          :120px;
 $tooltip-medium         :240px;
 $tooltip-large          :360px;
-
-//colour set
-//text
-$colour-text            :black;
-//link
-$colour-link-default    :$wet-asphalt;
-//link button
-$colour-link-btn        :$silver;
-//buttons
-$colour-btn-default     :$wet-asphalt;
-$colour-btn-primary     :$peter-river;
-$colour-btn-safe        :$turquoise;
-$colour-btn-warning     :$sun-flower;
-$colour-btn-risk        :$pomegranate;
-$colour-btn-minimal     :$asbestos;
-//nav burger color
-$colour_nav-burger      :$wet-asphalt

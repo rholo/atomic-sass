@@ -30,3 +30,24 @@ $clouds                 :#ecf0f1;
 $silver                 :#bdc3c7;
 $concrete               :#95a5a6;
 $asbestos               :#7f8c8d;
+
+//Colour UI definition:
+
+//text
+$colour-text            :black;
+
+//links
+$colour-link-default    :$wet-asphalt;
+//link button
+$colour-link-btn        :$silver;
+
+//buttons
+$colour-btn-default     :$wet-asphalt;
+$colour-btn-primary     :$peter-river;
+$colour-btn-safe        :$turquoise;
+$colour-btn-warning     :$sun-flower;
+$colour-btn-risk        :$pomegranate;
+$colour-btn-minimal     :$asbestos;
+
+//nav burger color
+$colour_nav-burger      :$wet-asphalt

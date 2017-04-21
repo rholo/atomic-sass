@@ -2,17 +2,16 @@
  * @Title: main
  * @Description: All CSS stuff for this proyect
 **/
-@import "variables","reset","mixins";
-@import "typography","helpers";
+//core
+@import "variables","reset","mixins","typography";
 //basic layout
 @import "layout","article","section","headers","nav";
 
-//grid: "grid","grid-flex","grid-table";
+//grids: you cant all or just one!
 @import "grid-flex","grid-default","grid-table";
 
 //inputs
 @import "buttons","links","inputs","table";
-
 
 //your design, this case is example stuff
 @import "custom";
