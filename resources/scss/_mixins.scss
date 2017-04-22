@@ -1,3 +1,9 @@
+@mixin center-flex($height){
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: $height;
+}
 @mixin absolute-center($width){
   width:$width;
   margin-left: -$width / 2;
