@@ -1,16 +1,24 @@
-.#{$prefix}helper-float-right{
-    float:right;
+.#{$prefix}float-right,
+.#{$prefix}float-left{
+    &:after,a
+    &:before{
+        clear: both;
+    }
 }
-.#{$prefix}helper-float-left{
+
+.#{$prefix}float-left{
     float: left;
 }
-.#{$prefix}helper-align-l{
+.#{$prefix}float-right{
+    float: right;
+}
+.#{$prefix}align-left{
   text-align: left;
 }
-.#{$prefix}helper-align-r{
+.#{$prefix}align-right{
   text-align: right;
 }
-.#{$prefix}helper-align-c{
+.#{$prefix}align-center{
   text-align: center;
 }
 .#{$prefix}disabled {
