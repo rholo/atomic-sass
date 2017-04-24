@@ -1,6 +1,7 @@
 @mixin absolute-center($width){
   width:$width;
-  margin-left: -$width / 2;
+  margin-left: (-$width / 2);
+  margin-top:(-$width / 2);
 }
 @mixin link-state ($link, $hover, $visit, $active) {
     color: $link;

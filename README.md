@@ -21,7 +21,7 @@ and more:
 now you can edit your $prefix variable to add all classname!
 
 #### three type's grid (flex included!)
-to define margin in custom and flex grid $grid-space: .5%
+to define margin in float and flex grid $grid-space: .5%
 
 | grid type | Number of columns
 | ------ | ------ |
@@ -56,13 +56,13 @@ to define margin in custom and flex grid $grid-space: .5%
 | $colour_nav-burger | define color of your burger navigation
 
 #### Default classname
-| Clase | Descripción |
+| Clase | Description |
 | ------ | ------ |
-| .main-layout | define layout contenedor <main> o <div> |
+| .main-layout | define main content layour <main> or <div> element|
 | .article | define <article> |
-| .section | define <section> and childe <header> and <footer> |
-| .input | standard para inputs de tipo texto |
-| .select | standard para <select> |
+| .section | define <section> and its childs <header> and <footer> |
+| .input | default input type text |
+| .select | default for <select> |
 | .table | add this class to parent's <table> <div class="table"><table>...
 
 #### Layout Base HTML

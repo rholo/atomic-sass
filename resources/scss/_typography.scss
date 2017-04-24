@@ -60,8 +60,8 @@ strong{
 small {font-size: $font-size*0.8;}
 
 a {
-  color: blue;
+  color: $colour-link-default;
   &:hover {
-    color: darken(blue,5.5%);
+    color: darken($colour-link-default,8.5%);
   }
 }

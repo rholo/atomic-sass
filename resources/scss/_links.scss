@@ -11,6 +11,7 @@ a.#{$prefix}link {
 }
 .#{$prefix}link-button{
   display: inline-block;
+  cursor:pointer;
   padding:4px 12px;
   background-color: $colour-link-btn;
   font-weight: $button-weight;
