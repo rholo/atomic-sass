@@ -5,13 +5,13 @@
 .#{$prefix}input,
 .#{$prefix}select,
 .#{$prefix}textarea {
-  border: 1px solid #ccc !important;
+  border: 1px solid $colour-input-border !important;
   outline: none;
   padding: 6px;
   font-size: 1.2rem;
   font-family: inherit;
   width: 100%;
-  background-color: #fbfbfb;
+  background-color: $colour-input-background;
   color: #5a5a5a;
   @include border-radius($border-radius);
 }

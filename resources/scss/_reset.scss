@@ -91,6 +91,7 @@ input {
 
 button, input[type="button"], input[type="reset"], input[type="submit"] {
   cursor: pointer;
+  border: 0;
   font-weight: 700;
     -webkit-appearance: button;
   &:disabled{

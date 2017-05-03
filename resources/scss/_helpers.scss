@@ -27,13 +27,14 @@
 a.#{$prefix}disabled {
     pointer-events: none!important;
 }
-.#{$prefix}helper-hidden{
+.#{$prefix}hidden{
     display: none;
+    visibility: hidden;
 }
-.#{$prefix}helper-flex{
+.#{$prefix}flex{
     display: flex; //IE 11+
 }
-hr.#{$prefix}helper-divisor{
+hr.#{$prefix}divisor{
     height: 1px;
     background-color: #e8e8e8;
     width: 100%;
