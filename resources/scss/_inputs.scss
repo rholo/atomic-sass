@@ -17,7 +17,7 @@
 }
 .#{$prefix}input,
 .#{$prefix}select{
-    height: 30px;
+    height: $input-height;
     &:disabled {
         background: #efefef;
       }

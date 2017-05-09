@@ -1,3 +1,6 @@
+.#{$prefix}optimus-prime{
+  @include center-flex(500px);
+}
 .#{$prefix}example-col{
     background-color: #eaeaea;
     >p{
@@ -10,10 +13,10 @@
     }
     text-align:center;
     width: 320px;
-    > .#{$prefix}button{
+    > .#{$prefix}link-button{
         margin:20px auto 0;
         display: block;
-        width:210px;
+        max-width:240px;
         &:last-of-type{
             margin-top: 4px;
         }

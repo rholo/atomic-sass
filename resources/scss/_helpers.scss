@@ -34,6 +34,11 @@ a.#{$prefix}disabled {
 .#{$prefix}flex{
     display: flex; //IE 11+
 }
+.#{$prefix}center-flex{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 hr.#{$prefix}divisor{
     height: 1px;
     background-color: #e8e8e8;
