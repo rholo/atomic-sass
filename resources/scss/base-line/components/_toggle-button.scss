@@ -1,0 +1,44 @@
+.toggle-button {
+    background-color: white;
+    margin:0;
+    border: 2px solid #D0D0D0;
+    height: 26px;
+    width: 40px!important;
+    border-radius: 20px;
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+    user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    button {
+        cursor: pointer;
+        outline: 0;
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 26px;
+        height: 26px;
+        background-color: white;
+        float: left;
+        margin: -2px 0 0 -2px;
+        border-radius: 100%;
+        border: 2px solid #D0D0D0;
+        transition: left 0.3s;
+    }
+}
+.toggle-button-selected {
+    background-color: #83B152;
+    border: 2px solid #7DA652;
+    button {
+        left: 14px;
+        top: 0;
+        margin: 0;
+        border: none;
+        width: 22px;
+        height: 22px;
+        box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+    }
+}

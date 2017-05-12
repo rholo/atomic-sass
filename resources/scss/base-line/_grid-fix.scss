@@ -18,9 +18,9 @@
 [class*='#{$prefix}fix-col']:last-of-type{
     border-right:0;
 }
-@for $i from 1 through $fix-columns {
+@for $i from 1 through $grid-fix {
     .#{$prefix}fix-col-#{$i} {
-       width:(100% / ($fix-columns / $i))
+       width:(100% / ($grid-fix / $i))
     }
 }
 @media screen and (max-width: $break-point) {

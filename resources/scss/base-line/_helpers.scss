@@ -1,6 +1,6 @@
 .#{$prefix}float-right,
 .#{$prefix}float-left{
-    &:after,a
+    &:after,
     &:before{
         clear: both;
     }

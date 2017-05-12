@@ -1,25 +1,6 @@
 /**
  * Description: Navigation
 **/
-.#{$prefix}nav-burger{
-  padding:16px;
-  padding-left: 0;
-  display: inline-block;
-  color: $colour_nav-burger;
-  > span{
-      width: 25px;
-      height: 3px;
-      background: $colour_nav-burger;
-      display: block;
-  }
-  > span + span{
-      margin-top: 5px;
-  }
-  &:hover{
-    color:darken($colour_nav-burger, 5.5%);
-    text-decoration: none;
-  }
-}
 [class*="#{$prefix}main-nav-"]{
     padding: 0;
     > ul{

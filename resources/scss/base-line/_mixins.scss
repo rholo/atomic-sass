@@ -1,3 +1,17 @@
+@mixin circle($size){
+  border-radius: ($size/2);
+  width: $size;
+  height: $size;
+  line-height:$size;
+  display: block;
+  text-align: center;
+}
+@mixin background($img,$repeat,$pos,$size){
+  background-image: $img;
+  background-repeat: $repeat;
+  background-position: $pos;
+  background-size:$size;
+}
 @mixin headings($from: 1, $to: 6){
     @for $i from $from through $to{
       h#{$i}{
@@ -5,19 +19,46 @@
       }
     }
 }
+@mixin truncate($width:''){
+  @if $width == '' {
+    //nada
+  } @else {
+    width:$width;
+  }
+  white-space:nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+@mixin position($pos,$top,$right,$bottom,$left,$z-index){
+  position: $pos;
+  top: $top;
+  right: $right;
+  bottom: $bottom;
+  left: $left;
+  z-index: $z-index;
+}
 @mixin center-flex($height){
     display: flex;
     align-items: center;
     justify-content: center;
     height: $height;
 }
-@mixin absolute-center($width){
+@mixin absolute-center($width,$height){
   width:$width;
+  height:$height;
   position: absolute;
   top: 50%;
   left: 50%;
   margin-left: (-$width / 2);
-  margin-top:(-$width / 2);
+  margin-top: (-$height / 2);
+}
+
+@mixin float($float){
+  float:$float;
+  &:after,
+  &:before{
+    clear:both;
+  }
 }
 @mixin link-state ($link, $hover, $visit, $active) {
     color: $link;
@@ -65,7 +106,6 @@
     -webkit-text-size-adjust: $font-size-global;
     -ms-text-size-adjust: $font-size-global;
 }
-
 @mixin border($border) {
     border:$border;
 }

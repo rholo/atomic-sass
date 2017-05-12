@@ -1,0 +1,31 @@
+/**
+ * @Title: main
+ * @Description: All CSS stuff for this proyect
+**/
+//core
+@import "variables";
+@import "mixins";
+@import "reset";
+@import "typography";
+@import "helpers";
+//basic layout
+@import "layout";
+@import "nav";
+@import "article";
+@import "section";
+
+//grids: can use all or just one!
+@import "grid-flex";
+@import "grid-float";
+@import "grid-fix";
+
+//inputs
+@import "buttons";
+@import "links";
+@import "inputs";
+@import "table";
+
+//components
+//@import "tooltip";
+//@import "nav-burger";
+//@import "toggle-button";

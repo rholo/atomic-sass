@@ -1,0 +1,70 @@
+/**
+ * @title Buttons
+ * @example
+**/
+.#{$prefix}button {
+      height: $button-height;
+      min-width: $button-min-width;
+      padding: $button-padding;
+      background-color: $button-background;
+      color: $button-color;
+      font-weight: $button-weight;
+      font-size:$button-font-size;
+      text-transform: uppercase;
+      white-space:nowrap;
+      text-overflow: ellipsis;
+      outline: none;
+      vertical-align: middle;
+      border:1px solid darken($button-background, 5%);
+      @include border-radius($border-radius);
+      @include transition(all 100ms linear);
+      &:hover {
+        background-color: darken($button-background, 6.5%);
+      }
+      &:disabled {
+          cursor:not-allowed!important;
+          opacity: .5;
+      }
+      > .fa {
+          margin-right: 3px;
+      }
+}
+[data-button="default"],
+.#{$prefix}button-default{
+    @include border(1px solid darken($colour-btn-default, 5%)!important);
+    @include btn-state($colour-btn-default);
+}
+[data-button="primary"],
+.#{$prefix}button-primary{
+    @include border(1px solid darken($colour-btn-primary, 5%)!important);
+    @include btn-state($colour-btn-primary);
+}
+[data-button="safe"],
+.#{$prefix}button-safe{
+    @include border(1px solid darken($colour-btn-safe, 5%)!important);
+    @include btn-state($colour-btn-safe);
+}
+[data-button="warning"],
+.#{$prefix}button-warning{
+    @include border(1px solid darken($colour-btn-warning, 5%)!important);
+    @include btn-state($colour-btn-warning);
+}
+[data-button="risk"],
+.#{$prefix}button-risk{
+    @include border(1px solid darken($colour-btn-risk, 5%)!important);
+    @include btn-state($colour-btn-risk);
+}
+[data-button="disabled"],
+.#{$prefix}button-disabled{
+    color: darken(white, 20%);
+    @include border(1px solid darken(white, 5%)!important);
+    @include btn-state(white);
+}
+[data-button="minimal"],
+.#{$prefix}button-minimal{
+    color:$colour-btn-minimal!important;
+    @include btn-state(white);
+    &:hover{
+        color:darken($colour-btn-minimal,6.5%)!important;
+    }
+}

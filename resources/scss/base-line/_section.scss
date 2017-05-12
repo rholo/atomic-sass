@@ -1,0 +1,11 @@
+.#{$prefix}section {
+  > header{
+      margin-bottom: $section-spacing;
+  }
+  .#{$prefix}section-content{
+    position: relative;
+  }
+  > footer{
+    margin-top:$section-spacing;
+  }
+}

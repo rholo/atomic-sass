@@ -1,0 +1,66 @@
+/**
+ * @title _variables
+ * @description: main configuration
+**/
+
+//setup colours
+@import "colors/colours.scss";
+
+// Google Fonts
+@import url(http://fonts.googleapis.com/css?family=Roboto+Slab|Open+Sans:400italic,700italic,400,700);
+
+//add prefix to all classname! for example $prefix:'nt-ui'+ '_'
+// learn more at http://getbem.com/naming/
+$prefix:'' + '';
+
+//Global params
+$font-primary           : 'Open Sans', Arial, "Helvetica Neue", Helvetica, sans-serif !default;
+$font-secondary         : 'Roboto Slab', Georgia, "Times New Roman", Times, serif !default;
+$font-size-global       : 62.5%;
+//font-size 1.4rem = 14px
+$font-size              : 1.2rem;
+$font-scale             : 0.25;
+$font-color             : $colour-text;
+//layout configuration
+$layout-min-width       : 280px !default;
+$layout-max-width       : 100% !default;
+$layout-padding         : 0 2% !default;
+$layout-margin          : 0 !default;
+$layout-background      : $colour-background-layout !default;
+
+//article
+$article-spacing        : 13px !default;
+
+//section
+$section-spacing        : 13px !default;
+//select columns for your grid
+$grid-flex              : 16 !default;
+$grid-float             : 12 !default;
+$grid-fix               : 12 !default;
+//add margin to columns on default grid
+$grid-space             : .5% !default;
+//for mediaqueries
+$break-point            : 1024px !default;
+
+//Universal params
+$border-radius          : 5px !default;
+
+//button & inputs
+$button-height          : 30px !default;
+$button-min-width       : 120px !default;
+$button-padding         : 7px 12px;
+$button-weight          : 700 !default;
+$button-font-size       : $font-size !default;
+$button-color           : $colour-button !default;
+$button-background      : $colour-btn-default!default;
+//input
+$input-height           : 30px !default;
+$input-color            : $colour-input !default;
+$input-font-size        : $font-size !default;
+$input-border           : 1px solid $colour-input-border !default;
+$input-background       : $colour-input-background !default;
+
+//tooltip-size
+$tooltip-small          : 120px !default;
+$tooltip-medium         : 240px !default;
+$tooltip-large          : 360px !default;

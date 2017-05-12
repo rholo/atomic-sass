@@ -4,7 +4,7 @@ html{
 }
 body{
     font-family: $font-primary;
-    color:$colour-text;
+    color:$font-color;
 }
 //heading config (h1 to h6)
 @include headings(){
@@ -23,20 +23,28 @@ body{
     }
 }
 
-p, span, label, a, li, ol, strong {
+p, span, label, a, li, ol {
   font-size:$font-size;
   line-height: $font-size*1.5;
   color: inherit;
 }
-strong{
-    font-size: inherit!important;
-    font-weight: 700;
-}
 small {font-size: $font-size*0.8;}
 
 a {
-  color: $colour-link-default;
-  &:hover {
-    color: darken($colour-link-default,8.5%);
+  cursor:pointer;
+  @include link-state(
+    $colour-link-default,
+    darken($colour-link-default, 5.5%),
+    green,
+    blue);
+  .fa{
+    margin: 0 .5rem 0 0;
   }
+}
+small.#{$prefix}error{
+  color: red!important;
+}
+input.#{$prefix}error,
+select.#{$prefix}error,{
+  border: 1px solid red!important;
 }
