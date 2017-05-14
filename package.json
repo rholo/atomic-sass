@@ -1,16 +1,16 @@
 {
-  "name": "Baseline",
-  "version": "1.0.0",
-  "description": "Baseline is a SASS proyect to make an standard CSS for any proyect",
+  "name": "Rocket",
+  "version": "2.0.0",
+  "description": "Rocket is a baseline SASS proyect to make an standard CSS for any proyect with your own prefix if u want it",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://rholo@bitbucket.org/rholo/baseline.git"
+    "url": "git+https://rholo@bitbucket.org/rholo/rocket.git"
   },
   "author": "Rodrigo Ahumada",
-  "license": "ISC",
-  "homepage": "https://bitbucket.org/rholo/baseline#readme"
+  "license": "MIT",
+  "homepage": "https://bitbucket.org/rholo/rocket#readme"
 }
