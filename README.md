@@ -1,45 +1,47 @@
-Base Layout
+Rocket
 =========
-Base layout is a initial clean SASS proyecto based on standard HTML5 structure, stay for more... [rholo]
+Rocket is a baseline SCSS to start your own CSS/HTML framework, see more at [rholo]
 
 Included:
 - headings
 - paragraph
 - link
 - list
-- button
+- buttons
 - inputs
 - table
 - grids
 
 and more:
 - three kind of grids, flex included for IE11+, and two standard grids for older
-- UI pallette colours defined by [Flat UI Colors]
-- Icons ready to use with [Font Awesome]
+- UI pallette colours using [Flat UI Colors]
+- Icons ready to use [Font Awesome]
 
 #### Now add custom prefix to all classname
-now you can edit your $prefix variable to add all classname!
+now you can make your own $prefix for all classname
 
 #### three type's grid (flex included!)
 to define margin in float and flex grid $grid-space: .5%
 
 | grid type | Number of columns
 | ------ | ------ |
-| $flex-columns | 16
-| $custom-columns | 12
-| $fix-columns | 12
+| $grid-flex | 16
+| $grid-float | 12
+| $grid-fix | 12
 
 #### Layout Variables
 | variable | description | default value
-| ------ | ------ | ------ |
-| $max-width-layout | max-width of your Main Layout | 90%
-| $layout-spacing | margin layout | 0 2%
+| ------ | ------ |
+| $layout-min-width |280px
+| $layout-max-width | 100%
+| $layout-padding | 0 2%
+| $layout-margin | 0
 
 #### Fonts
 | variable | description | default value
 | ------ | ------ | ------ |
 | $font-size-global | relative to HTML | 62.5%
-| $font-size | Base size | 1.4rem
+| $font-size | Base size | 1.2rem
 
 #### Colour Variables
 
@@ -55,24 +57,14 @@ to define margin in float and flex grid $grid-space: .5%
 | $colour-btn-minimal | minimal button
 | $colour_nav-burger | define color of your burger navigation
 
-#### Default classname
-| Clase | Description |
-| ------ | ------ |
-| .main-layout | define main content layour <main> or <div> element|
-| .article | define <article> |
-| .section | define <section> and its childs <header> and <footer> |
-| .input | default input type text |
-| .select | default for <select> |
-| .table | add this class to parent's <table> <div class="table"><table>...
-
-#### Layout Base HTML
-Standard HTML5 definition, remind if you define $prefix you need add this name to your markup: if your prefix is 'myPrefix' then classname will be myPrefix-main-layout
+#### Layout
+by definition this is make under a standard HTML5 structure
 
 #### Main
 add class "layout" to define your main layout
 ```sh
 <body>
-    <main class="main-layout"></main>
+    <main class="layout"></main>
 </body>
 ```
 #### Article
@@ -108,12 +100,12 @@ add class "layout" to define your main layout
 #### Buttons
 ```sh
 <!-- default color -->
-<button class="button" data-button="default">Default</button>
-<button class="button" data-button="primary">Primary</button>
-<button class="button" data-button="safe">Confirm</button>
-<button class="button" data-button="warning">Atention</button>
-<button class="button" data-button="risk">Risk</button>
-<button class="button" data-button="minimal">Minimal</button>
+<button class="button button-default" data-button="default">Default</button>
+<button class="button button-primary" data-button="primary">Primary</button>
+<button class="button button-safe" data-button="safe">Confirm</button>
+<button class="button button-warning" data-button="warning">Atention</button>
+<button class="button button-risk" data-button="risk">Risk</button>
+<button class="button button-minimal" data-button="minimal">Minimal</button>
 ```
 
 #### Basic Table
