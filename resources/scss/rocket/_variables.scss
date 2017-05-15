@@ -16,11 +16,11 @@ $prefix:'' + '';
 //Global params
 $font-primary           : 'Open Sans', Arial, "Helvetica Neue", Helvetica, sans-serif !default;
 $font-secondary         : 'Roboto Slab', Georgia, "Times New Roman", Times, serif !default;
-$font-size-global       : 62.5%;
+$font-size-global       : 62.5%!default;
 //font-size 1.4rem = 14px
-$font-size              : 1.2rem;
-$font-scale             : 0.25;
-$font-color             : $colour-text;
+$font-size              : 1.4rem !default;
+$font-scale             : 0.25 !default;
+$font-color             : $colour-text !default;
 //layout configuration
 $layout-min-width       : 280px !default;
 $layout-max-width       : 100% !default;
@@ -46,19 +46,30 @@ $break-point            : 1024px !default;
 $border-radius          : 5px !default;
 
 //button & inputs
-$button-height          : 30px !default;
+$button-height          : auto!default;
 $button-min-width       : 120px !default;
 $button-padding         : 7px 12px;
 $button-weight          : 700 !default;
 $button-font-size       : $font-size !default;
 $button-color           : $colour-button !default;
 $button-background      : $colour-btn-default!default;
+
+$button-ui:(
+  primary:$peter-river,
+  safe:$turquoise,
+  warning:$sun-flower,
+  risk:$pomegranate
+);
+
 //input
 $input-height           : 30px !default;
 $input-color            : $colour-input !default;
 $input-font-size        : $font-size !default;
 $input-border           : 1px solid $colour-input-border !default;
 $input-background       : $colour-input-background !default;
+
+//burger navigation
+$nav-burger-color       : $colour-nav-burger;
 
 //tooltip-size
 $tooltip-small          : 120px !default;

@@ -2,18 +2,18 @@
   padding:16px;
   padding-left: 0;
   display: inline-block;
-  color: $colour_nav-burger;
+  color: $nav-burger-color;
   > span{
       width: 25px;
       height: 3px;
-      background: $colour_nav-burger;
+      background: $nav-burger-color;
       display: block;
   }
   > span + span{
       margin-top: 5px;
   }
   &:hover{
-    color:darken($colour_nav-burger, 5.5%);
+    color:darken($nav-burger-color, 5.5%);
     text-decoration: none;
   }
 }

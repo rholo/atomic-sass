@@ -10,9 +10,10 @@ a.#{$prefix}link {
   }
 }
 .#{$prefix}link-button{
+  height: $button-height;
   display: inline-block;
   cursor:pointer;
-  padding:4px 12px;
+  padding:$button-padding;
   background-color: $colour-link-btn;
   font-weight: $button-weight;
   color: white;
@@ -33,8 +34,4 @@ a.#{$prefix}link {
       cursor:not-allowed!important;
       opacity: .5;
   }
-}
-a.#{$prefix}link-size-big{
-  font-size: 2.2rem;
-  padding: 12px 28px;
 }
