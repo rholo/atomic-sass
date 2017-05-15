@@ -1,0 +1,11 @@
+@media print {
+  button,input{
+    display: none;
+  }
+  body {
+    -webkit-print-color-adjust: exact;
+  }
+}
+@page {
+  size: landscape;
+}
