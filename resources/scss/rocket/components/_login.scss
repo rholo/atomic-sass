@@ -1,15 +1,5 @@
-.#{$prefix}brand-factoring{
-  width: 300px;
-  height: 60px;
-  display: block;
-  @include background($factoringBase64,no-repeat,center,cover);
-  position: absolute;
-  top: -50%;
-  left: 50%;
-  margin-left: -150px;
-}
 .#{$prefix}login{
-  background-color: $midnight-blue;
+  background-color: $peter-river;
   @include position(absolute, 0,0,0,0,0)
 }
 .#{$prefix}login-content{

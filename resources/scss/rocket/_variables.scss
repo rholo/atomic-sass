@@ -28,6 +28,8 @@ $layout-padding         : 0 2% !default;
 $layout-margin          : 0 !default;
 $layout-background      : $colour-background-layout !default;
 
+$layout-tablet: 1024px;
+$layout-phone: 425px;
 //article
 $article-spacing        : 13px !default;
 
@@ -39,7 +41,7 @@ $grid-float             : 12 !default;
 $grid-fix               : 12 !default;
 //add margin to columns on default grid
 $grid-space             : .5% !default;
-//for mediaqueries
+//for mediaqueries columns
 $break-point            : 1024px !default;
 
 //Universal params

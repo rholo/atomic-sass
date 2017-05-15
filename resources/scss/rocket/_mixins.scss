@@ -1,3 +1,13 @@
+@mixin phone(){
+  @media (max-width: #{$layout-phone}){
+    @content;
+  }
+}
+@mixin tablet(){
+  @media (min-width: #{$layout-phone} +1) and (max-width: #{$layout-tablet}){
+    @content;
+  }
+}
 @mixin circle($size){
   border-radius: ($size/2);
   width: $size;
@@ -12,18 +22,11 @@
   background-position: $pos;
   background-size:$size;
 }
-@mixin headings($from: 1, $to: 6){
-    @for $i from $from through $to{
-      h#{$i}{
-        @content
-      }
-    }
-}
 @mixin truncate($width:''){
   @if $width == '' {
     //nada
   } @else {
-    width:$width;
+    max-width:$width;
   }
   white-space:nowrap;
   text-overflow: ellipsis;
@@ -61,7 +64,14 @@
     clear:both;
   }
 }
-@mixin link-state ($link, $hover, $visit, $active) {
+@mixin headings($from: 1, $to: 6){
+    @for $i from $from through $to{
+      h#{$i}{
+        @content
+      }
+    }
+}
+@mixin link-state($link, $hover, $visit, $active) {
     color: $link;
     &:hover {
       color: $hover;
@@ -113,10 +123,4 @@
 //rotate
 @mixin rotate ($deg) {
   @include transform(rotate(#{$deg}deg));
-}
-@mixin truncate($truncation-width) {
-    max-width: $truncation-width;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
 }
