@@ -1,12 +1,27 @@
-@mixin phone(){
-  @media (max-width: #{$layout-phone}){
+@mixin mobile(){
+  @media only screen and (max-width: #{$media-mobile}){
     @content;
   }
 }
 @mixin tablet(){
-  @media (min-width: #{$layout-phone} +1) and (max-width: #{$layout-tablet}){
+  @media only screen and (min-width: #{$media-mobile}) and (max-width: #{$media-tablet}){
     @content;
   }
+}
+@mixin desktop(){
+    @media only screen and (min-width: #{$media-tablet}){
+      @content;
+    }
+}
+@mixin retina(){
+    @media only screen and (-webkit-min-device-pixel-ratio: 2),
+    only screen and (-moz-min-device-pixel-ratio: 2),
+    only screen and (-o-min-device-pixel-ratio: 2/1),
+    only screen and (min-device-pixel-ratio: 2),
+    only screen and (min-resolution: 192dpi),
+    only screen and (min-resolution: 2dppx){
+        @content;
+    }
 }
 @mixin circle($size){
   border-radius: ($size/2);
@@ -64,6 +79,12 @@
     clear:both;
   }
 }
+@mixin push-auto(){
+    margin:{
+        left:auto;
+        right:auto;
+    }
+}
 @mixin headings($from: 1, $to: 6){
     @for $i from $from through $to{
       h#{$i}{
@@ -119,6 +140,11 @@
 }
 @mixin border($border) {
     border:$border;
+}
+@mixin opacity($opacity) {
+  opacity: $opacity;
+  $opacity-ie: $opacity * 100;
+  filter: alpha(opacity=$opacity-ie); //IE8
 }
 //rotate
 @mixin rotate ($deg) {

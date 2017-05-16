@@ -28,21 +28,28 @@ $layout-padding         : 0 2% !default;
 $layout-margin          : 0 !default;
 $layout-background      : $colour-background-layout !default;
 
-$layout-tablet: 1024px;
-$layout-phone: 425px;
+$media-tablet           : 1024px;
+$media-mobile           : 480px;
+
+// $media:(
+//     desktop:1024px,
+//     tablet:768px,
+//     phone:480px,
+//     watch:230px
+// );
+
 //article
 $article-spacing        : 13px !default;
 
 //section
 $section-spacing        : 13px !default;
+
 //select columns for your grid
 $grid-flex              : 16 !default;
 $grid-float             : 12 !default;
 $grid-fix               : 12 !default;
 //add margin to columns on default grid
 $grid-space             : .5% !default;
-//for mediaqueries columns
-$break-point            : 1024px !default;
 
 //Universal params
 $border-radius          : 5px !default;

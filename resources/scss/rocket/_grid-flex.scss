@@ -16,7 +16,12 @@
     .#{$prefix}flex-col-#{$i} {flex:$i}
 }
 
-@media screen and (max-width: $break-point -1) {
+@include tablet{
+    [class*='#{$prefix}flex-']{
+        flex:2!important;
+    }
+};
+@include mobile{
     .#{$prefix}grid-flex {
         display: block;
     }
@@ -27,4 +32,4 @@
     [class*='#{$prefix}flex-']:last-of-type{
         margin-top: 5px;
     }
-  }
+};
