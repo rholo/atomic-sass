@@ -44,3 +44,9 @@ hr.#{$prefix}divisor{
     width: 100%;
     margin: 10px 0;
 }
+small.#{$prefix}error{
+    color: red;
+}
+input.#{$prefix}error{
+    border: 1px solid red!important;
+}
