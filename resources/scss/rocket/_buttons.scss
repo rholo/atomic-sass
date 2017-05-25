@@ -14,7 +14,6 @@
       white-space:nowrap;
       text-overflow: ellipsis;
       outline: none;
-      cursor:pointer;
       vertical-align: middle;
       border:1px solid darken($button-background, 5%);
       @include border-radius($border-radius);

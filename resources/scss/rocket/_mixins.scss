@@ -31,7 +31,7 @@
   display: block;
   text-align: center;
 }
-@mixin background($img,$repeat,$pos,$size){
+@mixin background($img,$size,$pos,$repeat){
   background-image: $img;
   background-repeat: $repeat;
   background-position: $pos;
@@ -119,6 +119,7 @@
       -ms-border-radius: $radius;
           border-radius: $radius;
 }
+//transitions
 @mixin transition($args) {
 -webkit-transition: $args;
    -moz-transition: $args;
