@@ -11,8 +11,6 @@
 //basic layout
 @import "layout";
 @import "nav";
-@import "article";
-@import "section";
 
 //grids: can use all or just one!
 @import "grid-flex";
@@ -28,4 +26,5 @@
 //components
 @import "components/tooltip";
 @import "components/nav-burger";
+@import "components/dialog";
 //@import "toggle-button";

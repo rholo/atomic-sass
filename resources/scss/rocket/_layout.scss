@@ -8,4 +8,24 @@ body {
     margin: $layout-margin;
     padding:$layout-padding;
     position: relative;
+    .#{$prefix}article {
+      > header{
+          margin-bottom: $article-spacing;
+      }
+      .#{$prefix}section {
+        > header{
+            margin-bottom: $section-spacing;
+        }
+        .#{$prefix}section-content{
+          position: relative;
+        }
+        > footer{
+          margin-top:$section-spacing;
+        }
+      }
+      > footer{
+        margin-top:$article-spacing;
+      }
+    }
+
 }

@@ -40,10 +40,3 @@ a {
     margin: 0 .5rem 0 0;
   }
 }
-small.#{$prefix}error{
-  color: red!important;
-}
-input.#{$prefix}error,
-select.#{$prefix}error,{
-  border: 1px solid red!important;
-}

@@ -1,0 +1,107 @@
+/*
+<div class="hidden-layout">
+  <div class="dialog-wrapping">
+    <div class="dialog-header">
+      <p>{{title}}</p>
+      <a href="javascript:;" class="dialog-close"></a>
+    </div>
+    <div class="dialog-content">{{content}}</div>
+    <div class="dialog-footer">
+      <button>Aceptar</button>
+      <button>Cancelar</button>
+    </div>
+  </div>
+</div>
+*/
+
+$dialog-close-icon: 'data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjxzdmcgaGVpZ2h0PSIxNiIgaWQ9InN2ZzIiIHZlcnNpb249IjEuMSIgd2lkdGg9IjE2IiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOmNjPSJodHRwOi8vY3JlYXRpdmVjb21tb25zLm9yZy9ucyMiIHhtbG5zOmRjPSJodHRwOi8vcHVybC5vcmcvZGMvZWxlbWVudHMvMS4xLyIgeG1sbnM6aW5rc2NhcGU9Imh0dHA6Ly93d3cuaW5rc2NhcGUub3JnL25hbWVzcGFjZXMvaW5rc2NhcGUiIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyIgeG1sbnM6c29kaXBvZGk9Imh0dHA6Ly9zb2RpcG9kaS5zb3VyY2Vmb3JnZS5uZXQvRFREL3NvZGlwb2RpLTAuZHRkIiB4bWxuczpzdmc9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZGVmcyBpZD0iZGVmczQiLz48ZyBpZD0ibGF5ZXIxIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgwLC0xMDM2LjM2MjIpIj48cGF0aCBkPSJtIDIsMTA1MC4zNjIyIDEyLC0xMiIgaWQ9InBhdGgyOTg1IiBzdHlsZT0iZmlsbDpub25lO3N0cm9rZTojMDAwMDAwO3N0cm9rZS13aWR0aDoyO3N0cm9rZS1saW5lY2FwOmJ1dHQ7c3Ryb2tlLWxpbmVqb2luOm1pdGVyO3N0cm9rZS1taXRlcmxpbWl0OjQ7c3Ryb2tlLW9wYWNpdHk6MTtzdHJva2UtZGFzaGFycmF5Om5vbmUiLz48cGF0aCBkPSJtIDIsMTAzOC4zNjIyIDEyLDEyIiBpZD0icGF0aDI5ODUtMSIgc3R5bGU9ImZpbGw6bm9uZTtzdHJva2U6IzAwMDAwMDtzdHJva2Utd2lkdGg6MjtzdHJva2UtbGluZWNhcDpidXR0O3N0cm9rZS1saW5lam9pbjptaXRlcjtzdHJva2UtbWl0ZXJsaW1pdDo0O3N0cm9rZS1vcGFjaXR5OjE7c3Ryb2tlLWRhc2hhcnJheTpub25lIi8+PC9nPjwvc3ZnPg==';
+
+.#{$prefix}layout-hidden {
+  background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%);
+  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%);
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#66000000', endColorstr='#66000000',GradientType=0 );
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.#{$prefix}modal{
+  z-index:999000;
+}
+.#{$prefix}dialog{
+  z-index:9990001;
+}
+.#{$prefix}dialog {
+  min-width: 280px;
+  top: 7%;
+  position: absolute;
+  left: 30%;
+  right: 30%;
+  z-index: 999001;
+  background-color: white;
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+}
+.#{$prefix}dialog-header {
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 2px 12px;
+  border-bottom: 1px solid #f5f5f5;
+  background: white;
+  line-height:5px;
+  h4{
+    line-height:5px;
+  }
+}
+
+.#{$prefix}dialog-content{
+  margin: 5px;
+  font-size: 12px;
+  text-align: center;
+}
+.#{$prefix}dialog-footer {
+  padding: 10px;
+  margin: 0;
+  border-top:1px solid #f5f5f5;
+  overflow: hidden;
+  text-align: right;
+}
+.#{$prefix}dialog-close {
+  display: block;
+  position: absolute;
+  top: 13px;
+  right: 10px;
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+  text-decoration: none;
+  background-image: url($dialog-close-icon);
+  background-repeat: no-repeat;
+  background-position: center;
+  &:hover{
+    text-decoration:none;
+  }
+}
+.#{$prefix}scroll-control {
+  overflow: hidden;
+  height: 100%;
+}
+
+
+//modal compose
+.#{$prefix}modal-header{
+  @extend .dialog-header;
+}
+.#{$prefix}modal-content{
+  @extend .dialog-content;
+}
+.#{$prefix}modal-footer{
+  @extend .dialog-footer;
+}
+.#{$prefix}modal-close{
+  @extend .dialog-close;
+}

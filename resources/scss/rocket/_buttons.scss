@@ -32,14 +32,14 @@
 @each $name,$color in $button-ui{
   [data-button="#{$name}"],
   .#{$prefix}button-#{$name}{
-      @include border(1px solid darken($color, 5%)!important);
+      border:1px solid darken($color, 5%)!important;
       @include btn-state($color);
 }
 }
 [data-button="disabled"],
 .#{$prefix}button-disabled{
     color: darken(white, 20%);
-    @include border(1px solid darken(white, 5%)!important);
+    border:1px solid darken(white, 5%)!important;
     @include btn-state(white);
 }
 [data-button="minimal"],

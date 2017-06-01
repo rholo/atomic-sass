@@ -21,6 +21,7 @@ $font-size-global       : 62.5%!default;
 $font-size              : 1.4rem !default;
 $font-scale             : 0.25 !default;
 $font-color             : $colour-text !default;
+$font-error             : $colour-text-error !default;
 //layout configuration
 $layout-min-width       : 280px !default;
 $layout-max-width       : 100% !default;
@@ -76,6 +77,11 @@ $input-color            : $colour-input !default;
 $input-font-size        : $font-size !default;
 $input-border           : 1px solid $colour-input-border !default;
 $input-background       : $colour-input-background !default;
+
+$table-th-padding       : 9px !default;
+$table-th-align         : left !default;
+$table-th-font-size     : $font-size !default;
+$table-tr-background    : #fbfbfb;
 
 //burger navigation
 $nav-burger-color       : $colour-nav-burger;

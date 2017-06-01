@@ -45,8 +45,15 @@ hr.#{$prefix}divisor{
     margin: 10px 0;
 }
 small.#{$prefix}error{
-    color: red;
+  color: $font-error!important;
 }
-input.#{$prefix}error{
-    border: 1px solid red!important;
+//jquery validate default
+label.error{
+  @extend .#{$prefix}error
+}
+
+input.#{$prefix}error,
+textarea.#{$prefix}error,
+select.#{$prefix}error{
+  border: 1px solid $font-error!important;
 }

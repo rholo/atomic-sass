@@ -19,7 +19,7 @@ a.#{$prefix}link {
   color: $button-color;
   text-align: center;
   text-decoration: none;
-  @include border(1px solid darken($colour-link-btn, 5%));
+  border:1px solid darken($colour-link-btn, 5%);
   @include border-radius($border-radius);
   @include transition(all 100ms linear);
   > .fa {

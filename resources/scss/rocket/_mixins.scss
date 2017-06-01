@@ -23,6 +23,17 @@
         @content;
     }
 }
+@mixin column-gap($count, $width,$gap){
+column-count: $count;
+column-width: $width;
+column-gap: $gap;
+-webkit-column-count: $count;
+-webkit-column-gap: $gap;
+-webkit-column-width: $width;
+-moz-column-count: $count;
+-moz-column-gap: $gap;
+-moz-column-width: $width;
+}
 @mixin circle($size){
   border-radius: 50%;
   width: $size;
@@ -46,6 +57,10 @@
   white-space:nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
+}
+@mixin hidden(){
+  display: none;
+  visibility: hidden;
 }
 @mixin position($pos,$top,$right,$bottom,$left,$z-index){
   position: $pos;
@@ -138,9 +153,6 @@
     font-size:$font-size-global;
     -webkit-text-size-adjust: $font-size-global;
     -ms-text-size-adjust: $font-size-global;
-}
-@mixin border($border) {
-    border:$border;
 }
 @mixin opacity($opacity) {
   opacity: $opacity;
