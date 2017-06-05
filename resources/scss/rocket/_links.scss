@@ -8,6 +8,9 @@ a.#{$prefix}link {
   .fa{
     margin: 0 .5rem 0 0;
   }
+  &:hover {
+    text-decoration: underline;
+  }
 }
 .#{$prefix}link-button{
   height: $button-height;

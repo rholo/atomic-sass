@@ -27,11 +27,8 @@ body {
   text-rendering: optimizeLegibility;
 }
 a {
-    text-decoration: none;
-    outline: 0;
-  &:hover {
-    text-decoration: underline;
-  }
+  text-decoration: none;
+  outline: 0;
   &:link, &:visited, &:hover, &:active {
     outline: 0;
   }
@@ -68,7 +65,7 @@ textarea {
 }
 
 input, select {
-  vertical-align: middle;
+  vertical-align: baseline;
 }
 
 select {
@@ -86,7 +83,6 @@ input {
   }
   &[type="checkbox"],&[type="radio"]{
       padding: 0;
-      vertical-align: text-bottom;
   }
 }
 

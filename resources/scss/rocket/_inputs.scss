@@ -41,7 +41,8 @@ input {
     background-color: #F9F9F9 !important;
   }
 }
-.#{$prefix}label{
+.#{$prefix}label-input{
+  display: block;
   input[type="checkbox"] {
     float: left;
     margin-top: 4px;

@@ -23,7 +23,7 @@
         @content;
     }
 }
-@mixin column-gap($count, $width,$gap){
+@mixin column-gap($count, $width, $gap){
 column-count: $count;
 column-width: $width;
 column-gap: $gap;
