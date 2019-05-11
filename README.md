@@ -1,6 +1,6 @@
 Rocket
 =========
-Rocket is a baseline SCSS to start your own CSS/HTML framework, see more at [rholo]
+Rocket is a baseline SCSS to start your own CSS Framework.
 
 Included:
 - headings
