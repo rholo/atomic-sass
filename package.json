@@ -1,12 +1,12 @@
 {
   "name": "rocket",
-  "version": "2.0.1",
+  "version": "2.1.1",
   "description": "Rocket is a baseline SASS proyect to make an standard CSS for any proyect with your own prefix if u want it",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "install":"npm i gulp gulp-sass gulp-sourcemaps browser-sync",
-    "start":"gulp"
+    "install": "yarn add node-sass",
+    "start": "node-sass --watch src/scss -o src/css"
   },
   "repository": {
     "type": "git",
@@ -14,5 +14,8 @@
   },
   "author": "Rodrigo Ahumada",
   "license": "MIT",
-  "homepage": "https://github.org/rholo/rocket#readme"
+  "homepage": "https://github.org/rholo/rocket#readme",
+  "dependencies": {
+    "node-sass": "^4.12.0"
+  }
 }

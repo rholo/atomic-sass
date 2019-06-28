@@ -1,8 +1,3 @@
-/**
- * @title _variables
- * @description: main configuration
-**/
-
 //setup colours
 @import "colors/colours.scss";
 
@@ -71,13 +66,14 @@ $button-ui:(
   risk:$pomegranate
 );
 
-//input
+//input settings
 $input-height           : 30px !default;
 $input-color            : $colour-input !default;
 $input-font-size        : $font-size !default;
 $input-border           : 1px solid $colour-input-border !default;
 $input-background       : $colour-input-background !default;
 
+// table settings
 $table-th-padding       : 9px !default;
 $table-th-align         : left !default;
 $table-th-font-size     : $font-size !default;
