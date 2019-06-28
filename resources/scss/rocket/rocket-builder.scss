@@ -7,12 +7,13 @@
 @import "mixins";
 @import "reset";
 @import "typography";
-@import "helpers";
+
 //basic layout
 @import "layout";
+
+//navigator
 @import "nav";
-@import "article";
-@import "section";
+@import "components/nav-burger";
 
 //grids: can use all or just one!
 @import "grid-flex";
@@ -23,9 +24,14 @@
 @import "buttons";
 @import "links";
 @import "inputs";
+
+//table
 @import "table";
 
+//helpers
+@import "helpers";
+
 //components
-//@import "tooltip";
-//@import "nav-burger";
+@import "components/tooltip";
+//@import "components/dialog";
 //@import "toggle-button";

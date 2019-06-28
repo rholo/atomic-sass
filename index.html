@@ -4,7 +4,7 @@
 <head>
 	<meta charset="utf-8" />
 	<!--<link rel="shortcut icon" href="resources/img/favicon.ico">-->
-	<title>Baseline</title>
+	<title>Rocket</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 	<meta http-equiv="Cache-control" content="public">
 	<!-- <link rel="icon" href="resources/img/favicon.png"> -->
@@ -17,11 +17,14 @@
 <body>
 	<header class="optimus-prime">
 		<div class="start-here">
-			<h1>Base<strong>line</strong></h1>
+			<h1>Rocket<strong></strong></h1>
 			<a class="link-button" href="http://cdn.rholo.cl/baseline.css"
 			target="_blank" data-button="safe" download><i class="fa fa-css3"></i>Minify (Ready 4 use!)</a>
-			<hr class="helper-divisor" />
+			<hr class="divisor" />
 			<a class="link-button link-size-big" href="https://bitbucket.org/rholo/baseline/" target="_blank" data-button="primary"><i class="fa fa-bitbucket"></i>SASS version</a>
+			<i class="fa fa-desktop fa-3x"></i>
+			<i class="fa fa-tablet fa-3x"></i>
+			<i class="fa fa-mobile fa-3x"></i>
 		</div>
 	</header>
 	<main class="layout">
@@ -213,14 +216,14 @@
 					<p>...</p>
 				</header>
 				<div class="section-content">
-					<h1>Heading H1 <small>complement text</small><h1>
-									<h2>Heading H2 <small>complement text</small><h2>
-									<h3>Heading H3 <small>complement text</small><h3>
-									<h4>Heading H4 <small>complement text</small><h4>
-									<h5>Heading H5 <small>complement text</small><h5>
-									<h6>Heading H6 <small>complement text</small><h6>
-								</div>
-            </section>
+					<h1>Heading H1 <small>small text</small></h1>
+					<h2>Heading H2 <small>small text</small></h2>
+					<h3>Heading H3 <small>small text</small></h3>
+					<h4>Heading H4 <small>small text</small></h4>
+					<h5>Heading H5 <small>small text</small></h5>
+					<h6>Heading H6 <small>small text</small></h6>
+				</div>
+      </section>
 			<section class="section">
 				<header>
 					<h3>Paragraph <small>text, links, others</small></h3>
@@ -237,11 +240,11 @@
 					<h3>Tooltips</h3>
 					<p>Text to complement title link or referencial tips</p>
 				</header>
-				<div class="nt_section-content">
-				<a href="javascript:;" class="nt_link" data-tooltip="lorem ipsum...">link with tooltips</a>
+				<div class="section-content">
+				<a href="javascript:;" class="link" data-tooltip="lorem ipsum...">link with tooltips</a>
 				</div>
 			</section>
-			<section class="nt_section">
+			<section class="section">
 				<header>
 					<h3>Navigation <small>simple nav menu</small></h3>
 					<p>...</p>
@@ -280,20 +283,33 @@
 				</header>
 				<div class="section-content">
 					<form novalidate="" id="">
-						<p>.input</p>
-						<input type="text" class="input" name="nameInput" value="">
-						<input type="text" class="input" name="nameInput" value="Disabled" disabled>
-						<p>.select</p>
-						<select class="select" name="nameSelect">
-						    <option value="">Seleccionar</option>
-						</select>
-						<select class="select" name="nameSelect" disabled>
-							<option value="">Disabled</option>
-						</select>
-						<p>.input-checkbox</p>
-						<input type="checkbox" class="input-checkbox" value="" name="">
-						<p>.input-radio</p>
-						<input type="radio" class="input-radio" value="" name="">
+						<label class="label-input">
+							Input text
+							<input type="text" class="input" name="nameInput" value="">
+							<small class="error">Debe completar este campo</small>
+						</label>
+						<label class="label-input">
+							Input disabled
+							<input type="text" class="input" name="nameInput" value="Disabled" disabled>
+						</label>
+						<label class="label-input">
+							Seleccionar
+							<select class="select" name="nameSelect">
+							    <option value="">Seleccionar</option>
+							</select>
+							<small class="error">Debe seleccionar un elemento</small>
+						</label>
+						<label class="label-input">
+							<input type="checkbox" class="input-checkbox" value="" name=""> Seleccionar
+						</label>
+						<label class="label-input">
+							<input type="radio" class="input-radio" value="a" name="sel">
+							Seleccion A
+						</label>
+						<label class="label-input">
+							<input type="radio" class="input-radio" value="b" name="sel">
+							Seleccion B
+						</label>
 					</form>
 				</div>
 			</section>

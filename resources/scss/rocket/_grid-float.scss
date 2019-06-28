@@ -5,18 +5,20 @@
  * @description the most common grid css system, use if your proyect is under IE11 support
 **/
 
-.#{$prefix}float-row + .#{$prefix}float-row{
-  margin-top: 1em;
-  margin-bottom: 1em;
-}
-.#{$prefix}float-row:after,.#{$prefix}float-row:before {
-    content: "";
-    display: table;
-    clear: both
+.#{$prefix}float-row{
+  +.#{$prefix}float-row{
+      margin-top: 1em;
+      margin-bottom: 1em;
+  }
+  &:after,
+  &:before{
+      content: "";
+      display: table;
+      clear: both
+  }
 }
 [class*="#{$prefix}float-col-"] {
     float: left;
-    // padding: .5rem;
     margin-right: $grid-space;
     &:last-of-type{
         border-right: 0;
@@ -28,12 +30,21 @@
        width:(100% / ($grid-float / $i)) - (($grid-space * ($grid-float - $i)) / $grid-float);
     }
 }
-@media screen and (max-width:$break-point - 1){
+@include tablet{
+    [class*="#{$prefix}float-col-"] {
+        width: 50% - $grid-space !important;
+        border-left: none!important;
+        &:last-of-type{
+            margin-right: 0;
+        }
+    }
+};
+@include mobile{
     [class*="#{$prefix}float-col-"] {
         float: none;
         width: 100%!important;
         margin-right: 0;
-        margin-top: 14px;
+        margin-top: 5px;
         border-left: none!important;
     }
-  }
+};

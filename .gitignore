@@ -1,7 +1,6 @@
 node_modules/
 resources/scss/font-awesome/
 resources/fonts/
-gulpfile.js
 resources/js/
 resources/img/favicon.png
 resources/css/prism.css

@@ -29,35 +29,17 @@
           margin-right: 3px;
       }
 }
-[data-button="default"],
-.#{$prefix}button-default{
-    @include border(1px solid darken($colour-btn-default, 5%)!important);
-    @include btn-state($colour-btn-default);
+@each $name,$color in $button-ui{
+  [data-button="#{$name}"],
+  .#{$prefix}button-#{$name}{
+      border:1px solid darken($color, 5%)!important;
+      @include btn-state($color);
 }
-[data-button="primary"],
-.#{$prefix}button-primary{
-    @include border(1px solid darken($colour-btn-primary, 5%)!important);
-    @include btn-state($colour-btn-primary);
-}
-[data-button="safe"],
-.#{$prefix}button-safe{
-    @include border(1px solid darken($colour-btn-safe, 5%)!important);
-    @include btn-state($colour-btn-safe);
-}
-[data-button="warning"],
-.#{$prefix}button-warning{
-    @include border(1px solid darken($colour-btn-warning, 5%)!important);
-    @include btn-state($colour-btn-warning);
-}
-[data-button="risk"],
-.#{$prefix}button-risk{
-    @include border(1px solid darken($colour-btn-risk, 5%)!important);
-    @include btn-state($colour-btn-risk);
 }
 [data-button="disabled"],
 .#{$prefix}button-disabled{
     color: darken(white, 20%);
-    @include border(1px solid darken(white, 5%)!important);
+    border:1px solid darken(white, 5%)!important;
     @include btn-state(white);
 }
 [data-button="minimal"],

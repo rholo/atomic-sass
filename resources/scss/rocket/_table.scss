@@ -22,19 +22,19 @@
 }
 .#{$prefix}table table th {
     border-bottom: 1px solid #E2E2E2;
-    padding: 9px;
-    text-align: left;
-    font-size: 1.2rem;
+    padding: $table-th-padding;
+    text-align: $table-th-align;
+    font-size:$table-th-font-size;
     vertical-align: top;
     &.th-group {
         background: #f1f1f1;
     }
 }
 .#{$prefix}table tbody > tr {
-    background: #FBFBFB;
+    background: $table-tr-background;
     display: table-row;
     &:nth-child(even) {
-        background-color: #fff;
+        background-color: lighten($table-tr-background, 20%);
     }
 }
 
@@ -42,44 +42,39 @@
     padding:9px;
     color: #5d626b;
     white-space: nowrap;
-}
-.#{$prefix}table td > {
-    .input-text,
-    .select,
-    .textarea{
-        padding: 0 5px;
-        height: 23px;
-    }
-    .button {
-        padding: 0 12px;
-    }
-}
-.#{$prefix}table table tbody > tr > td {
     font-size: 1.2rem !important;
     line-height: 1.8 !important;
-    > * {
-        font-size: 1.2rem !important;
-        line-height: 1.8 !important;
-    }
-
-    a.fa {
-        //color: $colour-icon-table;
-        text-align: center;
-        width: 20px;
-        height: 20px;
-        border-radius: 20px;
-        background-color: transparent;
-        @include transition(all 100ms linear);
-        &:hover {
-            color: white;
-            text-decoration: none;
-            //background-color: $colour-icon-table;
-        }
-    }
-    i.fa {
-        color:#666;
-        width: 16px;
-        margin: 0 auto;
+    >{
+      .#{$prefix}input-text,
+      .#{$prefix}select,
+      .#{$prefix}textarea{
+          padding: 0 5px;
+          height: 23px;
+      }
+      .#{$prefix}button {
+          padding: 0 12px;
+      }
+      a.fa {
+          //color: $colour-icon-table;
+          text-align: center;
+          width: 20px;
+          height: 20px;
+          border-radius: 20px;
+          background-color: transparent;
+          @include transition(all 100ms linear);
+          &:hover {
+              color: white;
+              text-decoration: none;
+              //background-color: $colour-icon-table;
+          }
+      }
+      i.fa {
+          color:#666;
+          width: 16px;
+          margin: 0 auto;
+      }
+      font-size: 1.2rem !important;
+      line-height: 1.8 !important;
     }
 }
 .table-footer {
@@ -89,18 +84,12 @@
     margin: 5px 0 0;
 }
 
-.#{$prefix}table .#{$prefix}table-tr-not-found {
+.#{$prefix}table .#{$prefix}table-info {
     padding: 17px;
     text-align: center;
     font-weight: bolder;
-    //color:$deep-sea;
-}
-.#{$prefix}table .#{$prefix}table-tr-selected {
     background-color: #FFF8EF!important;
-    font-weight: bolder;
-    // border-left: 4px solid #0b925a;
 }
-
 @media screen and (max-width:40em){
   .#{$prefix}table-responsive table thead{
     display: none;
@@ -117,7 +106,7 @@
     &:before{
       display: block;
     }
-    :last-of-type{
+    &:last-of-type{
       margin-bottom: 0;
       border-bottom: 0;
     }

@@ -11,7 +11,7 @@
   border: $input-border;
   font-size: $input-font-size;
   font-family: inherit;
-  color: #5a5a5a;
+  color: $input-color;
   background-color: $colour-input-background;
   @include border-radius($border-radius);
   &::placeholder{
@@ -41,7 +41,8 @@ input {
     background-color: #F9F9F9 !important;
   }
 }
-.#{$prefix}label{
+.#{$prefix}label-input{
+  display: block;
   input[type="checkbox"] {
     float: left;
     margin-top: 4px;

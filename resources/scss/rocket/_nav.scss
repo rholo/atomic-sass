@@ -1,8 +1,7 @@
 /**
  * Description: Navigation
 **/
-[class*="#{$prefix}main-nav-"]{
-    padding: 0;
+[class*="#{$prefix}main-nav"]{
     > ul{
       overflow:hidden;
       > li {

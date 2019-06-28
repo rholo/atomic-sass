@@ -24,13 +24,11 @@ body {
   -webkit-touch-callout: none;
   -webkit-text-size-adjust: none;
   -webkit-user-select: text;
+  text-rendering: optimizeLegibility;
 }
 a {
   text-decoration: none;
-    outline: 0;
-  &:hover {
-    text-decoration: underline;
-  }
+  outline: 0;
   &:link, &:visited, &:hover, &:active {
     outline: 0;
   }
@@ -67,7 +65,7 @@ textarea {
 }
 
 input, select {
-  vertical-align: middle;
+  vertical-align: baseline;
 }
 
 select {
@@ -85,15 +83,13 @@ input {
   }
   &[type="checkbox"],&[type="radio"]{
       padding: 0;
-      vertical-align: text-bottom;
   }
 }
 
 button, input[type="button"], input[type="reset"], input[type="submit"] {
   cursor: pointer;
   border: 0;
-  font-weight: 700;
-    -webkit-appearance: button;
+  -webkit-appearance: button;
   &:disabled{
     cursor: not-allowed;
     opacity: .5;

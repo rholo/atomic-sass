@@ -7,16 +7,21 @@
 }
 [class*='#{$prefix}flex-']{
     margin-right: $grid-space;
-}
-[class*='#{$prefix}flex-']:last-of-type{
-    margin-right: 0;
+    &:last-of-type{
+        margin-right: 0;
+    }
 }
 
 @for $i from 1 through $grid-flex {
     .#{$prefix}flex-col-#{$i} {flex:$i}
 }
 
-@media screen and (max-width: $break-point) {
+@include tablet{
+    [class*='#{$prefix}flex-']{
+        flex:2!important;
+    }
+};
+@include mobile{
     .#{$prefix}grid-flex {
         display: block;
     }
@@ -27,4 +32,4 @@
     [class*='#{$prefix}flex-']:last-of-type{
         margin-top: 5px;
     }
-  }
+};

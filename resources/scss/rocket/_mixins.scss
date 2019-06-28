@@ -1,33 +1,66 @@
+@mixin mobile(){
+  @media only screen and (max-width: #{$media-mobile}){
+    @content;
+  }
+}
+@mixin tablet(){
+  @media only screen and (min-width: #{$media-mobile}) and (max-width: #{$media-tablet}){
+    @content;
+  }
+}
+@mixin desktop(){
+    @media only screen and (min-width: #{$media-tablet}){
+      @content;
+    }
+}
+@mixin retina(){
+    @media only screen and (-webkit-min-device-pixel-ratio: 2),
+    only screen and (-moz-min-device-pixel-ratio: 2),
+    only screen and (-o-min-device-pixel-ratio: 2/1),
+    only screen and (min-device-pixel-ratio: 2),
+    only screen and (min-resolution: 192dpi),
+    only screen and (min-resolution: 2dppx){
+        @content;
+    }
+}
+@mixin column-gap($count, $width, $gap){
+column-count: $count;
+column-width: $width;
+column-gap: $gap;
+-webkit-column-count: $count;
+-webkit-column-gap: $gap;
+-webkit-column-width: $width;
+-moz-column-count: $count;
+-moz-column-gap: $gap;
+-moz-column-width: $width;
+}
 @mixin circle($size){
-  border-radius: ($size/2);
+  border-radius: 50%;
   width: $size;
   height: $size;
   line-height:$size;
   display: block;
   text-align: center;
 }
-@mixin background($img,$repeat,$pos,$size){
+@mixin background($img,$size,$pos,$repeat){
   background-image: $img;
   background-repeat: $repeat;
   background-position: $pos;
   background-size:$size;
 }
-@mixin headings($from: 1, $to: 6){
-    @for $i from $from through $to{
-      h#{$i}{
-        @content
-      }
-    }
-}
 @mixin truncate($width:''){
   @if $width == '' {
     //nada
   } @else {
-    width:$width;
+    max-width:$width;
   }
   white-space:nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
+}
+@mixin hidden(){
+  display: none;
+  visibility: hidden;
 }
 @mixin position($pos,$top,$right,$bottom,$left,$z-index){
   position: $pos;
@@ -37,6 +70,7 @@
   left: $left;
   z-index: $z-index;
 }
+
 @mixin center-flex($height){
     display: flex;
     align-items: center;
@@ -44,13 +78,13 @@
     height: $height;
 }
 @mixin absolute-center($width,$height){
-  width:$width;
-  height:$height;
   position: absolute;
   top: 50%;
   left: 50%;
-  margin-left: (-$width / 2);
-  margin-top: (-$height / 2);
+  width:$width;
+  height:$height;
+  margin-left: -($width / 2);
+  margin-top: -($height / 2);
 }
 
 @mixin float($float){
@@ -60,7 +94,20 @@
     clear:both;
   }
 }
-@mixin link-state ($link, $hover, $visit, $active) {
+@mixin push-auto(){
+    margin:{
+        left:auto;
+        right:auto;
+    }
+}
+@mixin headings($from: 1, $to: 6){
+    @for $i from $from through $to{
+      h#{$i}{
+        @content
+      }
+    }
+}
+@mixin link-state($link, $hover, $visit, $active) {
     color: $link;
     &:hover {
       color: $hover;
@@ -87,6 +134,7 @@
       -ms-border-radius: $radius;
           border-radius: $radius;
 }
+//transitions
 @mixin transition($args) {
 -webkit-transition: $args;
    -moz-transition: $args;
@@ -106,16 +154,12 @@
     -webkit-text-size-adjust: $font-size-global;
     -ms-text-size-adjust: $font-size-global;
 }
-@mixin border($border) {
-    border:$border;
+@mixin opacity($opacity) {
+  opacity: $opacity;
+  $opacity-ie: $opacity * 100;
+  filter: alpha(opacity=$opacity-ie); //IE8
 }
 //rotate
 @mixin rotate ($deg) {
   @include transform(rotate(#{$deg}deg));
-}
-@mixin truncate($truncation-width) {
-    max-width: $truncation-width;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
 }

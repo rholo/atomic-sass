@@ -44,3 +44,16 @@ hr.#{$prefix}divisor{
     width: 100%;
     margin: 10px 0;
 }
+small.#{$prefix}error{
+  color: $font-error!important;
+}
+//jquery validate default
+label.error{
+  @extend .#{$prefix}error
+}
+
+input.#{$prefix}error,
+textarea.#{$prefix}error,
+select.#{$prefix}error{
+  border: 1px solid $font-error!important;
+}

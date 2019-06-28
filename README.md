@@ -97,6 +97,20 @@ add class "layout" to define your main layout
 </nav>
 ```
 
+#### mixins
+
+| mixin | use | variable
+| ------ | ------ | ------ |
+| circle | make a perfect circle | @include circle(size)
+| float | add float left or right and clear elements | @include float(float)
+| push-auto | center element | @include push-auto()
+| opacity | use this to give opacity | @include opacity(opacity)
+| background | set your background image | @include background(image,size,position,repeat)
+| center-flex | automatically center a div | center-flex($height)
+| absolute-center | make a element center on body | absolute-center(width,height)
+| transition | add transitions to your element | transition(arguments)
+
+
 #### Buttons
 ```sh
 <!-- default color -->

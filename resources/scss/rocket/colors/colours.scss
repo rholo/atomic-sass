@@ -3,7 +3,8 @@
 //layout
 $colour-background-layout   : white;
 //text
-$colour-text                : black;
+$colour-text                : #333;
+$colour-text-error          : $pomegranate;
 $colour-button              : white;
 $colour-input               : black;
 //links
@@ -13,18 +14,14 @@ $colour-link-btn            : $silver;
 
 //buttons
 $colour-btn-default         : $wet-asphalt;
-$colour-btn-primary         : $peter-river;
-$colour-btn-safe            : $turquoise;
-$colour-btn-warning         : $sun-flower;
-$colour-btn-risk            : $pomegranate;
 $colour-btn-minimal         : $asbestos;
 
 //nav burger color
-$colour_nav-burger          : $wet-asphalt;
+$colour-nav-burger          : $wet-asphalt;
 
 //divisor
 $colour-background-divisor  : $concrete;
 
 //inputs
-$colour-input-border        : grey;
+$colour-input-border        : #cecece;
 $colour-input-background    : white;

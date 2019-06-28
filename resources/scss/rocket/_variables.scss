@@ -16,11 +16,12 @@ $prefix:'' + '';
 //Global params
 $font-primary           : 'Open Sans', Arial, "Helvetica Neue", Helvetica, sans-serif !default;
 $font-secondary         : 'Roboto Slab', Georgia, "Times New Roman", Times, serif !default;
-$font-size-global       : 62.5%;
+$font-size-global       : 62.5%!default;
 //font-size 1.4rem = 14px
-$font-size              : 1.2rem;
-$font-scale             : 0.25;
-$font-color             : $colour-text;
+$font-size              : 1.4rem !default;
+$font-scale             : 0.25 !default;
+$font-color             : $colour-text !default;
+$font-error             : $colour-text-error !default;
 //layout configuration
 $layout-min-width       : 280px !default;
 $layout-max-width       : 100% !default;
@@ -28,31 +29,48 @@ $layout-padding         : 0 2% !default;
 $layout-margin          : 0 !default;
 $layout-background      : $colour-background-layout !default;
 
+$media-tablet           : 1024px;
+$media-mobile           : 480px;
+
+// $media:(
+//     desktop:1024px,
+//     tablet:768px,
+//     phone:480px,
+//     watch:230px
+// );
+
 //article
 $article-spacing        : 13px !default;
 
 //section
 $section-spacing        : 13px !default;
+
 //select columns for your grid
 $grid-flex              : 16 !default;
 $grid-float             : 12 !default;
 $grid-fix               : 12 !default;
 //add margin to columns on default grid
 $grid-space             : .5% !default;
-//for mediaqueries
-$break-point            : 1024px !default;
 
 //Universal params
 $border-radius          : 5px !default;
 
 //button & inputs
-$button-height          : 30px !default;
+$button-height          : auto!default;
 $button-min-width       : 120px !default;
 $button-padding         : 7px 12px;
 $button-weight          : 700 !default;
 $button-font-size       : $font-size !default;
 $button-color           : $colour-button !default;
 $button-background      : $colour-btn-default!default;
+
+$button-ui:(
+  primary:$peter-river,
+  safe:$turquoise,
+  warning:$sun-flower,
+  risk:$pomegranate
+);
+
 //input
 $input-height           : 30px !default;
 $input-color            : $colour-input !default;
@@ -60,7 +78,23 @@ $input-font-size        : $font-size !default;
 $input-border           : 1px solid $colour-input-border !default;
 $input-background       : $colour-input-background !default;
 
+$table-th-padding       : 9px !default;
+$table-th-align         : left !default;
+$table-th-font-size     : $font-size !default;
+$table-tr-background    : #fbfbfb;
+
+//burger navigation
+$nav-burger-color       : $colour-nav-burger;
+
 //tooltip-size
 $tooltip-small          : 120px !default;
 $tooltip-medium         : 240px !default;
 $tooltip-large          : 360px !default;
+
+//progress-bar
+$progress-background    : #ccc;
+$progress-height        : 35px;
+$progress-bar-background: #2980b9;
+
+$progress-bar-font-color: white;
+$progress-bar-font-size : $font-size;

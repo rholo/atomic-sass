@@ -8,17 +8,21 @@ a.#{$prefix}link {
   .fa{
     margin: 0 .5rem 0 0;
   }
+  &:hover {
+    text-decoration: underline;
+  }
 }
 .#{$prefix}link-button{
+  height: $button-height;
   display: inline-block;
   cursor:pointer;
-  padding:4px 12px;
+  padding:$button-padding;
   background-color: $colour-link-btn;
   font-weight: $button-weight;
-  color: white;
+  color: $button-color;
   text-align: center;
   text-decoration: none;
-  @include border(1px solid darken($colour-link-btn, 5%));
+  border:1px solid darken($colour-link-btn, 5%);
   @include border-radius($border-radius);
   @include transition(all 100ms linear);
   > .fa {
@@ -33,8 +37,4 @@ a.#{$prefix}link {
       cursor:not-allowed!important;
       opacity: .5;
   }
-}
-a.#{$prefix}link-size-big{
-  font-size: 2.2rem;
-  padding: 12px 28px;
 }
