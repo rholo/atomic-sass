@@ -4,8 +4,11 @@
 
 @import "core/reset";
 @import "core/typography";
-@import "core/reset";
 
+// grids
+@import "grids/flex";
+//helpers
+@import "toolset/helpers";
 /*
 //basic layout
 @import "rocket/layout";
@@ -28,8 +31,7 @@
 //table
 @import "rocket/table";
 
-//helpers
-@import "rocket/helpers";
+
 
 //components
 //@import "rocket/components/tooltip";
