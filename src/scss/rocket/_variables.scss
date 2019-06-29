@@ -1,28 +1,26 @@
-//setup colours
-@import "colors/colours.scss";
+/*
+define your own prefix to all classname if you need it!
+learn more at http://getbem.com/naming/
+*/
+$prefix:'';
 
-// Google Fonts
-@import url(http://fonts.googleapis.com/css?family=Roboto+Slab|Open+Sans:400italic,700italic,400,700);
-
-//add prefix to all classname! for example $prefix:'nt-ui'+ '_'
-// learn more at http://getbem.com/naming/
-$prefix:'' + '';
+@import 'core/colors';
+@import 'core/fonts';
 
 //Global params
-$font-primary           : 'Open Sans', Arial, "Helvetica Neue", Helvetica, sans-serif !default;
-$font-secondary         : 'Roboto Slab', Georgia, "Times New Roman", Times, serif !default;
+$font-primary           : System, Arial, "Helvetica Neue", Helvetica, sans-serif !default;
+$font-secondary         : System, Georgia, "Times New Roman", Times, serif !default;
 $font-size-global       : 62.5%!default;
 //font-size 1.4rem = 14px
 $font-size              : 1.4rem !default;
 $font-scale             : 0.25 !default;
-$font-color             : $colour-text !default;
-$font-error             : $colour-text-error !default;
+$font-color             : black !default;
 //layout configuration
 $layout-min-width       : 280px !default;
 $layout-max-width       : 100% !default;
 $layout-padding         : 0 2% !default;
 $layout-margin          : 0 !default;
-$layout-background      : $colour-background-layout !default;
+$layout-background      : white !default;
 
 $media-tablet           : 1024px;
 $media-mobile           : 480px;
@@ -56,22 +54,22 @@ $button-min-width       : 120px !default;
 $button-padding         : 7px 12px;
 $button-weight          : 700 !default;
 $button-font-size       : $font-size !default;
-$button-color           : $colour-button !default;
-$button-background      : $colour-btn-default!default;
+$button-color           : black !default;
+$button-background      : white !default;
 
 $button-ui:(
-  primary:$peter-river,
-  safe:$turquoise,
-  warning:$sun-flower,
-  risk:$pomegranate
+  primary:blue,
+  safe:green,
+  warning:magenta,
+  risk:yellow
 );
 
 //input settings
 $input-height           : 30px !default;
-$input-color            : $colour-input !default;
+$input-color            : black !default;
 $input-font-size        : $font-size !default;
-$input-border           : 1px solid $colour-input-border !default;
-$input-background       : $colour-input-background !default;
+$input-border           : 1px solid blue !default;
+$input-background       : white !default;
 
 // table settings
 $table-th-padding       : 9px !default;
@@ -80,7 +78,7 @@ $table-th-font-size     : $font-size !default;
 $table-tr-background    : #fbfbfb;
 
 //burger navigation
-$nav-burger-color       : $colour-nav-burger;
+$nav-burger-color       : black;
 
 //tooltip-size
 $tooltip-small          : 120px !default;

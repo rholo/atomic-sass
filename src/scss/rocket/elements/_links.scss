@@ -5,9 +5,6 @@ a.#{$prefix}link {
     darken($colour-link-default, 5.5%),
     green,
     blue);
-  .fa{
-    margin: 0 .5rem 0 0;
-  }
   &:hover {
     text-decoration: underline;
   }
@@ -25,9 +22,6 @@ a.#{$prefix}link {
   border:1px solid darken($colour-link-btn, 5%);
   @include border-radius($border-radius);
   @include transition(all 100ms linear);
-  > .fa {
-      margin-right: 3px;
-  }
   &:hover {
     background-color: darken($colour-link-btn, 5.5%);
     color:white;

@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "install": "yarn add node-sass",
+    "install": "npm i node-sass",
     "start": "node-sass --watch src/scss -o src/css"
   },
   "repository": {

@@ -3,7 +3,6 @@ body {
 }
 .#{$prefix}layout{
 //  min-width: $layout-min-width;
-    background-color: $layout-background;
     max-width: $layout-max-width;
     margin: $layout-margin;
     padding:$layout-padding;

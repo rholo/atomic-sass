@@ -1,6 +1,3 @@
-/**
- * Typography
- */
 
 //font-family
 html{
@@ -10,7 +7,6 @@ body{
     font-family: $font-primary;
     color:$font-color;
 }
-//heading config (h1 to h6)
 @include headings(){
     font-weight: normal;
     font-family: $font-secondary;
@@ -36,7 +32,4 @@ small {font-size: $font-size*0.8;}
 
 a {
   cursor:pointer;
-  .fa{
-    margin: 0 .5rem 0 0;
-  }
 }

@@ -2,9 +2,6 @@
  * @title Table
  * @description: CSS for tables
 **/
-.#{$prefix}table{
-
-}
 .#{$prefix}table-scroll-x{
   overflow-x: auto;
 }
@@ -53,25 +50,6 @@
       }
       .#{$prefix}button {
           padding: 0 12px;
-      }
-      a.fa {
-          //color: $colour-icon-table;
-          text-align: center;
-          width: 20px;
-          height: 20px;
-          border-radius: 20px;
-          background-color: transparent;
-          @include transition(all 100ms linear);
-          &:hover {
-              color: white;
-              text-decoration: none;
-              //background-color: $colour-icon-table;
-          }
-      }
-      i.fa {
-          color:#666;
-          width: 16px;
-          margin: 0 auto;
       }
       font-size: 1.2rem !important;
       line-height: 1.8 !important;

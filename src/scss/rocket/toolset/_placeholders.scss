@@ -1,0 +1,15 @@
+%divisor{
+    height: 1px;
+    background-color: #e8e8e8;
+    width: 100%;
+    margin: 10px 0;
+}
+%flex-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+%hidden{
+    display: none;
+    visibility: hidden;
+}

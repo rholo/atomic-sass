@@ -1,7 +1,4 @@
-/**
- * @title Buttons
- * @example
-**/
+
 .#{$prefix}button {
       height: $button-height;
       min-width: $button-min-width;
@@ -25,9 +22,6 @@
           cursor:not-allowed!important;
           opacity: .5;
       }
-      > .fa {
-          margin-right: 3px;
-      }
 }
 @each $name,$color in $button-ui{
   [data-button="#{$name}"],
@@ -36,13 +30,11 @@
       @include btn-state($color);
 }
 }
-[data-button="disabled"],
 .#{$prefix}button-disabled{
     color: darken(white, 20%);
     border:1px solid darken(white, 5%)!important;
     @include btn-state(white);
 }
-[data-button="minimal"],
 .#{$prefix}button-minimal{
     color:$colour-btn-minimal!important;
     @include btn-state(white);
