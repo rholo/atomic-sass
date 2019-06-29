@@ -1,6 +1,9 @@
 /*
-define your own prefix to all classname if you need it!
-learn more at http://getbem.com/naming/
+    define your own prefix to all classname if you need it!
+    learn more at http://getbem.com/naming/
+*/
+/*
+    Define your fonts
 */
 /**
  * @title _colours
@@ -110,71 +113,39 @@ html {
 
 body {
   font-family: System, Arial, "Helvetica Neue", Helvetica, sans-serif;
-  color: black; }
+  color: grey; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+  font-family: System, Georgia, "Times New Roman", Times, serif; }
 
 h1 {
-  font-weight: normal;
-  font-family: System, Georgia, "Times New Roman", Times, serif; }
-  h1 > small {
-    margin-left: .7rem; }
-
-h2 {
-  font-weight: normal;
-  font-family: System, Georgia, "Times New Roman", Times, serif; }
-  h2 > small {
-    margin-left: .7rem; }
-
-h3 {
-  font-weight: normal;
-  font-family: System, Georgia, "Times New Roman", Times, serif; }
-  h3 > small {
-    margin-left: .7rem; }
-
-h4 {
-  font-weight: normal;
-  font-family: System, Georgia, "Times New Roman", Times, serif; }
-  h4 > small {
-    margin-left: .7rem; }
-
-h5 {
-  font-weight: normal;
-  font-family: System, Georgia, "Times New Roman", Times, serif; }
-  h5 > small {
-    margin-left: .7rem; }
-
-h6 {
-  font-weight: normal;
-  font-family: System, Georgia, "Times New Roman", Times, serif; }
-  h6 > small {
-    margin-left: .7rem; }
-
-h1 {
-  font-size: 2.9rem; }
+  font-size: 4.1rem; }
   h1 > span {
     font-size: 2rem; }
 
 h2 {
-  font-size: 2.65rem; }
+  font-size: 3.65rem; }
   h2 > span {
     font-size: 1.9rem; }
 
 h3 {
-  font-size: 2.4rem; }
+  font-size: 3.2rem; }
   h3 > span {
     font-size: 1.8rem; }
 
 h4 {
-  font-size: 2.15rem; }
+  font-size: 2.75rem; }
   h4 > span {
     font-size: 1.7rem; }
 
 h5 {
-  font-size: 1.9rem; }
+  font-size: 2.3rem; }
   h5 > span {
     font-size: 1.6rem; }
 
 h6 {
-  font-size: 1.65rem; }
+  font-size: 1.85rem; }
   h6 > span {
     font-size: 1.5rem; }
 
@@ -189,114 +160,114 @@ small {
 a {
   cursor: pointer; }
 
-.grid-flex {
+.rckt-grid-flex {
   display: flex; }
 
-.grid-flex + .grid-flex {
+.rckt-grid-flex + .rckt-grid-flex {
   margin-top: .8rem; }
 
-[class*='flex-'] {
+[class*='rckt-flex-'] {
   margin-right: 0.5%; }
-  [class*='flex-']:last-of-type {
+  [class*='rckt-flex-']:last-of-type {
     margin-right: 0; }
 
-.flex-col-1 {
+.rckt-flex-col-1 {
   flex: 1; }
 
-.flex-col-2 {
+.rckt-flex-col-2 {
   flex: 2; }
 
-.flex-col-3 {
+.rckt-flex-col-3 {
   flex: 3; }
 
-.flex-col-4 {
+.rckt-flex-col-4 {
   flex: 4; }
 
-.flex-col-5 {
+.rckt-flex-col-5 {
   flex: 5; }
 
-.flex-col-6 {
+.rckt-flex-col-6 {
   flex: 6; }
 
-.flex-col-7 {
+.rckt-flex-col-7 {
   flex: 7; }
 
-.flex-col-8 {
+.rckt-flex-col-8 {
   flex: 8; }
 
-.flex-col-9 {
+.rckt-flex-col-9 {
   flex: 9; }
 
-.flex-col-10 {
+.rckt-flex-col-10 {
   flex: 10; }
 
-.flex-col-11 {
+.rckt-flex-col-11 {
   flex: 11; }
 
-.flex-col-12 {
+.rckt-flex-col-12 {
   flex: 12; }
 
-.flex-col-13 {
+.rckt-flex-col-13 {
   flex: 13; }
 
-.flex-col-14 {
+.rckt-flex-col-14 {
   flex: 14; }
 
-.flex-col-15 {
+.rckt-flex-col-15 {
   flex: 15; }
 
-.flex-col-16 {
+.rckt-flex-col-16 {
   flex: 16; }
 
 @media only screen and (min-width: 470px) and (max-width: 1024px) {
-  [class*='flex-'] {
+  [class*='rckt-flex-'] {
     flex: 2 !important; } }
 
 @media only screen and (max-width: 470px) {
-  .grid-flex {
+  .rckt-grid-flex {
     display: block; }
-  [class*='flex-'] {
+  [class*='rckt-flex-'] {
     flex: 1 !important;
     margin-right: 0; }
-  [class*='flex-']:last-of-type {
+  [class*='rckt-flex-']:last-of-type {
     margin-top: 5px; } }
 
-.float-right:after, .float-right:before,
-.float-left:after,
-.float-left:before {
+.rckt-float-right:after, .rckt-float-right:before,
+.rckt-float-left:after,
+.rckt-float-left:before {
   clear: both; }
 
-.float-left {
+.rckt-float-left {
   float: left; }
 
-.float-right {
+.rckt-float-right {
   float: right; }
 
-.align-left {
+.rckt-align-left {
   text-align: left; }
 
-.align-right {
+.rckt-align-right {
   text-align: right; }
 
-.align-center {
+.rckt-align-center {
   text-align: center; }
 
-.disabled {
+.rckt-disabled {
   cursor: not-allowed !important; }
 
-a.disabled {
+a.rckt-disabled {
   pointer-events: none !important; }
 
-.hidden {
+.rckt-hidden {
   display: none;
   visibility: hidden; }
 
-.center-flex {
+.rckt-center-flex {
   display: flex;
   align-items: center;
   justify-content: center; }
 
-hr.divisor {
+hr.rckt-divisor {
   height: 1px;
   background-color: #e8e8e8;
   width: 100%;
@@ -311,11 +282,6 @@ hr.divisor {
 
 @import "rocket/components/nav-burger";
 
-//grids: can use all or just one!
-@import "rocket/grid-flex";
-@import "rocket/grid-float";
-@import "rocket/grid-fix";
-
 //inputs
 @import "rocket/buttons";
 @import "rocket/links";
@@ -323,8 +289,6 @@ hr.divisor {
 
 //table
 @import "rocket/table";
-
-
 
 //components
 //@import "rocket/components/tooltip";

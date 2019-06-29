@@ -1,8 +1,6 @@
-/*
-define your own prefix to all classname if you need it!
-learn more at http://getbem.com/naming/
-*/
-$prefix:'';
+
+
+$prefix:''!default;
 
 @import 'core/colors';
 @import 'core/fonts';
@@ -13,7 +11,7 @@ $font-secondary         : System, Georgia, "Times New Roman", Times, serif !defa
 $font-size-global       : 62.5%!default;
 //font-size 1.4rem = 14px
 $font-size              : 1.4rem !default;
-$font-scale             : 0.25 !default;
+$font-scale             : 0.45 !default;
 $font-color             : black !default;
 //layout configuration
 $layout-min-width       : 280px !default;

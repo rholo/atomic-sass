@@ -1,0 +1,16 @@
+// configurate my theme!
+
+/*
+    define your own prefix to all classname if you need it!
+    learn more at http://getbem.com/naming/
+*/
+$prefix:'rckt-';
+/*
+    Define your fonts
+*/
+$font-size: 1.4rem;
+$font-color: grey;
+
+// define just that you need it!
+$grids-flex: true;
+$grid-float: false;

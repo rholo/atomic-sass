@@ -7,8 +7,12 @@
 
 // grids
 @import "grids/flex";
+// @import "rocket/grid-float";
+// @import "rocket/grid-fix";
+
 //helpers
 @import "toolset/helpers";
+
 /*
 //basic layout
 @import "rocket/layout";
@@ -18,11 +22,6 @@
 
 @import "rocket/components/nav-burger";
 
-//grids: can use all or just one!
-@import "rocket/grid-flex";
-@import "rocket/grid-float";
-@import "rocket/grid-fix";
-
 //inputs
 @import "rocket/buttons";
 @import "rocket/links";
@@ -30,8 +29,6 @@
 
 //table
 @import "rocket/table";
-
-
 
 //components
 //@import "rocket/components/tooltip";

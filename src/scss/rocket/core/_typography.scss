@@ -7,12 +7,9 @@ body{
     font-family: $font-primary;
     color:$font-color;
 }
-@include headings(){
+@include headers(){
     font-weight: normal;
     font-family: $font-secondary;
-    > small{
-      margin-left: .7rem;
-    }
 }
 @for $i from 1 through 6 {
     h#{$i}{

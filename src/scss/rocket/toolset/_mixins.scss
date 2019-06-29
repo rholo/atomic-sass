@@ -107,6 +107,11 @@ column-gap: $gap;
       }
     }
 }
+@mixin headers() {
+  h1,h2,h3,h4,h5,h6{
+    @content;
+  }
+}
 @mixin link-state($link, $hover, $visit, $active) {
     color: $link;
     &:hover {
