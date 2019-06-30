@@ -1,4 +1,4 @@
-@if $grids-flex {
+@if $grid-flex {
     .#{$prefix}grid-flex{
         display: flex;
     }
@@ -12,7 +12,7 @@
         }
     }
 
-    @for $i from 1 through $grid-flex {
+    @for $i from 1 through $grid-flex-col {
         .#{$prefix}flex-col-#{$i} {flex:$i}
     }
 

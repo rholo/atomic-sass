@@ -27,99 +27,185 @@ article, aside, canvas, figure, figure img, figcaption, hgroup, footer, header, 
   display: block; }
 
 html {
-  font-size: 62.5%;
-  -webkit-text-size-adjust: 62.5%;
-  -ms-text-size-adjust: 62.5%; }
+  font-size: 100%;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%; }
 
 body {
-  font-family: arial;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   color: black;
+  font-size: 1.4rem;
   font-weight: normal;
   line-height: 1.6875;
   -webkit-font-smoothing: antialiased;
-  -webkit-touch-callout: none;
   -webkit-text-size-adjust: none;
   -webkit-user-select: text;
   text-rendering: optimizeLegibility; }
-
-p, span, label, a, li, ol {
-  font-size: 1.4rem;
-  line-height: 2.38rem;
-  color: inherit; }
 
 small {
   font-size: 1.12rem; }
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: normal;
-  font-family: System; }
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; }
 
 h1 {
-  font-size: 4.1rem; }
-  h1 > span {
+  font-size: 2.6rem; }
+  h1 > span, h1 small {
     font-size: 2rem; }
 
 h2 {
-  font-size: 3.65rem; }
-  h2 > span {
+  font-size: 2.4rem; }
+  h2 > span, h2 small {
     font-size: 1.9rem; }
 
 h3 {
-  font-size: 3.2rem; }
-  h3 > span {
+  font-size: 2.2rem; }
+  h3 > span, h3 small {
     font-size: 1.8rem; }
 
 h4 {
-  font-size: 2.75rem; }
-  h4 > span {
+  font-size: 2rem; }
+  h4 > span, h4 small {
     font-size: 1.7rem; }
 
 h5 {
-  font-size: 2.3rem; }
-  h5 > span {
+  font-size: 1.8rem; }
+  h5 > span, h5 small {
     font-size: 1.6rem; }
 
 h6 {
-  font-size: 1.85rem; }
-  h6 > span {
+  font-size: 1.6rem; }
+  h6 > span, h6 small {
     font-size: 1.5rem; }
 
-.rckt-float-right:after, .rckt-float-right:before,
-.rckt-float-left:after,
-.rckt-float-left:before {
+body {
+  overflow-x: hidden; }
+
+.layout {
+  max-width: 100%;
+  margin: 0;
+  padding: 0 2%;
+  position: relative; }
+  .layout .article > header {
+    margin-bottom: 13px; }
+  .layout .article .section > header {
+    margin-bottom: 13px; }
+  .layout .article .section .section-content {
+    position: relative; }
+  .layout .article .section > footer {
+    margin-top: 13px; }
+  .layout .article > footer {
+    margin-top: 13px; }
+
+.grid-flex {
+  display: flex; }
+
+.grid-flex + .grid-flex {
+  margin-top: .8rem; }
+
+[class*='flex-'] {
+  margin-right: 0.5%; }
+  [class*='flex-']:last-of-type {
+    margin-right: 0; }
+
+.flex-col-1 {
+  flex: 1; }
+
+.flex-col-2 {
+  flex: 2; }
+
+.flex-col-3 {
+  flex: 3; }
+
+.flex-col-4 {
+  flex: 4; }
+
+.flex-col-5 {
+  flex: 5; }
+
+.flex-col-6 {
+  flex: 6; }
+
+.flex-col-7 {
+  flex: 7; }
+
+.flex-col-8 {
+  flex: 8; }
+
+.flex-col-9 {
+  flex: 9; }
+
+.flex-col-10 {
+  flex: 10; }
+
+.flex-col-11 {
+  flex: 11; }
+
+.flex-col-12 {
+  flex: 12; }
+
+.flex-col-13 {
+  flex: 13; }
+
+.flex-col-14 {
+  flex: 14; }
+
+.flex-col-15 {
+  flex: 15; }
+
+.flex-col-16 {
+  flex: 16; }
+
+@media only screen and (min-width: 480px) and (max-width: 1024px) {
+  [class*='flex-'] {
+    flex: 2 !important; } }
+
+@media only screen and (max-width: 480px) {
+  .grid-flex {
+    display: block; }
+  [class*='flex-'] {
+    flex: 1 !important;
+    margin-right: 0; }
+  [class*='flex-']:last-of-type {
+    margin-top: 5px; } }
+
+.float-right:after, .float-right:before,
+.float-left:after,
+.float-left:before {
   clear: both; }
 
-.rckt-float-left {
+.float-left {
   float: left; }
 
-.rckt-float-right {
+.float-right {
   float: right; }
 
-.rckt-align-left {
+.align-left {
   text-align: left; }
 
-.rckt-align-right {
+.align-right {
   text-align: right; }
 
-.rckt-align-center {
+.align-center {
   text-align: center; }
 
-.rckt-disabled {
+.disabled {
   cursor: not-allowed !important; }
 
-a.rckt-disabled {
+a.disabled {
   pointer-events: none !important; }
 
-.rckt-hidden {
+.hidden {
   display: none;
   visibility: hidden; }
 
-.rckt-center-flex {
+.center-flex {
   display: flex;
   align-items: center;
   justify-content: center; }
 
-hr.rckt-divisor {
+hr.divisor {
   height: 1px;
   background-color: #e8e8e8;
   width: 100%;

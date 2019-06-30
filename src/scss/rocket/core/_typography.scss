@@ -6,20 +6,19 @@ html{
 body{
     font-family: $font-primary;
     color:$font-color;
+    font-size:$font-size;
     font-weight: normal;
     line-height: 1.6875;
     -webkit-font-smoothing: antialiased;
-    -webkit-touch-callout: none;
     -webkit-text-size-adjust: none;
     -webkit-user-select: text;
     text-rendering: optimizeLegibility;
+   // line-height: $font-size*1.7;
 }
-// if put this on body ?
-p, span, label, a, li, ol {
-    font-size:$font-size;
-    line-height: $font-size*1.7;
-    color: inherit;
-}
+// p, span, label, a, li, ol {
+
+// }
+
 small {font-size: $font-size*0.8;}
 
 @include headers(){
@@ -29,7 +28,7 @@ small {font-size: $font-size*0.8;}
 @for $i from 1 through 6 {
     h#{$i}{
         font-size:$font-size + $font-scale * (7 - $i);
-        > span{
+        > span, small{
           font-size:  $font-size + 0.1 * (7 - $i);
         }
     }

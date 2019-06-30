@@ -1,19 +1,19 @@
 
 $prefix:''!default;
 // normalize some stuff
-$reset-table    : true !default;
-$reset-buttons  : true !default;
-$reset-inputs   : true !default;
 $inputs         : true !default;
 $buttons        : true !default;
 $grid-flex      : true !default;
+$grid-float     : false !default;
+$grid-fix       : false !default;
+
 // colors
 $red    : Crimson!default;
-$green  : ForestGreen!default;
-$blue   : Navy!default;
+$green  : DarkCyan!default;
+$blue   : MediumBlue!default;
 $orange : DarkOrange!default;
 $yellow : Gold!default;
-$violet : BlueViolet!default;
+$violet : DarkViolet!default;
 $grey   : DarkGrey !default;
 // @import 'core/colors';
 @import 'core/fonts';
@@ -21,16 +21,16 @@ $grey   : DarkGrey !default;
 //Global params
 $font-primary           : System, Arial, "Helvetica Neue", Helvetica, sans-serif !default;
 $font-secondary         : System, Georgia, "Times New Roman", Times, serif !default;
-$font-size-global       : 62.5%!default;
+$font-size-global       : 100%!default;
 //font-size 1.4rem = 14px
 $font-size              : 1.4rem !default;
-$font-scale             : 0.45 !default;
+$font-scale             : 0.2 !default;
 $font-color             : black !default;
 
 //select columns for your grid
-$grid-flex              : 16 !default;
-$grid-float             : 12 !default;
-$grid-fix               : 12 !default;
+$grid-flex-col              : 16 !default;
+$grid-float-cols             : 12 !default;
+$grid-fix-cols               : 12 !default;
 //add margin to columns on default grid
 $grid-space             : .5% !default;
 
@@ -57,8 +57,6 @@ $article-spacing        : 13px !default;
 //section
 $section-spacing        : 13px !default;
 
-
-
 //Universal params
 $border-radius          : 5px !default;
 
@@ -72,10 +70,11 @@ $button-color           : black !default;
 $button-background      : white !default;
 
 $button-ui:(
-  primary:blue,
-  safe:green,
-  warning:magenta,
-  risk:yellow
+  blue: $blue,
+  grey: $grey,
+  green: $green,
+  red:$red,
+  yellow: $yellow
 );
 
 //input settings

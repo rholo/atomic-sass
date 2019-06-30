@@ -34,15 +34,15 @@ column-gap: $gap;
 -moz-column-gap: $gap;
 -moz-column-width: $width;
 }
-@mixin circle($size){
+@mixin circle($size) {
   border-radius: 50%;
   width: $size;
   height: $size;
-  line-height:$size;
-  display: block;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-@mixin background($img,$size,$pos,$repeat){
+@mixin background($img,$size,$pos,$repeat) {
   background-image: $img;
   background-repeat: $repeat;
   background-position: $pos;
@@ -95,7 +95,7 @@ column-gap: $gap;
   }
 }
 @mixin push-auto(){
-    margin:{
+    margin{
         left:auto;
         right:auto;
     }
