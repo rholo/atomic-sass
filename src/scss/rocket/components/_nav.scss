@@ -1,6 +1,6 @@
-/**
- * Description: Navigation
-**/
+li {
+  list-style-type: none;
+}
 [class*="#{$prefix}main-nav"]{
     > ul{
       overflow:hidden;

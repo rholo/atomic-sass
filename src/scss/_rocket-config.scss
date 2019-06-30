@@ -5,12 +5,20 @@
     learn more at http://getbem.com/naming/
 */
 $prefix:'rckt-';
+// you dont need normalize everything
+$reset-table: false;
+$reset-inputs: false;
 /*
     Define your fonts
 */
+$font-primary: arial;
+$font-secondary: System;
 $font-size: 1.4rem;
-$font-color: grey;
 
+/*
+    Can define your palette colors by name
+    https://htmlcolorcodes.com/color-names/
+*/
 // define just that you need it!
-$grids-flex: true;
-$grid-float: false;
+$grids-flex : true;
+$flex-cols  : 16;

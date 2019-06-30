@@ -1,7 +1,15 @@
-/**
- * @title Table
- * @description: CSS for tables
-**/
+@if $reset-table {
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    max-width: 100%;
+    width: 100%;
+    td, tr {
+        border: 0;
+    }
+  }
+}
+
 .#{$prefix}table-scroll-x{
   overflow-x: auto;
 }

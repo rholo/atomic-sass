@@ -5,24 +5,16 @@
 /*
     Define your fonts
 */
-/**
- * @title _colours
- * @description: main configuration palette colour and look n feel based on
- * http://chir.ag/projects/name-that-color/
-**/
+/*
+    Can define your palette colors by name
+    https://htmlcolorcodes.com/color-names/
+*/
 @font-face {
   font-family: System;
   font-style: normal;
   font-weight: 300;
   src: local(".SFNSText-Light"), local(".HelveticaNeueDeskInterface-Light"), local(".LucidaGrandeUI"), local("Ubuntu Light"), local("Segoe UI Light"), local("Roboto-Light"), local("DroidSans"), local("Tahoma"); }
 
-/**
- * @author Rodrigo Ahumada, Front-end Developer
- * @description Custom CSS initial and global Config.
- * @link https://github.com/rholo/resets
- * @version 2.0.0
- * @licence free (public domain)
- */
 html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, hr, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figure, figcaption, hgroup, menu, footer, header, nav, section, summary, time, mark, audio, video, img, main, input, textarea, select {
   border: 0;
   margin: 0;
@@ -34,7 +26,14 @@ html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pr
 article, aside, canvas, figure, figure img, figcaption, hgroup, footer, header, nav, section, audio, video, main, img {
   display: block; }
 
+html {
+  font-size: 62.5%;
+  -webkit-text-size-adjust: 62.5%;
+  -ms-text-size-adjust: 62.5%; }
+
 body {
+  font-family: arial;
+  color: black;
   font-weight: normal;
   line-height: 1.6875;
   -webkit-font-smoothing: antialiased;
@@ -43,81 +42,9 @@ body {
   -webkit-user-select: text;
   text-rendering: optimizeLegibility; }
 
-a {
-  text-decoration: none;
-  outline: 0; }
-  a:link, a:visited, a:hover, a:active {
-    outline: 0; }
-  a img {
-    border: 0; }
-
-progress[value] {
-  -webkit-appearance: none;
-  appearance: none;
-  width: 100%;
-  height: 35px;
-  border: none;
-  color: inherit; }
-  progress[value]::-webkit-progress-bar {
-    background-color: #eee;
-    border-radius: 2px; }
-  progress[value]::-webkit-progress-value {
-    background-color: #2980b9; }
-
-li {
-  list-style-type: none; }
-
-textarea {
-  vertical-align: top;
-  resize: vertical;
-  font-family: inherit;
-  width: 100%;
-  padding: 10px; }
-
-input, select {
-  vertical-align: baseline; }
-
-select {
-  background: white;
-  -webkit-appearance: menulist-button; }
-
-input[type="search"]::-ms-clear, input[type="search"]::-webkit-search-cancel-button {
-  display: none; }
-
-input[type="file"] {
-  background: none; }
-
-input[type="checkbox"], input[type="radio"] {
-  padding: 0; }
-
-button, input[type="button"], input[type="reset"], input[type="submit"] {
-  cursor: pointer;
-  border: 0;
-  -webkit-appearance: button; }
-  button:disabled, input[type="button"]:disabled, input[type="reset"]:disabled, input[type="submit"]:disabled {
-    cursor: not-allowed;
-    opacity: .5; }
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-  max-width: 100%;
-  width: 100%; }
-  table td, table tr {
-    border: 0; }
-
-html {
-  font-size: 62.5%;
-  -webkit-text-size-adjust: 62.5%;
-  -ms-text-size-adjust: 62.5%; }
-
-body {
-  font-family: System, Arial, "Helvetica Neue", Helvetica, sans-serif;
-  color: grey; }
-
 h1, h2, h3, h4, h5, h6 {
   font-weight: normal;
-  font-family: System, Georgia, "Times New Roman", Times, serif; }
+  font-family: System; }
 
 h1 {
   font-size: 4.1rem; }
@@ -219,11 +146,11 @@ a {
 .rckt-flex-col-16 {
   flex: 16; }
 
-@media only screen and (min-width: 470px) and (max-width: 1024px) {
+@media only screen and (min-width: 480px) and (max-width: 1024px) {
   [class*='rckt-flex-'] {
     flex: 2 !important; } }
 
-@media only screen and (max-width: 470px) {
+@media only screen and (max-width: 480px) {
   .rckt-grid-flex {
     display: block; }
   [class*='rckt-flex-'] {

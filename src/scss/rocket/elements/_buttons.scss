@@ -1,4 +1,14 @@
-
+@if $reset-buttons{
+    button, input[type="button"], input[type="reset"], input[type="submit"] {
+      cursor: pointer;
+      border: 0;
+      -webkit-appearance: button;
+      &:disabled{
+        cursor: not-allowed;
+        opacity: .5;
+      }
+    }
+}
 .#{$prefix}button {
       height: $button-height;
       min-width: $button-min-width;

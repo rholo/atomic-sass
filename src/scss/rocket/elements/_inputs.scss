@@ -1,7 +1,35 @@
-/**
- * @title Inputs
- * @example
-**/
+@if $reset-inputs{
+  textarea {
+    vertical-align: top;
+    resize: vertical;
+    font-family: inherit;
+    width: 100%;
+    padding: 10px;
+  }
+
+  input, select {
+    vertical-align: baseline;
+  }
+
+  select {
+      background: white;
+    -webkit-appearance: menulist-button;
+  }
+  input {
+    &[type="search"] {
+      &::-ms-clear, &::-webkit-search-cancel-button {
+        display: none;
+      }
+    }
+    &[type="file"] {
+      background: none;
+    }
+    &[type="checkbox"],&[type="radio"]{
+        padding: 0;
+    }
+  }
+}
+
 .#{$prefix}input,
 .#{$prefix}select,
 .#{$prefix}textarea {

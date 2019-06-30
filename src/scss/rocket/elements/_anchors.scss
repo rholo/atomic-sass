@@ -1,4 +1,13 @@
-//disabled link in helpers .#{$prefix}disabled
+a {
+  text-decoration: none;
+  outline: 0;
+  &:link, &:visited, &:hover, &:active {
+    outline: 0;
+  }
+  img {
+    border: 0;
+  }
+}
 a.#{$prefix}link {
   @include link-state(
     $colour-link-default,

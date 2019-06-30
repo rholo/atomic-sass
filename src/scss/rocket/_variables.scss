@@ -1,8 +1,18 @@
 
-
 $prefix:''!default;
-
-@import 'core/colors';
+// normalize some stuff
+$reset-table    : true !default;
+$reset-buttons  : true !default;
+$reset-inputs   : true !default;
+// colors
+$red    : Crimson!default;
+$green  : ForestGreen!default;
+$blue   : Navy!default;
+$orange : DarkOrange!default;
+$yellow : Gold!default;
+$violet : BlueViolet!default;
+$grey   : DarkGrey !default;
+// @import 'core/colors';
 @import 'core/fonts';
 
 //Global params
@@ -13,6 +23,14 @@ $font-size-global       : 62.5%!default;
 $font-size              : 1.4rem !default;
 $font-scale             : 0.45 !default;
 $font-color             : black !default;
+
+//select columns for your grid
+$grid-flex              : 16 !default;
+$grid-float             : 12 !default;
+$grid-fix               : 12 !default;
+//add margin to columns on default grid
+$grid-space             : .5% !default;
+
 //layout configuration
 $layout-min-width       : 280px !default;
 $layout-max-width       : 100% !default;
@@ -21,7 +39,7 @@ $layout-margin          : 0 !default;
 $layout-background      : white !default;
 
 $media-tablet           : 1024px;
-$media-mobile           : 470px;
+$media-mobile           : 480px;
 
 // $media:(
 //     desktop:1024px,
@@ -36,12 +54,7 @@ $article-spacing        : 13px !default;
 //section
 $section-spacing        : 13px !default;
 
-//select columns for your grid
-$grid-flex              : 16 !default;
-$grid-float             : 12 !default;
-$grid-fix               : 12 !default;
-//add margin to columns on default grid
-$grid-space             : .5% !default;
+
 
 //Universal params
 $border-radius          : 5px !default;
