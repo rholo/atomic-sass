@@ -9,46 +9,49 @@
       }
     }
 }
-.#{$prefix}button {
-      height: $button-height;
-      min-width: $button-min-width;
-      padding: $button-padding;
-      background-color: $button-background;
-      color: $button-color;
-      font-weight: $button-weight;
-      font-size:$button-font-size;
-      text-transform: uppercase;
-      white-space:nowrap;
-      text-overflow: ellipsis;
-      outline: none;
-      vertical-align: middle;
-      border:1px solid darken($button-background, 5%);
-      @include border-radius($border-radius);
-      @include transition(all 100ms linear);
-      &:hover {
-        background-color: darken($button-background, 6.5%);
-      }
-      &:disabled {
-          cursor:not-allowed!important;
-          opacity: .5;
-      }
+@if $buttons{
+  .#{$prefix}button {
+    height: $button-height;
+    min-width: $button-min-width;
+    padding: $button-padding;
+    background-color: $button-background;
+    color: $button-color;
+    font-weight: $button-weight;
+    font-size:$button-font-size;
+    text-transform: uppercase;
+    white-space:nowrap;
+    text-overflow: ellipsis;
+    outline: none;
+    vertical-align: middle;
+    border:1px solid darken($button-background, 5%);
+    @include border-radius($border-radius);
+    @include transition(all 100ms linear);
+    &:hover {
+      background-color: darken($button-background, 6.5%);
+    }
+    &:disabled {
+        cursor:not-allowed!important;
+        opacity: .5;
+    }
 }
 @each $name,$color in $button-ui{
-  [data-button="#{$name}"],
-  .#{$prefix}button-#{$name}{
-      border:1px solid darken($color, 5%)!important;
-      @include btn-state($color);
+[data-button="#{$name}"],
+.#{$prefix}button-#{$name}{
+    border:1px solid darken($color, 5%)!important;
+    @include btn-state($color);
 }
 }
 .#{$prefix}button-disabled{
-    color: darken(white, 20%);
-    border:1px solid darken(white, 5%)!important;
-    @include btn-state(white);
+  color: darken(white, 20%);
+  border:1px solid darken(white, 5%)!important;
+  @include btn-state(white);
 }
 .#{$prefix}button-minimal{
-    color:$colour-btn-minimal!important;
-    @include btn-state(white);
-    &:hover{
-        color:darken($colour-btn-minimal,6.5%)!important;
-    }
+  color:$colour-btn-minimal!important;
+  @include btn-state(white);
+  &:hover{
+      color:darken($colour-btn-minimal,6.5%)!important;
+  }
+}
+
 }

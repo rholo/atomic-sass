@@ -29,51 +29,53 @@
     }
   }
 }
-
-.#{$prefix}input,
-.#{$prefix}select,
-.#{$prefix}textarea {
-  width: 100%;
-  padding: 6px;
-  outline: none;
-  border: $input-border;
-  font-size: $input-font-size;
-  font-family: inherit;
-  color: $input-color;
-  background-color: $colour-input-background;
-  @include border-radius($border-radius);
-  &::placeholder{
-    color:#ccc;
-  }
-}
-.#{$prefix}input,
-.#{$prefix}select{
-    height: $input-height;
-    &:disabled {
-        background: #efefef;
-      }
-}
-select[disabled] > option{
-    color:#ccc!important;
-}
-.#{$prefix}select[multiple] {
-    min-height: 120px;
-}
-input {
-  &[type="file"] {
-    border: 0 !important;
+@if $inputs {
+  .#{$prefix}input,
+  .#{$prefix}select,
+  .#{$prefix}textarea {
+    width: 100%;
+    padding: 6px;
     outline: none;
+    border: $input-border;
+    font-size: $input-font-size;
+    font-family: inherit;
+    color: $input-color;
+    background-color: $colour-input-background;
+    @include border-radius($border-radius);
+    &::placeholder{
+      color:#ccc;
+    }
   }
-  &:focus {
-    border-color: #65B3CC !important;
-    background-color: #F9F9F9 !important;
+  .#{$prefix}input,
+  .#{$prefix}select{
+      height: $input-height;
+      &:disabled {
+          background: #efefef;
+        }
   }
-}
-.#{$prefix}label-input{
-  display: block;
-  input[type="checkbox"] {
-    float: left;
-    margin-top: 4px;
-    margin-right: 7px;
+  select[disabled] > option{
+      color:#ccc!important;
   }
+  .#{$prefix}select[multiple] {
+      min-height: 120px;
+  }
+  input {
+    &[type="file"] {
+      border: 0 !important;
+      outline: none;
+    }
+    &:focus {
+      border-color: #65B3CC !important;
+      background-color: #F9F9F9 !important;
+    }
+  }
+  .#{$prefix}label-input{
+    display: block;
+    input[type="checkbox"] {
+      float: left;
+      margin-top: 4px;
+      margin-right: 7px;
+    }
+  }
+
 }

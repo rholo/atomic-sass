@@ -1,35 +1,37 @@
-//use for IE11+
-.#{$prefix}grid-flex{
-    display: flex;
-}
-.#{$prefix}grid-flex + .#{$prefix}grid-flex{
-    margin-top:.8rem;
-}
-[class*='#{$prefix}flex-']{
-    margin-right: $grid-space;
-    &:last-of-type{
-        margin-right: 0;
+@if $grids-flex {
+    .#{$prefix}grid-flex{
+        display: flex;
     }
-}
-
-@for $i from 1 through $grid-flex {
-    .#{$prefix}flex-col-#{$i} {flex:$i}
-}
-
-@include tablet{
-    [class*='#{$prefix}flex-']{
-        flex:2!important;
-    }
-};
-@include mobile{
-    .#{$prefix}grid-flex {
-        display: block;
+    .#{$prefix}grid-flex + .#{$prefix}grid-flex{
+        margin-top:.8rem;
     }
     [class*='#{$prefix}flex-']{
-        flex:1!important;
-        margin-right: 0;
+        margin-right: $grid-space;
+        &:last-of-type{
+            margin-right: 0;
+        }
     }
-    [class*='#{$prefix}flex-']:last-of-type{
-        margin-top: 5px;
+
+    @for $i from 1 through $grid-flex {
+        .#{$prefix}flex-col-#{$i} {flex:$i}
     }
-};
+
+    @include tablet{
+        [class*='#{$prefix}flex-']{
+            flex:2!important;
+        }
+    };
+    @include mobile{
+        .#{$prefix}grid-flex {
+            display: block;
+        }
+        [class*='#{$prefix}flex-']{
+            flex:1!important;
+            margin-right: 0;
+        }
+        [class*='#{$prefix}flex-']:last-of-type{
+            margin-top: 5px;
+        }
+    };
+
+}

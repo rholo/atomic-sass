@@ -5,9 +5,11 @@
     learn more at http://getbem.com/naming/
 */
 $prefix:'rckt-';
-// you dont need normalize everything
-$reset-table: false;
-$reset-inputs: false;
+// ask yourself if you need all this stuff!
+$reset-table    : false;
+$reset-inputs   : false;
+$inputs         : false;
+$buttons        : false;
 /*
     Define your fonts
 */
@@ -20,5 +22,5 @@ $font-size: 1.4rem;
     https://htmlcolorcodes.com/color-names/
 */
 // define just that you need it!
-$grids-flex : true;
+$grids-flex : false;
 $flex-cols  : 16;
