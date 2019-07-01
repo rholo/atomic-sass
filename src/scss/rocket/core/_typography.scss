@@ -15,10 +15,6 @@ body{
     text-rendering: optimizeLegibility;
    // line-height: $font-size*1.7;
 }
-// p, span, label, a, li, ol {
-
-// }
-
 small {font-size: $font-size*0.8;}
 
 @include headers(){

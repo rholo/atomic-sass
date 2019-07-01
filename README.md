@@ -1,26 +1,17 @@
 Rocket
 =========
-Rocket is a baseline SCSS to start your own CSS Framework.
+Rocket is a baseline SCSS to start your own CSS Framework, define just that you need and make your own lightweight and clean CSS Framework.
 
-Included:
-- headings
-- paragraph
-- link
-- list
-- buttons
-- inputs
-- table
-- grids
+Included HTML elements ready to use and custom components
 
 and more:
 - three kind of grids, flex included for IE11+, and two standard grids for older
-- UI pallette colours using [Flat UI Colors]
-- Icons ready to use [Font Awesome]
+- ColorName pallete colors
 
-#### Now add custom prefix to all classname
-now you can make your own $prefix for all classname
+#### add your own prefix to all classname
+now you can make your own $prefix for all classname in just one variable!
 
-#### three type's grid (flex included!)
+#### three type's grids
 to define margin in float and flex grid $grid-space: .5%
 
 | grid type | Number of columns
@@ -57,46 +48,6 @@ to define margin in float and flex grid $grid-space: .5%
 | $colour-btn-minimal | minimal button
 | $colour_nav-burger | define color of your burger navigation
 
-#### Layout
-by definition this is make under a standard HTML5 structure
-
-#### Main
-add class "layout" to define your main layout
-```sh
-<body>
-    <main class="layout"></main>
-</body>
-```
-#### Article
-```sh
-<article class="article">
-    <header>...
-        <section>...
-    <footer>...
-</article>
-```
-
-#### Section
-```sh
-<section class="section">
-    <header>...
-        <div class="section-content">...
-    <footer>...
-</section>
-```
-
-#### Navigation
-```sh
-<nav class="main-nav-h">
-	<ul>
-		<li><a href="javascript:;">link</a></li>
-		<!-- include font-awesome icon -->
-		<li><a href="javascript:;"><i class="fa fa-*"></i>link</a></li>
-		...
-	</ul>
-</nav>
-```
-
 #### mixins
 
 | mixin | use | variable
@@ -114,12 +65,12 @@ add class "layout" to define your main layout
 #### Buttons
 ```sh
 <!-- default color -->
-<button class="button button-default" data-button="default">Default</button>
-<button class="button button-primary" data-button="primary">Primary</button>
-<button class="button button-safe" data-button="safe">Confirm</button>
-<button class="button button-warning" data-button="warning">Atention</button>
-<button class="button button-risk" data-button="risk">Risk</button>
-<button class="button button-minimal" data-button="minimal">Minimal</button>
+<button class="button button-default">Default</button>
+<button class="button button-primary">Primary</button>
+<button class="button button-safe">Confirm</button>
+<button class="button button-warning">Atention</button>
+<button class="button button-risk">Risk</button>
+<button class="button button-minimal">Minimal</button>
 ```
 
 #### Basic Table
@@ -142,5 +93,3 @@ add class "layout" to define your main layout
 ```
 
 [rholo]: <http://rholo.cl/labs/layout-base>
-[Font Awesome]: <http://fontawesome.io/get-started/>
-[Flat UI Colors]: <http://flatuicolors.com/>

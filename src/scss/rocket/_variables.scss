@@ -1,26 +1,29 @@
 
-$prefix:''!default;
+$prefix                 :''!default;
 // normalize some stuff
-$inputs         : true !default;
-$buttons        : true !default;
-$grid-flex      : true !default;
-$grid-float     : false !default;
-$grid-fix       : false !default;
+$inputs                 : true !default;
+$buttons                : true !default;
+$table                  : false !default;
+$grid-flex              : true !default;
+$grid-float             : false !default;
+$grid-fix               : false !default;
 
 // colors
-$red    : Crimson!default;
-$green  : DarkCyan!default;
-$blue   : MediumBlue!default;
-$orange : DarkOrange!default;
-$yellow : Gold!default;
-$violet : DarkViolet!default;
-$grey   : DarkGrey !default;
+$red                    : Crimson!default;
+$green                  : DarkCyan!default;
+$blue                   : MediumBlue!default;
+$orange                 : DarkOrange!default;
+$yellow                 : Gold!default;
+$violet                 : DarkViolet!default;
+$grey                   : DarkGrey !default;
 // @import 'core/colors';
 @import 'core/fonts';
 
 //Global params
 $font-primary           : System, Arial, "Helvetica Neue", Helvetica, sans-serif !default;
 $font-secondary         : System, Georgia, "Times New Roman", Times, serif !default;
+
+$font-headings          : $font-secondary;
 $font-size-global       : 100%!default;
 //font-size 1.4rem = 14px
 $font-size              : 1.4rem !default;
@@ -28,28 +31,21 @@ $font-scale             : 0.2 !default;
 $font-color             : black !default;
 
 //select columns for your grid
-$grid-flex-col              : 16 !default;
-$grid-float-cols             : 12 !default;
-$grid-fix-cols               : 12 !default;
+$grid-flex-col          : 16 !default;
+$grid-float-cols        : 12 !default;
+$grid-fix-cols          : 12 !default;
 //add margin to columns on default grid
 $grid-space             : .5% !default;
 
 //layout configuration
 $layout-min-width       : 280px !default;
-$layout-max-width       : 100% !default;
+$layout-max-width       : 70vw !default;
 $layout-padding         : 0 2% !default;
-$layout-margin          : 0 !default;
+$layout-margin          : 0 auto!default;
 $layout-background      : white !default;
 
 $media-tablet           : 1024px;
 $media-mobile           : 480px;
-
-// $media:(
-//     desktop:1024px,
-//     tablet:768px,
-//     phone:480px,
-//     watch:230px
-// );
 
 //article
 $article-spacing        : 13px !default;
@@ -60,14 +56,16 @@ $section-spacing        : 13px !default;
 //Universal params
 $border-radius          : 5px !default;
 
+$color-link: $blue;
+
 //button & inputs
 $button-height          : auto!default;
 $button-min-width       : 120px !default;
 $button-padding         : 7px 12px;
 $button-weight          : 700 !default;
 $button-font-size       : $font-size !default;
-$button-color           : black !default;
-$button-background      : white !default;
+$button-color           : white !default;
+$button-background      : $grey !default;
 
 $button-ui:(
   blue: $blue,

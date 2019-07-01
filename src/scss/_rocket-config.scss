@@ -1,4 +1,4 @@
-// configurate my theme!
+// configurate your theme!
 
 /*
     define your own prefix to all classname if you need it!
@@ -6,17 +6,19 @@
 */
 $prefix:'';
 // ask yourself if you need all this stuff!
-$inputs     : false;
-$buttons    : false;
+$inputs     : true;
+$buttons    : true;
 $table      : false;
-/*
-    Define your fonts
-*/
+
+// Define your fonts!
 $my-fonts: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 
-$font-primary: $my-fonts;
-$font-secondary: $my-fonts;
-$font-size: 1.4rem;
+$font-primary   : $my-fonts;
+// by default heading use secondary font, you can change it if you want
+$font-secondary : $my-fonts;
+
+// this is a global font size to scale all headings and paragraph sizes
+$font-size      : 1.4rem;
 
 /*
     Can define your palette colors by name

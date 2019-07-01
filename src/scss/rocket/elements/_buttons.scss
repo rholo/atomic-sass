@@ -1,13 +1,13 @@
-    button, input[type="button"], input[type="reset"], input[type="submit"] {
-      cursor: pointer;
-      border: 0;
-      -webkit-appearance: button;
-      &:disabled{
-        cursor: not-allowed;
-        opacity: .5;
-      }
-    }
 @if $buttons{
+  button, input[type="button"], input[type="reset"], input[type="submit"] {
+    cursor: pointer;
+    border: 0;
+    -webkit-appearance: button;
+    &:disabled{
+      cursor: not-allowed;
+      opacity: .5;
+    }
+  }
   .#{$prefix}button {
     height: $button-height;
     min-width: $button-min-width;
@@ -15,8 +15,8 @@
     background-color: $button-background;
     color: $button-color;
     font-weight: $button-weight;
-    font-size:$button-font-size;
-    text-transform: uppercase;
+    font-size:$button-font-size*0.8;
+    text-transform: capitalize;
     white-space:nowrap;
     text-overflow: ellipsis;
     outline: none;
@@ -33,23 +33,23 @@
     }
 }
 @each $name,$color in $button-ui{
-[data-button="#{$name}"],
 .#{$prefix}button-#{$name}{
     border:1px solid darken($color, 5%)!important;
+    color: white;
     @include btn-state($color);
 }
 }
-.#{$prefix}button-disabled{
-  color: darken(white, 20%);
-  border:1px solid darken(white, 5%)!important;
-  @include btn-state(white);
-}
-.#{$prefix}button-minimal{
-  color:$colour-btn-minimal!important;
-  @include btn-state(white);
-  &:hover{
-      color:darken($colour-btn-minimal,6.5%)!important;
-  }
-}
+// .#{$prefix}button-disabled{
+//   color: darken(white, 20%);
+//   border:1px solid darken(white, 5%)!important;
+//   @include btn-state(white);
+// }
+// .#{$prefix}button-minimal{
+//   color:$colour-btn-minimal!important;
+//   @include btn-state(white);
+//   &:hover{
+//       color:darken($colour-btn-minimal,6.5%)!important;
+//   }
+// }
 
 }

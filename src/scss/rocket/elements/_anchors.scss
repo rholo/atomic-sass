@@ -11,34 +11,11 @@ a {
 }
 a.#{$prefix}link {
   @include link-state(
-    $colour-link-default,
-    darken($colour-link-default, 5.5%),
-    green,
-    blue);
+    $color-link,
+    darken($color-link, 5.5%),
+    $green,
+    $blue);
   &:hover {
     text-decoration: underline;
-  }
-}
-.#{$prefix}link-button{
-  height: $button-height;
-  display: inline-block;
-  cursor:pointer;
-  padding:$button-padding;
-  background-color: $colour-link-btn;
-  font-weight: $button-weight;
-  color: $button-color;
-  text-align: center;
-  text-decoration: none;
-  border:1px solid darken($colour-link-btn, 5%);
-  @include border-radius($border-radius);
-  @include transition(all 100ms linear);
-  &:hover {
-    background-color: darken($colour-link-btn, 5.5%);
-    color:white;
-    text-decoration: none;
-  }
-  &:disabled {
-      cursor:not-allowed!important;
-      opacity: .5;
   }
 }

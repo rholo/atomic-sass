@@ -1,3 +1,9 @@
+.#{$prefix}contain{
+  @include container(70vw);
+  @include mobile(){
+    width: 85vw;
+  }
+}
 .#{$prefix}float-right,
 .#{$prefix}float-left{
     &:after,

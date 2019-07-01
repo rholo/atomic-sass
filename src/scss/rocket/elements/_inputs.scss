@@ -1,3 +1,5 @@
+
+@if $inputs {
   textarea {
     vertical-align: top;
     resize: vertical;
@@ -27,7 +29,6 @@
         padding: 0;
     }
   }
-@if $inputs {
   .#{$prefix}input,
   .#{$prefix}select,
   .#{$prefix}textarea {
@@ -38,7 +39,7 @@
     font-size: $input-font-size;
     font-family: inherit;
     color: $input-color;
-    background-color: $colour-input-background;
+    background-color: white;
     @include border-radius($border-radius);
     &::placeholder{
       color:#ccc;

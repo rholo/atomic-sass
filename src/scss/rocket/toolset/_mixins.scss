@@ -23,6 +23,12 @@
         @content;
     }
 }
+@mixin container($width) {
+  width: $width;
+  margin-left:auto;
+  margin-right:auto;
+  position: relative;
+}
 @mixin column-gap($count, $width, $gap){
 column-count: $count;
 column-width: $width;

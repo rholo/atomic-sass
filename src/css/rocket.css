@@ -3,9 +3,6 @@
     learn more at http://getbem.com/naming/
 */
 /*
-    Define your fonts
-*/
-/*
     Can define your palette colors by name
     https://htmlcolorcodes.com/color-names/
 */
@@ -79,24 +76,55 @@ h6 {
   h6 > span, h6 small {
     font-size: 1.5rem; }
 
-body {
-  overflow-x: hidden; }
-
-.layout {
-  max-width: 100%;
-  margin: 0;
-  padding: 0 2%;
+.contain {
+  width: 70vw;
+  margin-left: auto;
+  margin-right: auto;
   position: relative; }
-  .layout .article > header {
-    margin-bottom: 13px; }
-  .layout .article .section > header {
-    margin-bottom: 13px; }
-  .layout .article .section .section-content {
-    position: relative; }
-  .layout .article .section > footer {
-    margin-top: 13px; }
-  .layout .article > footer {
-    margin-top: 13px; }
+  @media only screen and (max-width: 480px) {
+    .contain {
+      width: 85vw; } }
+
+.float-right:after, .float-right:before,
+.float-left:after,
+.float-left:before {
+  clear: both; }
+
+.float-left {
+  float: left; }
+
+.float-right {
+  float: right; }
+
+.align-left {
+  text-align: left; }
+
+.align-right {
+  text-align: right; }
+
+.align-center {
+  text-align: center; }
+
+.disabled {
+  cursor: not-allowed !important; }
+
+a.disabled {
+  pointer-events: none !important; }
+
+.hidden {
+  display: none;
+  visibility: hidden; }
+
+.center-flex {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+hr.divisor {
+  height: 1px;
+  background-color: #e8e8e8;
+  width: 100%;
+  margin: 10px 0; }
 
 .grid-flex {
   display: flex; }
@@ -170,60 +198,189 @@ body {
   [class*='flex-']:last-of-type {
     margin-top: 5px; } }
 
-.float-right:after, .float-right:before,
-.float-left:after,
-.float-left:before {
-  clear: both; }
+button, input[type="button"], input[type="reset"], input[type="submit"] {
+  cursor: pointer;
+  border: 0;
+  -webkit-appearance: button; }
+  button:disabled, input[type="button"]:disabled, input[type="reset"]:disabled, input[type="submit"]:disabled {
+    cursor: not-allowed;
+    opacity: .5; }
 
-.float-left {
-  float: left; }
+.button {
+  height: auto;
+  min-width: 120px;
+  padding: 7px 12px;
+  background-color: DarkGrey;
+  color: white;
+  font-weight: 700;
+  font-size: 1.12rem;
+  text-transform: capitalize;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  outline: none;
+  vertical-align: middle;
+  border: 1px solid #9c9c9c;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-transition: all 100ms linear;
+  -moz-transition: all 100ms linear;
+  -ms-transition: all 100ms linear;
+  -o-transition: all 100ms linear;
+  transition: all 100ms linear; }
+  .button:hover {
+    background-color: #989898; }
+  .button:disabled {
+    cursor: not-allowed !important;
+    opacity: .5; }
 
-.float-right {
-  float: right; }
+.button-blue {
+  border: 1px solid #0000b4 !important;
+  color: white;
+  background-color: MediumBlue !important; }
+  .button-blue:hover {
+    background-color: #0000ac !important; }
+  .button-blue:hover:disabled {
+    background-color: MediumBlue !important; }
 
-.align-left {
-  text-align: left; }
+.button-grey {
+  border: 1px solid #9c9c9c !important;
+  color: white;
+  background-color: DarkGrey !important; }
+  .button-grey:hover {
+    background-color: #989898 !important; }
+  .button-grey:hover:disabled {
+    background-color: DarkGrey !important; }
 
-.align-right {
-  text-align: right; }
+.button-green {
+  border: 1px solid #007272 !important;
+  color: white;
+  background-color: DarkCyan !important; }
+  .button-green:hover {
+    background-color: #006a6a !important; }
+  .button-green:hover:disabled {
+    background-color: DarkCyan !important; }
 
-.align-center {
-  text-align: center; }
+.button-red {
+  border: 1px solid #c51236 !important;
+  color: white;
+  background-color: Crimson !important; }
+  .button-red:hover {
+    background-color: #be1134 !important; }
+  .button-red:hover:disabled {
+    background-color: Crimson !important; }
 
-.disabled {
-  cursor: not-allowed !important; }
+.button-yellow {
+  border: 1px solid #e6c200 !important;
+  color: white;
+  background-color: Gold !important; }
+  .button-yellow:hover {
+    background-color: #debb00 !important; }
+  .button-yellow:hover:disabled {
+    background-color: Gold !important; }
 
-a.disabled {
-  pointer-events: none !important; }
+a {
+  cursor: pointer;
+  text-decoration: none;
+  outline: 0; }
+  a:link, a:visited, a:hover, a:active {
+    outline: 0; }
+  a img {
+    border: 0; }
 
-.hidden {
-  display: none;
-  visibility: hidden; }
+a.link {
+  color: MediumBlue; }
+  a.link:hover {
+    color: #0000b1; }
+  a.link:visited {
+    color: DarkCyan; }
+  a.link:active {
+    color: MediumBlue; }
+  a.link:hover {
+    text-decoration: underline; }
 
-.center-flex {
-  display: flex;
-  align-items: center;
-  justify-content: center; }
-
-hr.divisor {
-  height: 1px;
-  background-color: #e8e8e8;
+textarea {
+  vertical-align: top;
+  resize: vertical;
+  font-family: inherit;
   width: 100%;
-  margin: 10px 0; }
+  padding: 10px; }
+
+input, select {
+  vertical-align: baseline; }
+
+select {
+  background: white;
+  -webkit-appearance: menulist-button; }
+
+input[type="search"]::-ms-clear, input[type="search"]::-webkit-search-cancel-button {
+  display: none; }
+
+input[type="file"] {
+  background: none; }
+
+input[type="checkbox"], input[type="radio"] {
+  padding: 0; }
+
+.input,
+.select,
+.textarea {
+  width: 100%;
+  padding: 6px;
+  outline: none;
+  border: 1px solid blue;
+  font-size: 1.4rem;
+  font-family: inherit;
+  color: black;
+  background-color: white;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  border-radius: 5px; }
+  .input::placeholder,
+  .select::placeholder,
+  .textarea::placeholder {
+    color: #ccc; }
+
+.input,
+.select {
+  height: 30px; }
+  .input:disabled,
+  .select:disabled {
+    background: #efefef; }
+
+select[disabled] > option {
+  color: #ccc !important; }
+
+.select[multiple] {
+  min-height: 120px; }
+
+input[type="file"] {
+  border: 0 !important;
+  outline: none; }
+
+input:focus {
+  border-color: #65B3CC !important;
+  background-color: #F9F9F9 !important; }
+
+.label-input {
+  display: block; }
+  .label-input input[type="checkbox"] {
+    float: left;
+    margin-top: 4px;
+    margin-right: 7px; }
 
 /*
 //basic layout
-@import "rocket/layout";
+
 
 //navigator
 //@import "rocket/nav";
 
 @import "rocket/components/nav-burger";
 
-//inputs
-@import "rocket/buttons";
-@import "rocket/links";
-@import "rocket/inputs";
+
 
 //table
 @import "rocket/table";

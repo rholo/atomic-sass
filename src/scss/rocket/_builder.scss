@@ -4,29 +4,30 @@
 
 @import "core/reset";
 @import "core/typography";
-@import "core/layout";
+
+//helpers
+@import "toolset/helpers";
 
 // grids
 @import "grids/flex";
 // @import "rocket/grid-float";
 // @import "rocket/grid-fix";
 
-//helpers
-@import "toolset/helpers";
+//inputs
+@import "elements/buttons";
+@import "elements/anchors";
+@import "elements/inputs";
 
 /*
 //basic layout
-@import "rocket/layout";
+
 
 //navigator
 //@import "rocket/nav";
 
 @import "rocket/components/nav-burger";
 
-//inputs
-@import "rocket/buttons";
-@import "rocket/links";
-@import "rocket/inputs";
+
 
 //table
 @import "rocket/table";

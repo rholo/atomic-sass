@@ -1,117 +1,120 @@
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-  max-width: 100%;
-  width: 100%;
-  td, tr {
-      border: 0;
-  }
-}
-.#{$prefix}table-scroll-x{
-  overflow-x: auto;
-}
-.#{$prefix}table table {
+@if $table {
+  table {
     border-collapse: collapse;
     border-spacing: 0;
+    max-width: 100%;
     width: 100%;
-}
-.#{$prefix}table .#{$prefix}table-scroll {
+    td, tr {
+        border: 0;
+    }
+  }
+  .#{$prefix}table-scroll-x{
     overflow-x: auto;
-    position: relative;
-    td {
-        white-space: nowrap;
-    }
-}
-.#{$prefix}table table th {
-    border-bottom: 1px solid #E2E2E2;
-    padding: $table-th-padding;
-    text-align: $table-th-align;
-    font-size:$table-th-font-size;
-    vertical-align: top;
-    &.th-group {
-        background: #f1f1f1;
-    }
-}
-.#{$prefix}table tbody > tr {
-    background: $table-tr-background;
-    display: table-row;
-    &:nth-child(even) {
-        background-color: lighten($table-tr-background, 20%);
-    }
-}
+  }
+  .#{$prefix}table table {
+      border-collapse: collapse;
+      border-spacing: 0;
+      width: 100%;
+  }
+  .#{$prefix}table .#{$prefix}table-scroll {
+      overflow-x: auto;
+      position: relative;
+      td {
+          white-space: nowrap;
+      }
+  }
+  .#{$prefix}table table th {
+      border-bottom: 1px solid #E2E2E2;
+      padding: $table-th-padding;
+      text-align: $table-th-align;
+      font-size:$table-th-font-size;
+      vertical-align: top;
+      &.th-group {
+          background: #f1f1f1;
+      }
+  }
+  .#{$prefix}table tbody > tr {
+      background: $table-tr-background;
+      display: table-row;
+      &:nth-child(even) {
+          background-color: lighten($table-tr-background, 20%);
+      }
+  }
 
-.#{$prefix}table td {
-    padding:9px;
-    color: #5d626b;
-    white-space: nowrap;
-    font-size: 1.2rem !important;
-    line-height: 1.8 !important;
-    >{
-      .#{$prefix}input-text,
-      .#{$prefix}select,
-      .#{$prefix}textarea{
-          padding: 0 5px;
-          height: 23px;
-      }
-      .#{$prefix}button {
-          padding: 0 12px;
-      }
+  .#{$prefix}table td {
+      padding:9px;
+      color: #5d626b;
+      white-space: nowrap;
       font-size: 1.2rem !important;
       line-height: 1.8 !important;
-    }
-}
-.table-footer {
-    display: block;
-    overflow: hidden;
-    padding: 0;
-    margin: 5px 0 0;
-}
+      >{
+        .#{$prefix}input-text,
+        .#{$prefix}select,
+        .#{$prefix}textarea{
+            padding: 0 5px;
+            height: 23px;
+        }
+        .#{$prefix}button {
+            padding: 0 12px;
+        }
+        font-size: 1.2rem !important;
+        line-height: 1.8 !important;
+      }
+  }
+  .table-footer {
+      display: block;
+      overflow: hidden;
+      padding: 0;
+      margin: 5px 0 0;
+  }
 
-.#{$prefix}table .#{$prefix}table-info {
-    padding: 17px;
-    text-align: center;
-    font-weight: bolder;
-    background-color: #FFF8EF!important;
-}
-@media screen and (max-width:40em){
-  .#{$prefix}table-responsive table thead{
-    display: none;
+  .#{$prefix}table .#{$prefix}table-info {
+      padding: 17px;
+      text-align: center;
+      font-weight: bolder;
+      background-color: #FFF8EF!important;
   }
-  .#{$prefix}table-responsive tr{
-    display: block!important;
-    margin-bottom: 11px;
-    border-bottom: 1px solid #f1f1f1;
-    &:after{
-      content:'';
-      display: table;
-      clear: both;
+  @media screen and (max-width:40em){
+    .#{$prefix}table-responsive table thead{
+      display: none;
     }
-    &:before{
+    .#{$prefix}table-responsive tr{
+      display: block!important;
+      margin-bottom: 11px;
+      border-bottom: 1px solid #f1f1f1;
+      &:after{
+        content:'';
+        display: table;
+        clear: both;
+      }
+      &:before{
+        display: block;
+      }
+      &:last-of-type{
+        margin-bottom: 0;
+        border-bottom: 0;
+      }
+    }
+    .#{$prefix}table-responsive table td{
       display: block;
-    }
-    &:last-of-type{
-      margin-bottom: 0;
-      border-bottom: 0;
-    }
-  }
-  .#{$prefix}table-responsive table td{
-    display: block;
-    float:left;
-    clear:left;
-    width:100%;
-    text-align: right;
-    &:last-child{
-      border-bottom: 0;
-    }
-    &:before{
-      content:attr(data-label);
-      float: left;
-      text-transform: uppercase;
-      font-weight: 700;
-    }
-    a{
-      display: block;
-      position: relative;
+      float:left;
+      clear:left;
+      width:100%;
+      text-align: right;
+      &:last-child{
+        border-bottom: 0;
+      }
+      &:before{
+        content:attr(data-label);
+        float: left;
+        text-transform: uppercase;
+        font-weight: 700;
+      }
+      a{
+        display: block;
+        position: relative;
+      }
     }
   }
+
 }

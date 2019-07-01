@@ -1,10 +1,4 @@
 node_modules/
-resources/scss/font-awesome/
-resources/fonts/
-resources/js/
-resources/img/favicon.png
-resources/css/prism.css
-
 .*.swp
 ._*
 .DS_Store
