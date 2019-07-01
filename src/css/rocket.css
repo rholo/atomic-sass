@@ -2,16 +2,6 @@
     define your own prefix to all classname if you need it!
     learn more at http://getbem.com/naming/
 */
-/*
-    Can define your palette colors by name
-    https://htmlcolorcodes.com/color-names/
-*/
-@font-face {
-  font-family: System;
-  font-style: normal;
-  font-weight: 300;
-  src: local(".SFNSText-Light"), local(".HelveticaNeueDeskInterface-Light"), local(".LucidaGrandeUI"), local("Ubuntu Light"), local("Segoe UI Light"), local("Roboto-Light"), local("DroidSans"), local("Tahoma"); }
-
 html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, hr, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figure, figcaption, hgroup, menu, footer, header, nav, section, summary, time, mark, audio, video, img, main, input, textarea, select {
   border: 0;
   margin: 0;
@@ -184,19 +174,6 @@ hr.divisor {
 
 .flex-col-16 {
   flex: 16; }
-
-@media only screen and (min-width: 480px) and (max-width: 1024px) {
-  [class*='flex-'] {
-    flex: 2 !important; } }
-
-@media only screen and (max-width: 480px) {
-  .grid-flex {
-    display: block; }
-  [class*='flex-'] {
-    flex: 1 !important;
-    margin-right: 0; }
-  [class*='flex-']:last-of-type {
-    margin-top: 5px; } }
 
 button, input[type="button"], input[type="reset"], input[type="submit"] {
   cursor: pointer;

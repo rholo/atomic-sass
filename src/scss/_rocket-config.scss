@@ -5,25 +5,36 @@
     learn more at http://getbem.com/naming/
 */
 $prefix:'';
-// ask yourself if you need all this stuff!
-$inputs     : true;
-$buttons    : true;
-$table      : false;
-
 // Define your fonts!
-$my-fonts: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+$my-font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 
-$font-primary   : $my-fonts;
-// by default heading use secondary font, you can change it if you want
-$font-secondary : $my-fonts;
-
-// this is a global font size to scale all headings and paragraph sizes
+// this font-size scale all headings and paragraph
 $font-size      : 1.4rem;
 
-/*
-    Can define your palette colors by name
-    https://htmlcolorcodes.com/color-names/
-*/
-// define just that you need it!
-// $grid-flex : true;
-$flex-cols  : 16;
+// by default we use OS Font
+$font-primary   : $my-font;
+$font-secondary : $my-font;
+
+// Modern browsers support 140 named colors
+$red            : Crimson;
+$green          : DarkCyan;
+$blue           : MediumBlue;
+$orange         : DarkOrange;
+$yellow         : Gold;
+$violet         : DarkViolet;
+$grey           : DarkGrey;
+
+// here add or remove if you dont need it
+$inputs         : true;
+$buttons        : true;
+$table          : false;
+
+// Three kind of grids system
+$grid-flex      : true;
+$grid-float     : false;
+$grid-table     : false;
+
+// define your columns for grids
+$flex-columns   : 16;
+$float-columns  : 12;
+$table-columns  : 12;

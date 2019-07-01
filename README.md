@@ -2,11 +2,51 @@ Rocket
 =========
 Rocket is a baseline SCSS to start your own CSS Framework, define just that you need and make your own lightweight and clean CSS Framework.
 
-Included HTML elements ready to use and custom components
+#### How to start
 
-and more:
-- three kind of grids, flex included for IE11+, and two standard grids for older
-- ColorName pallete colors
+create your config scss file in your project
+```
+config.scss
+```
+this is a sample you can copy and use
+
+```
+// define your prefix
+$prefix         : '';
+
+// this font-size scale all headings and paragraph
+$font-size      : 1.4rem;
+
+// by default we use OS Font
+$font-primary   : '';
+$font-secondary : '';
+
+// Modern browsers support 140 named colors
+$red            : Crimson;
+$green          : DarkCyan;
+$blue           : MediumBlue;
+$orange         : DarkOrange;
+$yellow         : Gold;
+$violet         : DarkViolet;
+$grey           : DarkGrey;
+
+// here add or remove if you dont need it
+$inputs         : true;
+$buttons        : true;
+$table          : false;
+
+// Three kind of grids system
+$grid-flex      : true;
+$grid-float     : false;
+$grid-table     : false;
+
+// define your columns for grids
+$flex-columns   : 16;
+$float-columns  : 12;
+$table-columns  : 12;
+
+
+```
 
 #### add your own prefix to all classname
 now you can make your own $prefix for all classname in just one variable!

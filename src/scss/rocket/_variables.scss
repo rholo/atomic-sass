@@ -16,12 +16,11 @@ $orange                 : DarkOrange!default;
 $yellow                 : Gold!default;
 $violet                 : DarkViolet!default;
 $grey                   : DarkGrey !default;
-// @import 'core/colors';
-@import 'core/fonts';
 
 //Global params
-$font-primary           : System, Arial, "Helvetica Neue", Helvetica, sans-serif !default;
-$font-secondary         : System, Georgia, "Times New Roman", Times, serif !default;
+$os-font                : -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+$font-primary           : $os-font !default;
+$font-secondary         : $os-font !default;
 
 $font-headings          : $font-secondary;
 $font-size-global       : 100%!default;
@@ -31,9 +30,9 @@ $font-scale             : 0.2 !default;
 $font-color             : black !default;
 
 //select columns for your grid
-$grid-flex-col          : 16 !default;
-$grid-float-cols        : 12 !default;
-$grid-fix-cols          : 12 !default;
+$flex-columns           : 16 !default;
+$float-columns          : 12 !default;
+$fix-columns            : 12 !default;
 //add margin to columns on default grid
 $grid-space             : .5% !default;
 
