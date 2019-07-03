@@ -4,6 +4,8 @@ Atomic is a baseline SCSS to start your own CSS Framework, define just that you 
 
 Configurate your own theme to your project with your prefix, normalize or reset don't required.
 
+define your own prefix to all classname if you need it!, learn more at http://getbem.com/naming/
+
 #### How to start
 
 create your config.scss file in your project, import atomic-builder.scss and done.
