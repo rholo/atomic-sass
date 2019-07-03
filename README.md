@@ -50,34 +50,5 @@ $table-columns  : 12;
 
 ```
 
-#### Buttons
-```sh
-<!-- default color -->
-<button class="button button-default">Default</button>
-<button class="button button-primary">Primary</button>
-<button class="button button-safe">Confirm</button>
-<button class="button button-warning">Atention</button>
-<button class="button button-risk">Risk</button>
-<button class="button button-minimal">Minimal</button>
-```
-
-#### Basic Table
-```sh
-<div class="table">
-  <table>...
-```
-#### Responsive Table
-```sh
-<div class="table table-responsive">
-  <table>
-    <thead>...
-        <tr>...
-            <th>title
-    <tbody>...
-        <tr>..
-            <td data-label="title">
-  </table>
-<div>
-```
 
 [rholo]: <http://rholo.cl/labs/layout-base>
