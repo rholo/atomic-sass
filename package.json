@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "node-sass -w scss -o ./",
-    "prod": "node-sass /scss -o / --output-style compressed"
+    "prod": "node-sass scss -o / --output-style compressed"
   },
   "repository": "git+https://github.com/rholo/atomic-sass",
   "author": "Rodrigo Ahumada",
