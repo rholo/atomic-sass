@@ -1,6 +1,6 @@
 {
   "name": "atomic-sass",
-  "version": "2.0.2",
+  "version": "2.0.3",
   "description": "Atomic Sass is a baseline SASS proyect to make an standard CSS for any proyect with your own prefix if u want it",
   "main": "index.js",
   "scripts": {
@@ -8,7 +8,7 @@
     "dev": "node-sass -w src/scss -o src/css",
     "prod": "node-sass src/scss -o src/css --output-style compressed"
   },
-  "repository": "git+https://rholo@bitbucket.org/rholo/atomic-sass.git",
+  "repository": "git+https://github.com/rholo/atomic-sass",
   "author": "Rodrigo Ahumada",
   "license": "MIT",
   "homepage": "https://github.org/rholo/atomic-sass#readme",
