@@ -8,24 +8,22 @@ define your own prefix to all classname if you need it!, learn more at http://ge
 
 #### How to start
 
-create your config.scss file in your project, import atomic-builder.scss and done.
+import atomic-sass to your project and done.
 ```
-@import '~/atomic-sass/atomic-builder'
+@import 'atomic-sass/scss/atomic';
 ```
+
+##### Options
+
 this is a sample you can copy and use to configurate your own theme really fast
 
 ```
-// define your prefix
 $prefix         : '';
 
-// this font-size scale all headings and paragraph
 $font-size      : 1.4rem;
-
-// by default we use OS Font
 $font-primary   : '';
 $font-secondary : '';
 
-// Modern browsers support 140 named colors!
 $red            : Crimson;
 $green          : DarkCyan;
 $blue           : MediumBlue;
@@ -34,23 +32,18 @@ $yellow         : Gold;
 $violet         : DarkViolet;
 $grey           : DarkGrey;
 
-// here you can add or remove HTML Elements styles if you dont need it
 $inputs         : true;
 $buttons        : true;
 $table          : false;
 
-// Three kind of grids system
 $grid-flex      : true;
 $grid-float     : false;
 $grid-table     : false;
 
-// define your columns for grids
 $flex-columns   : 16;
 $float-columns  : 12;
 $table-columns  : 12;
 
+@import 'atomic-sass/scss/atomic';
 
 ```
-
-
-[rholo]: <http://rholo.cl/labs/layout-base>
