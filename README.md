@@ -1,14 +1,14 @@
-Rocket
+Atomic Sass
 =========
-Rocket is a baseline SCSS to start your own CSS Framework, define just that you need and make your own lightweight and clean CSS Framework.
+Atomic is a baseline SCSS to start your own CSS Framework, define just that you need and make your own lightweight and clean CSS Framework.
 
 Configurate your own theme to your project with your prefix, normalize or reset don't required.
 
 #### How to start
 
-create your config.scss file in your project, import rocket-builder.scss and done.
+create your config.scss file in your project, import atomic-builder.scss and done.
 ```
-@import '~/rocket-sass/rocket-builder'
+@import '~/atomic-sass/atomic-builder'
 ```
 this is a sample you can copy and use to configurate your own theme really fast
 
