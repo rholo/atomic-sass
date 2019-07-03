@@ -1,22 +1,20 @@
 {
-  "name": "rocket",
-  "version": "2.1.1",
+  "name": "rocket-sass",
+  "version": "2.0.0",
   "description": "Rocket is a baseline SASS proyect to make an standard CSS for any proyect with your own prefix if u want it",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "install": "npm i node-sass",
-    "start": "node-sass --watch src/scss -o src/css",
-    "build": "node-sass src/scss -o src/css --output-style compressed"
+    "start": "node-sass -w src/scss -o src/css",
+    "build": "node-sass src/scss --include-path node_modules/ -o src/css --output-style compressed"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://rholo@bitbucket.org/rholo/rocket.git"
-  },
+  "repository": "git+https://rholo@bitbucket.org/rholo/rocket-sass.git",
   "author": "Rodrigo Ahumada",
   "license": "MIT",
-  "homepage": "https://github.org/rholo/rocket#readme",
-  "dependencies": {
+  "homepage": "https://github.org/rholo/rocket-sass#readme",
+  "private": false,
+  "devDependencies": {
     "node-sass": "^4.12.0"
   }
 }
