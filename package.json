@@ -1,6 +1,6 @@
 {
   "name": "atomic-sass",
-  "version": "2.0.4",
+  "version": "2.0.5",
   "description": "Atomic Sass is a baseline SASS proyect to make an standard CSS for any proyect with your own prefix if u want it",
   "main": "index.js",
   "scripts": {
