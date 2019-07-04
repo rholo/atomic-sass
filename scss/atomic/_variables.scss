@@ -27,13 +27,16 @@ $font-size-global       : 100%!default;
 //font-size 1.4rem = 14px
 $font-size              : 1.4rem !default;
 $font-scale             : 0.2 !default;
-$font-color             : black !default;
-$color-link             : $violet !default;
+$font-color             : Black !default;
+$link-color             : DarkCyan !default;
 
 $flex-columns           : 16 !default;
 $float-columns          : 12 !default;
 $fix-columns            : 12 !default;
 $grid-space             : .5% !default;
+
+$padding-prefix         : 'pd';
+$margin-prefix          : 'mg';
 
 $media-tablet           : 1024px;
 $media-mobile           : 480px;
@@ -61,9 +64,9 @@ $button-ui:(
 
 //input settings
 $input-height           : 30px !default;
-$input-color            : black !default;
+$input-color            : $font-color !default;
 $input-font-size        : $font-size !default;
-$input-border           : 1px solid blue !default;
+$input-border           : 1px solid $grey !default;
 $input-background       : white !default;
 
 // table settings

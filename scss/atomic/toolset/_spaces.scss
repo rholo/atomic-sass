@@ -1,21 +1,19 @@
-$padding-prefix: 'pd';
-$margin-prefix: 'mg';
 $sides:(t: top, l: left, r: right, b: bottom);
 
 @for $i from 1 through 5 {
-    .#{$margin-prefix}--#{$i}{
+    .#{$prefix}#{$margin-prefix}--#{$i}{
         margin: $i + rem;
     }
-    .#{$padding-prefix}--#{$i}{
+    .#{$prefix}#{$padding-prefix}--#{$i}{
         padding: $i + rem;
     }
     @each $side, $name-side in $sides {
-        .#{$margin-prefix}{
+        .#{$prefix}#{$margin-prefix}{
             &--#{$side}__#{$i}{
                 margin-#{$name-side}: $i + rem
             }
         }
-        .#{$padding-prefix}{
+        .#{$prefix}#{$padding-prefix}{
             &--#{$side}__#{$i}{
                 padding-#{$name-side}: $i + rem
             }

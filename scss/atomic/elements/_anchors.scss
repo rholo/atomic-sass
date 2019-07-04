@@ -11,8 +11,8 @@ a {
 }
 a.#{$prefix}link {
   @include link-state(
-    $color-link,
-    darken($color-link, 5.5%),
+    $link-color,
+    darken($link-color, 5.5%),
     $green,
     $blue);
   &:hover {
