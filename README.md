@@ -47,7 +47,7 @@ $table          : false;
 
 $flex-grid      : true;
 $float-grid     : false;
-$fix-grid       : false
+$fix-grid       : false;
 
 $flex-columns   : 16;
 $grid-space     : 0.5%;
