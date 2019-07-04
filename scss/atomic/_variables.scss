@@ -3,10 +3,11 @@ $prefix                 :''!default;
 // normalize some stuff
 $inputs                 : true !default;
 $buttons                : true !default;
-$table                  : false !default;
+$table                  : true !default;
 $flex-grid              : true !default;
-$float-grid             : false !default;
-$fix-grid               : false !default;
+$float-grid             : true !default;
+$fix-grid               : true !default;
+$helpers                : true !default;
 
 // colors
 $red                    : Crimson!default;

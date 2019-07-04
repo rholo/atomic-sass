@@ -1,12 +1,14 @@
 @import "variables";
 @import "toolset/mixins";
-@import "toolset/helpers";
 @import "core/reset";
 @import "core/typography";
 
-@import "toolset/spaces";
-
 @import "grids/flex";
+@import "grids/fix";
+@import "grids/float";
+
+@import "toolset/spaces";
+@import "toolset/helpers";
 
 @import "elements/buttons";
 @import "elements/anchors";

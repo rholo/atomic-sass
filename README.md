@@ -1,6 +1,6 @@
 Atomic Sass
 =========
-Atomic is a baseline SCSS to start your own CSS Framework, define just that your project need and make your own lightweight, clean and scalable css.
+Atomic is a baseline SCSS to start your own CSS Library, define just that your project need and make your own lightweight, clean and scalable css.
 
 #### Features
 - Define your own prefix to all classname if you need it!

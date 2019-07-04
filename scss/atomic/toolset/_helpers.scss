@@ -1,50 +1,52 @@
-.#{$prefix}contain{
-  @include container(70vw);
-  @include mobile(){
-    width: 85vw;
-  }
-}
-.#{$prefix}float-right,
-.#{$prefix}float-left{
-    &:after,
-    &:before{
-        clear: both;
+@if $helpers {
+  #{$prefix}contain{
+    @include container(70vw);
+    @include mobile(){
+      width: 85vw;
     }
-}
+  }
+  .#{$prefix}float-right,
+  .#{$prefix}float-left{
+      &:after,
+      &:before{
+          clear: both;
+      }
+  }
 
-.#{$prefix}float-left{
-    float: left;
-}
-.#{$prefix}float-right{
-    float: right;
-}
-.#{$prefix}align-left{
-  text-align: left;
-}
-.#{$prefix}align-right{
-  text-align: right;
-}
-.#{$prefix}align-center{
-  text-align: center;
-}
-.#{$prefix}disabled {
-    cursor: not-allowed!important;
-}
-a.#{$prefix}disabled {
-    pointer-events: none!important;
-}
-.#{$prefix}hidden{
-    display: none;
-    visibility: hidden;
-}
-.#{$prefix}center-flex{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-hr.#{$prefix}divisor{
-    height: 1px;
-    background-color: #e8e8e8;
-    width: 100%;
-    margin: 10px 0;
+  .#{$prefix}float-left{
+      float: left;
+  }
+  .#{$prefix}float-right{
+      float: right;
+  }
+  .#{$prefix}align-left{
+    text-align: left;
+  }
+  .#{$prefix}align-right{
+    text-align: right;
+  }
+  .#{$prefix}align-center{
+    text-align: center;
+  }
+  .#{$prefix}disabled {
+      cursor: not-allowed!important;
+  }
+  a.#{$prefix}disabled {
+      pointer-events: none!important;
+  }
+  .#{$prefix}hidden{
+      display: none;
+      visibility: hidden;
+  }
+  .#{$prefix}center-flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  hr.#{$prefix}divisor{
+      height: 1px;
+      background-color: #e8e8e8;
+      width: 100%;
+      margin: 10px 0;
+  }
 }

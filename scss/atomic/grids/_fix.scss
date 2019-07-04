@@ -18,9 +18,9 @@
             border-right:0;
         }
     }
-    @for $i from 1 through $grid-fix {
+    @for $i from 1 through $fix-columns {
         .#{$prefix}fix-col-#{$i} {
-           width:(100% / ($grid-fix / $i))
+           width:(100% / ($fix-columns / $i))
         }
     }
     @include tablet{

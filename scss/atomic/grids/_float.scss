@@ -19,9 +19,9 @@
         margin-right: 0;
     }
 }
-@for $i from 1 through $grid-float {
+@for $i from 1 through $float-columns {
     .#{$prefix}float-col-#{$i} {
-       width:(100% / ($grid-float / $i)) - (($grid-space * ($grid-float - $i)) / $grid-float);
+       width:(100% / ($float-columns / $i)) - (($grid-space * ($float-columns - $i)) / $float-columns);
     }
 }
 @include tablet{
