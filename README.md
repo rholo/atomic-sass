@@ -11,6 +11,15 @@ Atomic is a baseline SCSS to start your own CSS Library, define just that your p
 
 #### How to start
 
+install by npm
+```
+npm i atomic-sass
+```
+
+install by yarn
+```
+yarn add atomic-sass
+```
 import atomic-sass to your project and done.
 ```
 @import 'atomic-sass/scss/atomic';
