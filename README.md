@@ -25,7 +25,7 @@ import atomic-sass to your project and done.
 @import 'atomic-sass/scss/atomic';
 ```
 
-##### Create your own theme
+#### Create your own theme
 
 this is a sample you can use to configurate your own theme really fast
 
