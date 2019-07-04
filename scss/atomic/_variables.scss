@@ -4,9 +4,9 @@ $prefix                 :''!default;
 $inputs                 : true !default;
 $buttons                : true !default;
 $table                  : false !default;
-$grid-flex              : true !default;
-$grid-float             : false !default;
-$grid-fix               : false !default;
+$flex-grid              : true !default;
+$float-grid             : false !default;
+$fix-grid               : false !default;
 
 // colors
 $red                    : Crimson!default;
@@ -28,34 +28,19 @@ $font-size-global       : 100%!default;
 $font-size              : 1.4rem !default;
 $font-scale             : 0.2 !default;
 $font-color             : black !default;
+$color-link             : $violet !default;
 
-//select columns for your grid
 $flex-columns           : 16 !default;
 $float-columns          : 12 !default;
 $fix-columns            : 12 !default;
-//add margin to columns on default grid
 $grid-space             : .5% !default;
-
-//layout configuration
-$layout-min-width       : 280px !default;
-$layout-max-width       : 70vw !default;
-$layout-padding         : 0 2% !default;
-$layout-margin          : 0 auto!default;
-$layout-background      : white !default;
 
 $media-tablet           : 1024px;
 $media-mobile           : 480px;
 
-//article
-$article-spacing        : 13px !default;
+//for inputs and bottons
+$border-radius          : 0 !default;
 
-//section
-$section-spacing        : 13px !default;
-
-//Universal params
-$border-radius          : 5px !default;
-
-$color-link: $blue;
 
 //button & inputs
 $button-height          : auto!default;

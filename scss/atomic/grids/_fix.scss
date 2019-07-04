@@ -1,38 +1,41 @@
-.#{$prefix}row-fix {
-    display: table;
-    table-layout: fixed;
-    margin: 0;
-    width: 100%;
-    padding-bottom: 5px;
-    border-spacing:.5rem 0;
-    + .#{$prefix}row-fix {
-        margin-top: 5px;
-        padding-top: 5px;
-    }
-}
-[class*='#{$prefix}fix-col'] {
-    display: table-cell;
-    padding:0 1.2rem;
-    &:last-of-type{
-        border-right:0;
-    }
-}
-@for $i from 1 through $grid-fix {
-    .#{$prefix}fix-col-#{$i} {
-       width:(100% / ($grid-fix / $i))
-    }
-}
-@include tablet{
-    [class*='#{$prefix}fix-col'] {
-        width: 50%!important;
-    }
-};
-@include mobile{
-    [class*='#{$prefix}fix-col'] {
-        display: block;
-        width: 100%!important;
-        &:last-of-type{
+@if $fix-grid {
+    .#{$prefix}row-fix {
+        display: table;
+        table-layout: fixed;
+        margin: 0;
+        width: 100%;
+        padding-bottom: 5px;
+        border-spacing:.5rem 0;
+        + .#{$prefix}row-fix {
             margin-top: 5px;
+            padding-top: 5px;
         }
     }
-};
+    [class*='#{$prefix}fix-col'] {
+        display: table-cell;
+        padding:0 1.2rem;
+        &:last-of-type{
+            border-right:0;
+        }
+    }
+    @for $i from 1 through $grid-fix {
+        .#{$prefix}fix-col-#{$i} {
+           width:(100% / ($grid-fix / $i))
+        }
+    }
+    @include tablet{
+        [class*='#{$prefix}fix-col'] {
+            width: 50%!important;
+        }
+    };
+    @include mobile{
+        [class*='#{$prefix}fix-col'] {
+            display: block;
+            width: 100%!important;
+            &:last-of-type{
+                margin-top: 5px;
+            }
+        }
+    };
+
+}

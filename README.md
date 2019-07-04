@@ -1,11 +1,14 @@
 Atomic Sass
 =========
-Atomic is a baseline SCSS to start your own CSS Framework, define just that you need and make your own lightweight and clean CSS Framework.
+Atomic is a baseline SCSS to start your own CSS Framework, define just that your project need and make your own lightweight, clean and scalable css.
 
-Configurate your own theme to your project with your prefix, normalize or reset don't required.
+Normalize or reset don't required!
 
-define your own prefix to all classname if you need it!, learn more at http://getbem.com/naming/
-
+#### Features
+    - Define your own prefix to all classname if you need it!, get more at http://getbem.com/naming/
+    - Using ColorName, modern browsers support 140 named colors, get all of theme https://htmlcolorcodes.com/color-names/
+    - Flexbox Grid for modern browsers or Float Grid and Table Grid for olders
+    - mixins and placeholders ready to use!
 #### How to start
 
 import atomic-sass to your project and done.
@@ -13,16 +16,19 @@ import atomic-sass to your project and done.
 @import 'atomic-sass/scss/atomic';
 ```
 
-##### Options
+##### Create your own theme
 
-this is a sample you can copy and use to configurate your own theme really fast
+this is a sample you can use to configurate your own theme really fast
 
 ```
-$prefix         : '';
+$prefix         : 'at-';
 
 $font-size      : 1.4rem;
-$font-primary   : '';
-$font-secondary : '';
+
+$your-font      : '';
+$other-font     : '';
+$font-primary   : $your-font;
+$font-secondary : $other-font;
 
 $red            : Crimson;
 $green          : DarkCyan;
@@ -36,13 +42,20 @@ $inputs         : true;
 $buttons        : true;
 $table          : false;
 
-$grid-flex      : true;
-$grid-float     : false;
-$grid-table     : false;
+$flex-grid      : true;
+$float-grid     : false;
+$fix-grid       : false
 
 $flex-columns   : 16;
-$float-columns  : 12;
-$table-columns  : 12;
+$grid-space     : 0.5%;
+
+$red            : Crimson;
+$green          : DarkCyan;
+$blue           : MediumBlue;
+$orange         : DarkOrange;
+$yellow         : Gold;
+$violet         : DarkViolet;
+$grey           : DarkGrey;
 
 @import 'atomic-sass/scss/atomic';
 

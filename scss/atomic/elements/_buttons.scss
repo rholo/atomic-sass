@@ -22,7 +22,9 @@
     outline: none;
     vertical-align: middle;
     border:1px solid darken($button-background, 5%);
-    @include border-radius($border-radius);
+    @if $border-radius != 0 {
+      @include border-radius($border-radius);
+    }
     @include transition(all 100ms linear);
     &:hover {
       background-color: darken($button-background, 6.5%);
