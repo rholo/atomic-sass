@@ -1,10 +1,10 @@
 
-[data-tooltip]{
+.#{$prefix}-tooltip{
   position: relative;
   &:before,
   &:after{
     opacity: 0;
-    @include transition(all .25s ease-out)
+    @include transition(all .25s ease-out);
     pointer-events: none;
   }
   &:before{

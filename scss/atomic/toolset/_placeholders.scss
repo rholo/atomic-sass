@@ -13,3 +13,13 @@
     display: none;
     visibility: hidden;
 }
+%flex-nav{
+    ul{
+        display: flex;
+        li{
+            a{
+                display: block;
+            }
+        }
+    }
+}
